@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      
 jobs:
   deploy:
     name: Deploy to GitHub Pages
@@ -16,7 +17,7 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
       - name: Build website
         run: yarn build
 
