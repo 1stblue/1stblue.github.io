@@ -30,7 +30,7 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh-Hans',
     locales: ['en', 'zh-Hans'],
   },
 
@@ -66,19 +66,46 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: '1stblue.com',
+        title: 'Elastic Pipe',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
+            type : 'docsVersionDropdown',
+            position: 'left',
+            label: '产品',
+            dropdownActiveClassDisabled: false,
+            dropdownItemsAfter: [
+              {
+                href: '/page-cloud',
+                label: 'Elastic Pipe - Cloud',
+              },
+              {
+                href: '/page-enterprise',
+                label: 'Elastic Pipe - Enterprise',
+              },
+              {
+                href: '/page-partner',
+                label: 'Elastic Pipe - Partner',
+              },
+              {
+                href: '/page-developer',
+                label: 'Elastic Pipe - Developer',
+              }
+            ]
+          },
+          {to: '/blog', label: '案例', position: 'left'},
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs', label: 'APIs', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '活动', position: 'left'},
           {
             href: 'https://github.com/1stblue.com',
             label: 'GitHub',
@@ -120,7 +147,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/1stblue.com',
+                href: 'https://github.com/1stblue',
               },
             ],
           },
