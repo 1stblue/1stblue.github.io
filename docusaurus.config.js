@@ -44,14 +44,14 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/1stblue.com/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                        'https://github.com/1stblue/1stblue.github.io/tree/main/',
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                        'https://github.com/1stblue/1stblue.github.io/tree/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -79,19 +79,19 @@ const config = {
                         dropdownActiveClassDisabled: false,
                         dropdownItemsAfter: [
                             {
-                                href: '/page-cloud',
+                                href: '/markdown-page',
                                 label: 'Elastic Pipe - Cloud',
                             },
                             {
-                                href: '/page-enterprise',
+                                href: '/markdown-page',
                                 label: 'Elastic Pipe - Enterprise',
                             },
                             {
-                                href: '/page-partner',
+                                href: '/markdown-page',
                                 label: 'Elastic Pipe - Partner',
                             },
                             {
-                                href: '/page-developer',
+                                href: '/markdown-page',
                                 label: 'Elastic Pipe - Developer',
                             }
                         ]
@@ -105,7 +105,7 @@ const config = {
                         position: 'left',
                         label: '文档',
                     },
-                    {to: '/docs', label: 'APIs', position: 'left'},
+                    {to: '/docs/intro', label: 'APIs', position: 'left'},
                     {to: '/blog', label: '博客', position: 'left'},
                     {to: '/blog', label: '活动', position: 'left'},
                     {
@@ -114,7 +114,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        to: '/try',
+                        to: '/markdown-page',
                         label: '免费试用',
                         position: 'right',
                     }
@@ -159,7 +159,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} 1stblue.com. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} 1stblue.com`,
             },
             prism: {
                 theme: lightCodeTheme,
