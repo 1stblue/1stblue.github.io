@@ -31,7 +31,7 @@ const config = {
     // to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: 'zh-Hans',
-        locales: ['en', 'zh-Hans'],
+        locales: ['zh-Hans', 'en'],
     },
 
     presets: [
@@ -99,6 +99,7 @@ const config = {
                     {to: '/blog', label: '方案', position: 'left'},
                     {to: '/blog', label: '案例', position: 'left'},
                     {to: '/blog', label: '连接器', position: 'left'},
+                    {to: '/blog', label: '生态', position: 'left'},
                     {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
@@ -111,11 +112,6 @@ const config = {
                     {
                         href: 'https://github.com/1stblue',
                         label: 'GitHub',
-                        position: 'right',
-                    },
-                    {
-                        to: '/markdown-page',
-                        label: '免费试用',
                         position: 'right',
                     }
                 ],
@@ -146,7 +142,7 @@ const config = {
                         ],
                     },
                     {
-                        title: 'More',
+                        title: '关于',
                         items: [
                             {
                                 label: 'Blog',
