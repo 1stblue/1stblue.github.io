@@ -55,7 +55,7 @@
             <uri>https://github.com/endiliey</uri>
         </author>
         <category label="hello" term="hello"/>
-        <category label="docusaurus" term="docusaurus"/>
+        <category label="中文" term="中文"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[First Blog Post]]></title>
@@ -68,7 +68,7 @@
             <name>Gao Wei</name>
             <uri>https://github.com/wgao19</uri>
         </author>
-        <category label="hola" term="hola"/>
+        <category label="测试中文" term="测试中文"/>
         <category label="docusaurus" term="docusaurus"/>
     </entry>
 </feed>
