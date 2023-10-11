@@ -64,7 +64,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             // Replace with your project's social card
-            image: 'img/docusaurus-social-card.jpg',
+            //image: 'img/docusaurus-social-card.jpg',
             navbar: {
                 title: 'Elastic Pipe',
                 logo: {
@@ -73,47 +73,12 @@ const config = {
                 },
                 items: [
                     {
-                        type: 'docsVersionDropdown',
-                        position: 'left',
-                        label: '产品',
-                        dropdownActiveClassDisabled: false,
-                        dropdownItemsAfter: [
-                            {
-                                href: '/markdown-page',
-                                label: 'Elastic Pipe - Cloud',
-                            },
-                            {
-                                href: '/markdown-page',
-                                label: 'Elastic Pipe - Enterprise',
-                            },
-                            {
-                                href: '/markdown-page',
-                                label: 'Elastic Pipe - Partner',
-                            },
-                            {
-                                href: '/markdown-page',
-                                label: 'Elastic Pipe - Developer',
-                            }
-                        ]
-                    },
-                    {to: '/blog', label: '方案', position: 'left'},
-                    {to: '/blog', label: '案例', position: 'left'},
-                    {to: '/blog', label: '连接器', position: 'left'},
-                    {to: '/blog', label: '生态', position: 'left'},
-                    {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
                         position: 'left',
                         label: '文档',
                     },
-                    {to: '/docs/intro', label: 'APIs', position: 'left'},
-                    {to: '/blog', label: '博客', position: 'left'},
-                    {to: '/blog', label: '活动', position: 'left'},
-                    {
-                        href: 'https://github.com/1stblue',
-                        label: 'GitHub',
-                        position: 'right',
-                    }
+                    {to: '/blog', label: '博客', position: 'left'}
                 ],
             },
             footer: {
