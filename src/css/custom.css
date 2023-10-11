@@ -20,7 +20,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #0e1f3b;
   --ifm-footer-background-color: #142d57;
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
+  --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
     BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
   --ifm-heading-font-family: greycliff-cf, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
@@ -698,68 +698,6 @@ section.navigation-cards a p {
 
 html[data-theme='dark'] section.navigation-cards a p {
   color: var(--ifm-font-color-base);
-}
-
-.community {
-  display: flex;
-  justify-content: flex-start;
-  gap: 32px;
-}
-
-
-
-.community a {
-  border-radius: 33px;
-  padding: 13px 26px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.community a img,
-.community a svg {
-  margin-right: 18px;
-} 
-
-.community a.videos {
-  background-color: #FFD2D2;
-  color: #A70000;
-}
-
-.community a.videos img {
-  width:39px;
-  height:27px;
-  display: block;
-}
-
-.community a.slack {
-  background-color: #D2DFFF;
-  color: #062267 !important;
-}
-
-.community a.slack img {
-  width:32px;
-  height:32px;
-  display: block;
-}
-
-.community a.twitter {
-  background-color: #D2EFFF;
-  color: #006BA7;
-}
-
-.community a.twitter svg {
-  display: block;
-  max-height: 28px;
-}
-
-.community a span {
-  font-size: 21px;
-  line-height: 1.25;
-  display: block;
-  margin: 0;
-  font-weight: 700;
-  font-family: var(--ifm-heading-font-family);
 }
 
 @media screen and (max-width: 640px) {
