@@ -13,7 +13,7 @@ tags: [ Oracle, ROWID, 并行 ]
 
 **表结构**
 
-```oraclesqlplus
+```oraclesqlplus title="create-table.sql"
 CREATE TABLE TPCH.FP_RAW_DATA
 (
     CP_IDX   number(20, 0)    not null,
@@ -100,7 +100,7 @@ ORDER BY chunk_id;
 
 ### E: 基于ROWID，Hash切分
 
-```oraclesqlplus
+```oraclesqlplus title="hello.sql"
 SELECT *
 FROM TPCH.FP_RAW_DATA
 WHERE MOD(DBMS_ROWID.ROWID_ROW_NUMBER(TPCH.FP_RAW_DATA.ROWID), 4) = 0
@@ -113,8 +113,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum 
 tempor eros aliquam consequat. Lorem ipsum dolor sit amet
 :::
 
-1. 优先使用 `DBMS_PARALLEL_EXECUTE`包中的`create_chunks_by_rowid`方法，获取基于`ROWID`切分；
+1. 在我们的场景中，允许`Partitioned Table`?
+2. 优先使用 `DBMS_PARALLEL_EXECUTE`包中的`create_chunks_by_rowid`方法，获取基于`ROWID`切分；
 2. 如果因为版本兼容性或者权限等原因导致1失败，则尝试采用；
 3. 啦啦啦
 
-[^1]: [InfoSphere Information Server Partitioned read methods](https://www.ibm.com/docs/en/iis/11.7?topic=reference-partitioned-read-methods) 
+[^1]: [Oracle DBMS_PARALLEL_EXECUTE](https://docs.oracle.com/en/database/oracle/oracle-database/19/arpls/DBMS_PARALLEL_EXECUTE.html)
+[^2]: [InfoSphere Information Server Partitioned read methods](https://www.ibm.com/docs/en/iis/11.7?topic=reference-partitioned-read-methods) 
