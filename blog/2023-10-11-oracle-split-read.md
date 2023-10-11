@@ -33,7 +33,27 @@ CREATE TABLE TPCH.FP_RAW_DATA
 CREATE UNIQUE INDEX TPCH.FP_RAW_IDX2 ON TPCH.FP_RAW_DATA (CP_IDX, WAFERID, X, Y);
 ```
 
-**准备10,000万（1亿）行数据**
+**准备20,000万（2亿）行数据**
+
+```oraclesqlplus
+SELECT TABLE_NAME
+     , NUM_ROWS
+     , AVG_ROW_LEN
+     , ROUND(AVG_ROW_LEN * NUM_ROWS / 1024 / 1024 / 1024, 2) AS GB
+FROM ALL_TABLES
+where OWNER = 'TPCH'
+  AND TABLE_NAME = 'FP_RAW_DATA_MARS3'
+```
+
+```shell
+TABLE_NAME
+--------------------------------------------------------------------------------
+  NUM_ROWS AVG_ROW_LEN	       GB
+---------- ----------- ----------
+FP_RAW_DATA_MARS3
+ 200000000	    99	    18.44
+```
+分16个分片进行，平均每个分片处理12,500,000（1250万）行数据
 
 脚注[^1]
 
@@ -75,7 +95,7 @@ FROM (SELECT id, ROWNUM AS rn
       FROM (SELECT ROWID AS id
             FROM TPCH.FP_RAW_DATA
             ORDER BY ROWID) t) x
-WHERE MOD(rn, 2000000) = 0
+WHERE MOD(rn, 12500000) = 0
 ```
 
 ### D: `DBMS_PARALLEL_EXECUTE`包`create_chunks_by_rowid`
@@ -88,7 +108,7 @@ BEGIN
             table_owner => 'TPCH',
             table_name => 'FP_RAW_DATA',
             by_row => TRUE,
-            chunk_size => 2000000);
+            chunk_size => 12500000);
 END;
 /
 
@@ -103,7 +123,7 @@ ORDER BY chunk_id;
 ```oraclesqlplus title="hello.sql"
 SELECT *
 FROM TPCH.FP_RAW_DATA
-WHERE MOD(DBMS_ROWID.ROWID_ROW_NUMBER(TPCH.FP_RAW_DATA.ROWID), 4) = 0
+WHERE MOD(DBMS_ROWID.ROWID_ROW_NUMBER(TPCH.FP_RAW_DATA.ROWID), 16) = 0
 ```
 
 ## 结论
