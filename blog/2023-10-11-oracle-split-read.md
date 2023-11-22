@@ -2,6 +2,7 @@
 slug: oracle-split-read
 title: Oracle大表的并行读取
 authors: [ aleafs ]
+image: https://refine.ams3.cdn.digitaloceanspaces.com/blog/2022-04-29-create-full-stack-app/social.jpg
 tags: [ Oracle, ROWID, 并行 ]
 ---
 
