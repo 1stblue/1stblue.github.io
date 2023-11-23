@@ -176,7 +176,7 @@ const config = {
         navbar: {
             logo: {
                 alt: "refine",
-                src: "img/refine_logo.png",
+                src: "img/logo.png",
             },
             items: [
                 { to: "blog", label: "Blog", position: "left" },
@@ -205,7 +205,7 @@ const config = {
         footer: {
             logo: {
                 alt: "refine",
-                src: "/img/refine_logo.png",
+                src: "/img/logo.png",
             },
             links: [
                 {
@@ -309,7 +309,7 @@ const config = {
             },
         },
         colorMode: {
-            defaultMode: "dark",
+            defaultMode: "light",
         },
     },
     customFields: {
