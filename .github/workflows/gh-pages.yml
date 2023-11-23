@@ -23,6 +23,8 @@ jobs:
         run: npm run build
       - name: start serve
         run: npm run serve
+      - name: cd build
+        run: cd ./build
       - name: generate pdf
         run: npx --yes docs-to-pdf docusaurus --initialDocURLs="http://localhost:3000/docs/" --contentSelector="div.refine-prose" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,button" --coverImage="https://1stblue.github.io/img/favicon.png" --coverTitle="Bluepipe"
       # Popular action to deploy to GitHub Pages:

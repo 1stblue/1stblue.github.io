@@ -7,7 +7,7 @@ import { DocItemOutlined } from "./icons/doc-item-outlined";
 export const LandingGhostButton = () => {
     return (
         <Link
-            href="/docs/tutorial"
+            href="/docs/tutorial/contributing"
             className={clsx(
                 "relative",
                 "text-gray-0",

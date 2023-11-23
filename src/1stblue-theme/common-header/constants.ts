@@ -74,7 +74,7 @@ export const MENU_ITEMS: MenuItemType[] = [
         {
           label: 'Tutorial',
           description: 'Create your first Refine application.',
-          link: '/docs/tutorial',
+          link: '/docs/tutorial/contributing',
           icon: TutorialIcon
         },
         {
