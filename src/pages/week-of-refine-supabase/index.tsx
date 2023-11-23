@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "@docusaurus/Head";
-import { CommonHeader } from "@site/src/refine-theme/common-header";
-import { CommonLayout } from "@site/src/refine-theme/common-layout";
+import { CommonHeader } from "@site/src/1stblue-theme/common-header";
+import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
 import { RefineWeek } from "@site/src/components/refine-week";
-import { BlogFooter } from "@site/src/refine-theme/blog-footer";
+import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
 
 const RefineWeekSupabase = () => {
     return (

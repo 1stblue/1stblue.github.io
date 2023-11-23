@@ -1,5 +1,5 @@
-import { PageIcon } from "@site/src/refine-theme/icons/page";
-import { ShareIcon } from "@site/src/refine-theme/icons/share";
+import { PageIcon } from "@site/src/1stblue-theme/icons/page";
+import { ShareIcon } from "@site/src/1stblue-theme/icons/share";
 import React from "react";
 import { Examples } from "../types/examples";
 
@@ -17,7 +17,7 @@ export const SHOW_CASES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/app-crm",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/app-crm",
     },
     {
         title: "Finefoods Ant Design Admin Panel",
@@ -32,7 +32,7 @@ export const SHOW_CASES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/finefoods-antd",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/finefoods-antd",
     },
     {
         title: "Finefoods Material UI Admin Panel",
@@ -47,7 +47,7 @@ export const SHOW_CASES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/finefoods-material-ui",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/finefoods-material-ui",
     },
     {
         title: "Refine Swag Store",
@@ -62,7 +62,7 @@ export const SHOW_CASES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/store",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/store",
     },
 ];
 
@@ -94,7 +94,7 @@ export const EXAMPLES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/finefoods-client",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/finefoods-client",
     },
     {
         title: "Win95 Style Admin Panel",
@@ -114,7 +114,7 @@ export const EXAMPLES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/blog-win95",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/blog-win95",
     },
     {
         title: "Invoice Generator App",
@@ -134,7 +134,7 @@ export const EXAMPLES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/refine-week-invoice-generator",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/refine-week-invoice-generator",
     },
     {
         title: "refine Pixels!",
@@ -154,7 +154,7 @@ export const EXAMPLES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/pixels",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/pixels",
         isExternal: true,
     },
     {
@@ -175,7 +175,7 @@ export const EXAMPLES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/multi-tenancy-strapi",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/multi-tenancy-strapi",
     },
     {
         title: "Multi-Tenancy Example with Appwrite",
@@ -195,6 +195,6 @@ export const EXAMPLES: Examples = [
                 icon: (props) => <ShareIcon {...props} />,
             },
         ],
-        source: "https://github.com/refinedev/refine/tree/master/examples/multi-tenancy-appwrite",
+        source: "https://github.com/1stblue/1stblue.github.io/tree/main/examples/multi-tenancy-appwrite",
     },
 ];

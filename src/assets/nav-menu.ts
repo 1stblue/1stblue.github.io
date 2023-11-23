@@ -33,7 +33,7 @@ export const POPOVERMENUS: NavMenu[] = [
             {
                 label: "Tutorial",
                 description: "Your first refine application",
-                link: "/docs/tutorial/",
+                link: "/docs/tutorial",
                 icon: TutorialIcon,
             },
             // {
@@ -55,7 +55,7 @@ export const POPOVERMENUS: NavMenu[] = [
                 icon: AwesomeIcon,
             },
         ],
-        imageLink: "https://github.com/refinedev/refine",
+        imageLink: "https://github.com/1stblue/1stblue.github.io",
         imageURL:
             "https://refine.ams3.cdn.digitaloceanspaces.com/website/static/landing/popovers/open-source.png",
     },

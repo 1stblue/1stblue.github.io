@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import clsx from "clsx";
-import { LandingRainbowButton } from "@site/src/refine-theme/landing-rainbow-button";
-import { RefineLogoSeal } from "@site/src/refine-theme/icons/refine-logo-seal";
+import { LandingRainbowButton } from "@site/src/1stblue-theme/landing-rainbow-button";
+import { RefineLogoSeal } from "@site/src/1stblue-theme/icons/refine-logo-seal";
 
 type Props = {
     title?: string;

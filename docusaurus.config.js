@@ -3,14 +3,13 @@
 
 require("dotenv").config();
 
-const redirectJson = require("./redirects.json");
 const tutorialData = require("./tutorial-units");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: '1stblue.com',
     tagline: 'Dinosaurs are cool',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon.png',
 
     // Set the production url of your site here
     url: 'https://1stblue.github.io',
@@ -75,8 +74,8 @@ const config = {
                 blog: false,
                 theme: {
                     customCss: [
-                        require.resolve("./src/refine-theme/css/fonts.css"),
-                        require.resolve("./src/refine-theme/css/custom.css"),
+                        require.resolve("./src/1stblue-theme/css/fonts.css"),
+                        require.resolve("./src/1stblue-theme/css/custom.css"),
                         require.resolve("./src/css/custom.css"),
                         require.resolve("./src/css/split-pane.css"),
                         require.resolve("./src/css/demo-page.css"),
@@ -89,12 +88,7 @@ const config = {
         ],
     ],
     plugins: [
-        [
-            "@docusaurus/plugin-client-redirects",
-            {
-                redirects: redirectJson.redirects,
-            },
-        ],
+   
         [
             "docusaurus-plugin-copy",
             {
@@ -114,9 +108,7 @@ const config = {
                 },
             };
         },
-        // "./plugins/docgen.js",
         "./plugins/examples.js",
-        "./plugins/checklist.js",
         ...(process.env.DISABLE_BLOG
             ? []
             : [
@@ -131,7 +123,7 @@ const config = {
                           blogSidebarCount: 0,
                           feedOptions: {
                               type: "all",
-                              copyright: `Copyright © ${new Date().getFullYear()} refine.`,
+                              copyright: `Copyright © ${new Date().getFullYear()} 1stblue.`,
                           },
                       },
                   ],
@@ -194,7 +186,7 @@ const config = {
                     dropdownActiveClassDisabled: true,
                 },
                 {
-                    href: "https://github.com/refinedev/refine",
+                    href: "https://github.com/1stblue/1stblue.github.io",
                     position: "right",
                     className: "header-icon-link header-github-link",
                 },
@@ -225,7 +217,7 @@ const config = {
                         },
                         {
                             label: "Tutorials",
-                            to: "docs/tutorial/introduction/index/",
+                            to: "docs/tutorial/",
                         },
                         {
                             label: "Blog",
@@ -263,32 +255,32 @@ const config = {
                         },
                     ],
                 },
-                {
-                    title: "__LEGAL",
-                    items: [
-                        {
-                            label: "License",
-                            to: "https://github.com/refinedev/refine/blob/master/LICENSE",
-                        },
-                        // {
-                        //     label: "Terms",
-                        //     to: "/enterprise",
-                        // },
-                        // {
-                        //     label: "Privacy",
-                        //     to: "/privacy-policy",
-                        // },
-                        // {
-                        //     label: "info@refine.dev",
-                        //     to: "mailto:info@refine.dev",
-                        // },
-                    ],
-                },
+                // {
+                //     title: "__LEGAL",
+                //     items: [
+                //         {
+                //             label: "License",
+                //             to: "https://github.com/1stblue/1stblue.github.io/tree/main/LICENSE",
+                //         },
+                //         // {
+                //         //     label: "Terms",
+                //         //     to: "/enterprise",
+                //         // },
+                //         // {
+                //         //     label: "Privacy",
+                //         //     to: "/privacy-policy",
+                //         // },
+                //         // {
+                //         //     label: "info@refine.dev",
+                //         //     to: "mailto:info@refine.dev",
+                //         // },
+                //     ],
+                // },
                 {
                     title: "__SOCIAL",
                     items: [
                         {
-                            href: "https://github.com/refinedev/refine",
+                            href: "https://github.com/1stblue/1stblue.github.io",
                             label: "github",
                         },
                         {
@@ -335,7 +327,6 @@ const config = {
         LIVE_PREVIEW_URL:
             process.env.LIVE_PREVIEW_URL ?? "http://localhost:3030/preview",
         /** ---- */
-        tutorial: tutorialData,
     },
     webpack: {
         jsLoader: (isServer) => ({

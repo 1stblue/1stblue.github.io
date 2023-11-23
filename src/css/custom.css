@@ -579,7 +579,7 @@ html[data-active-page="index"] {
     @apply font-montserrat mb-4 text-center font-semibold text-[#2a2a42];
 }
 
-#__docusaurus .navbar-sidebar__item.menu a[href="https://github.com/refinedev/refine"]::after
+#__docusaurus .navbar-sidebar__item.menu a[href="https://github.com/1stblue/1stblue.github.io"]::after
 {
     display: none;
 }

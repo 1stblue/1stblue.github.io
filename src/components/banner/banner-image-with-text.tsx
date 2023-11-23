@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import clsx from "clsx";
-import { LandingRainbowButton } from "@site/src/refine-theme/landing-rainbow-button";
-import { RefineLogoSeal } from "@site/src/refine-theme/icons/refine-logo-seal";
-import { ArrowRightIcon } from "@site/src/refine-theme/icons/arrow-right";
+import { LandingRainbowButton } from "@site/src/1stblue-theme/landing-rainbow-button";
+import { RefineLogoSeal } from "@site/src/1stblue-theme/icons/refine-logo-seal";
+import { ArrowRightIcon } from "@site/src/1stblue-theme/icons/arrow-right";
 import Link from "@docusaurus/Link";
 
 type Props = {

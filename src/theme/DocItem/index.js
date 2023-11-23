@@ -1,1 +1,1 @@
-export { DocItem as default } from "../../refine-theme/doc-item";
+export { DocItem as default } from "../../1stblue-theme/doc-item";

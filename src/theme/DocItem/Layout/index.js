@@ -1,1 +1,1 @@
-export { DocItemLayout as default } from "../../../refine-theme/doc-item-layout";
+export { DocItemLayout as default } from "../../../1stblue-theme/doc-item-layout";

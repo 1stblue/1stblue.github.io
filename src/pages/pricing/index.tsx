@@ -2,13 +2,13 @@ import React from "react";
 import clsx from "clsx";
 import Head from "@docusaurus/Head";
 
-import { CommonLayout } from "@site/src/refine-theme/common-layout";
-import { CommonHeader } from "@site/src/refine-theme/common-header";
-import { BlogFooter } from "@site/src/refine-theme/blog-footer";
-import { PricingInfoIcon } from "@site/src/refine-theme/icons/pricing-info";
-import { PricingCheckIcon } from "@site/src/refine-theme/icons/pricing-check";
-import { PricingTimesIcon } from "@site/src/refine-theme/icons/pricing-times";
-import { PricingRainbowButton } from "@site/src/refine-theme/pricing-rainbow-button";
+import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
+import { CommonHeader } from "@site/src/1stblue-theme/common-header";
+import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
+import { PricingInfoIcon } from "@site/src/1stblue-theme/icons/pricing-info";
+import { PricingCheckIcon } from "@site/src/1stblue-theme/icons/pricing-check";
+import { PricingTimesIcon } from "@site/src/1stblue-theme/icons/pricing-times";
+import { PricingRainbowButton } from "@site/src/1stblue-theme/pricing-rainbow-button";
 import {
     PricingAirtableIcon,
     PricingAntdIcon,
@@ -34,8 +34,8 @@ import {
     PricingStripeIcon,
     PricingSupabaseIcon,
     PricingTwilioIcon,
-} from "@site/src/refine-theme/icons/pricing";
-import { TinyArrowLeft } from "@site/src/refine-theme/icons/tiny-arrow-left";
+} from "@site/src/1stblue-theme/icons/pricing";
+import { TinyArrowLeft } from "@site/src/1stblue-theme/icons/tiny-arrow-left";
 
 const TableItemHeading = ({ children }) => {
     return (

@@ -96,7 +96,6 @@ This means you can use refine seamlessly in different platforms like React Nativ
 
 💪 Future-proof, **robust architecture**
 
-⌛️ Built-in [CLI](https://refine.dev/docs/packages/documentation/cli/) with time-saving features
 
 💻 refine [Devtools](https://github.com/refinedev/refine/blob/master/packages/devtools/README.md) - dive deeper into your app and provide useful insights
 
@@ -116,4 +115,3 @@ This means you can use refine seamlessly in different platforms like React Nativ
 
 👉 Continue with the [Quickstart guide](/docs/getting-started/quickstart/) to setup and run your first **refine** project.
 
-👉 Jump directly to the [Tutorial](/docs/tutorial/introduction/index/) to learn refine by building a full-blown CRUD application.

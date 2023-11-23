@@ -3,9 +3,9 @@ import Head from "@docusaurus/Head";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 
-import { CommonLayout } from "@site/src/refine-theme/common-layout";
-import { CommonHeader } from "@site/src/refine-theme/common-header";
-import { BlogFooter } from "@site/src/refine-theme/blog-footer";
+import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
+import { CommonHeader } from "@site/src/1stblue-theme/common-header";
+import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
 import { weekOfRefineCards } from "@site/src/assets/week-of-refine/constants";
 import {
     DateIcon,

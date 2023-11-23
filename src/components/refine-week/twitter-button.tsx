@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterTwitterIcon as TwitterIcon } from "../../refine-theme/icons/footer-twitter";
+import { FooterTwitterIcon as TwitterIcon } from "../../1stblue-theme/icons/footer-twitter";
 import clsx from "clsx";
 
 type Props = {

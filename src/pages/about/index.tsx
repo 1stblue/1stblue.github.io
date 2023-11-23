@@ -1,22 +1,22 @@
 import Head from "@docusaurus/Head";
-import { FooterRedditIcon as RedditIcon } from "@site/src/refine-theme/icons/footer-reddit";
-import { BlogFooter } from "@site/src/refine-theme/blog-footer";
-import { CommonHeader } from "@site/src/refine-theme/common-header";
-import { CommonLayout } from "@site/src/refine-theme/common-layout";
-import { Istanbul500Icon } from "@site/src/refine-theme/icons/500";
-import { GithubIcon } from "@site/src/refine-theme/icons/github";
-import { JoinUsIcon } from "@site/src/refine-theme/icons/join-us";
-import { MailIcon } from "@site/src/refine-theme/icons/mail";
-import { MarkerIcon } from "@site/src/refine-theme/icons/marker";
-import { OpenSourceIcon } from "@site/src/refine-theme/icons/open-source";
-import { DiscordIcon, TwitterIcon } from "@site/src/refine-theme/icons/popover";
+import { FooterRedditIcon as RedditIcon } from "@site/src/1stblue-theme/icons/footer-reddit";
+import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
+import { CommonHeader } from "@site/src/1stblue-theme/common-header";
+import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
+import { Istanbul500Icon } from "@site/src/1stblue-theme/icons/500";
+import { GithubIcon } from "@site/src/1stblue-theme/icons/github";
+import { JoinUsIcon } from "@site/src/1stblue-theme/icons/join-us";
+import { MailIcon } from "@site/src/1stblue-theme/icons/mail";
+import { MarkerIcon } from "@site/src/1stblue-theme/icons/marker";
+import { OpenSourceIcon } from "@site/src/1stblue-theme/icons/open-source";
+import { DiscordIcon, TwitterIcon } from "@site/src/1stblue-theme/icons/popover";
 import Link from "@docusaurus/Link";
 import clsx from "clsx";
 import React from "react";
 import { backedBy } from "../../assets/backed-by";
 import { team } from "../../assets/team";
 import { useColorMode } from "@docusaurus/theme-common";
-import { YCombinatorCircleIcon } from "@site/src/refine-theme/icons/ycombinator-circle";
+import { YCombinatorCircleIcon } from "@site/src/1stblue-theme/icons/ycombinator-circle";
 
 const About: React.FC = () => {
     const { colorMode } = useColorMode();
@@ -169,7 +169,7 @@ const About: React.FC = () => {
                         <div className="grid w-full shrink-0 grid-cols-2 gap-4 lg:w-[400px]">
                             <a
                                 target="_blank"
-                                href="https://github.com/refinedev/refine"
+                                href="https://github.com/1stblue/1stblue.github.io"
                                 className={clsx(
                                     "flex h-max flex-row justify-start gap-3",
                                     "dark:bg-gray-900",

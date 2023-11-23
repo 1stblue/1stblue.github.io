@@ -2,18 +2,18 @@ import Head from "@docusaurus/Head";
 import clsx from "clsx";
 import React from "react";
 
-import { CommonLayout } from "../refine-theme/common-layout";
-import { LandingFooter } from "../refine-theme/landing-footer";
-import { LandingCommunity } from "../refine-theme/landing-community";
-import { LandingEnterpriseDevelopers } from "../refine-theme/landing-enterprise-developers";
-import { LandingTrustedByDevelopers } from "../refine-theme/landing-trusted-by-developers";
-import { LandingPackages } from "../refine-theme/landing-packages";
-import { LandingAlreadyInvented } from "../refine-theme/landing-already-invented";
-import { LandingPureReactCode } from "../refine-theme/landing-pure-react-code";
-import { LandingSweetSpot } from "../refine-theme/landing-sweet-spot";
-import { LandingHeroSection } from "../refine-theme/landing-hero-section";
-import { LandingTryItSection } from "../refine-theme/landing-try-it-section";
-import { CommonHeader } from "../refine-theme/common-header";
+import { CommonLayout } from "../1stblue-theme/common-layout";
+import { LandingFooter } from "../1stblue-theme/landing-footer";
+import { LandingCommunity } from "../1stblue-theme/landing-community";
+import { LandingEnterpriseDevelopers } from "../1stblue-theme/landing-enterprise-developers";
+import { LandingTrustedByDevelopers } from "../1stblue-theme/landing-trusted-by-developers";
+import { LandingPackages } from "../1stblue-theme/landing-packages";
+import { LandingAlreadyInvented } from "../1stblue-theme/landing-already-invented";
+import { LandingPureReactCode } from "../1stblue-theme/landing-pure-react-code";
+import { LandingSweetSpot } from "../1stblue-theme/landing-sweet-spot";
+import { LandingHeroSection } from "../1stblue-theme/landing-hero-section";
+import { LandingTryItSection } from "../1stblue-theme/landing-try-it-section";
+import { CommonHeader } from "../1stblue-theme/common-header";
 // import { LandingTestimonial } from "../1stblue-theme/landing-testimonial";
 
 function Home() {

@@ -25,11 +25,11 @@ const data = [
         image: {
             src: "https://refine.ams3.cdn.digitaloceanspaces.com/website/static/banners/banner-save-hours.png",
             alt: "Illustration about time is gold",
-            href: "https://github.com/refinedev/refine?ref=banner-save-hours",
+            href: "https://github.com/1stblue/1stblue.github.io?ref=banner-save-hours",
         },
         button: {
             text: "Learn more",
-            href: "https://github.com/refinedev/refine?ref=banner-save-hours",
+            href: "https://github.com/1stblue/1stblue.github.io?ref=banner-save-hours",
         },
         bannerName: "banner-save-hours",
     },
@@ -39,11 +39,11 @@ const data = [
         image: {
             src: "https://refine.ams3.cdn.digitaloceanspaces.com/website/static/banners/banner-oss-insight.png",
             alt: "Photo about refine ranking on OSS Insight website",
-            href: "https://github.com/refinedev/refine?ref=banner-oss-insight",
+            href: "https://github.com/1stblue/1stblue.github.io?ref=banner-oss-insight",
         },
         button: {
             text: "Learn more",
-            href: "https://github.com/refinedev/refine?ref=banner-oss-insight",
+            href: "https://github.com/1stblue/1stblue.github.io?ref=banner-oss-insight",
         },
         bannerName: "banner-oss-insight",
     }, */

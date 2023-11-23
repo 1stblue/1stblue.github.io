@@ -37,7 +37,7 @@ const PromotionBanner = ({ image, title, description, isDark }) => {
                 <br />
                 <br />
                 Try{" "}
-                <a href="https://github.com/refinedev/refine" target="_blank">
+                <a href="https://github.com/1stblue/1stblue.github.io" target="_blank">
                     refine
                 </a>{" "}
                 to rapidly build your next <b>CRUD</b> project, whether {"it's"}{" "}
@@ -68,7 +68,7 @@ const PromotionBanner = ({ image, title, description, isDark }) => {
                     href={
                         description === "refineNew"
                             ? "https://s.refine.dev/new-blog"
-                            : "https://github.com/refinedev/refine"
+                            : "https://github.com/1stblue/1stblue.github.io"
                     }
                     target="_blank"
                 >

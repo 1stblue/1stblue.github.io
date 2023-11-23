@@ -108,8 +108,4 @@ You will see the output as a table populated with `blog_posts` and `category` da
 
 ## Next Steps
 
-👉 Jump to [Tutorials](https://refine.dev/docs/tutorial/introduction/index/) and continue your work to turn your example project into a full-blown CRUD application! 🚀
-
-👉 Read more on [Advanced Tutorials](https://refine.dev/docs/advanced-tutorials/) for different usage scenarios.
-
 👉 See [real-life examples](https://refine.dev/examples/) built using **refine**

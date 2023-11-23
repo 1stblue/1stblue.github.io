@@ -1,1 +1,1 @@
-export { DocCategoryGeneratedIndexPage as default } from "../../refine-theme/doc-generated-index-page";
+export { DocCategoryGeneratedIndexPage as default } from "../../1stblue-theme/doc-generated-index-page";
