@@ -1,7 +1,8 @@
 ---
 id: contributing
 title: Contributing
-sidebar_label: Contributing
+sidebar_label: Tutorial
+sidebar_position: 1
 ---
 
 We follow a [code of conduct][code_of_conduct] when participating in the community. Please read it before you make any contributions.

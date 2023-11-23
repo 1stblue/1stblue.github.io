@@ -2,6 +2,7 @@
 id: contributing
 title: Contributing
 sidebar_label: Contributing
+output: pdf_document
 ---
 
 We follow a [code of conduct][code_of_conduct] when participating in the community. Please read it before you make any contributions.
@@ -558,3 +559,4 @@ Make sure you use `setInitialRoutes` function before rendering the `<Refine/>` c
 [code_of_conduct]: https://github.com/refinedev/refine/blob/master/CODE_OF_CONDUCT.md
 [discord channel]: https://discord.gg/refine
 [lerna.json]: https://github.com/refinedev/refine/blob/master/lerna.json
+# npx docs-to-pdf docusaurus --initialDocURLs="http://localhost:3000/docs/examples/" --contentSelector="div.refine-prose" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,button" --coverImage="https://1stblue.github.io/img/favicon.png" --coverTitle="Bluepipe"
