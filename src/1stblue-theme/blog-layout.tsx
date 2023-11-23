@@ -1,0 +1,71 @@
+import React, { useEffect, useState } from "react";
+import { CommonLayout } from "./common-layout";
+import { CommonHeader } from "./common-header";
+import { BlogFooter } from "./blog-footer";
+import clsx from "clsx";
+import { BannerSidebar } from "../components/banner/banner-sidebar";
+import { BannerModal } from "../components/banner/banner-modal";
+import { useLocation } from "@docusaurus/router";
+import useScrollTracker from "../hooks/use-scroll-tracker";
+
+export const RefineBlogLayout = (props: any) => {
+    const [shouldShowBanner, setShouldShowBanner] = useState(false);
+    const { children, toc, ...layoutProps } = props;
+    const { pathname } = useLocation();
+
+    const tracker = useScrollTracker();
+
+    useEffect(() => {
+        if (pathname === "/blog/" || pathname === "/blog") return;
+
+        if (tracker.scrollY > 20) {
+            setShouldShowBanner(true);
+        }
+
+        if (tracker.scrollY < 20) {
+            setShouldShowBanner(false);
+        }
+    }, [tracker.scrollY]);
+
+    return (
+        <CommonLayout {...layoutProps}>
+            {/* If there's TOC, then we can say that this is a blog post page. */}
+            {/* Then we can pass `trackProgress` prop to the header. */}
+            <CommonHeader hasSticky={true} trackProgress={!!toc} />
+            <div
+                className={clsx(
+                    "flex",
+                    "justify-center",
+                    "mx-auto",
+                    "max-w-screen-blog-max",
+                    "w-full",
+                )}
+            >
+               
+                <div
+                    className={clsx(
+                        "refine-prose",
+                        "flex-1",
+                        "min-w-0",
+                        "xl:px-8",
+                    )}
+                >
+                    {children}
+                </div>
+                {toc && (
+                    <div
+                        className={clsx(
+                            "w-[280px]",
+                            "hidden blog-md:block",
+                            "flex-shrink-0",
+                        )}
+                    >
+                        {toc}
+                    </div>
+                )}
+            </div>
+            <BlogFooter />
+            {/* <BannerModal /> */}
+        </CommonLayout>
+    );
+};
