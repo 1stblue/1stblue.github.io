@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Oracle\u5927\u8868\u7684\u5e76\u884c\u8bfb\u53d6","permalink":"/blog/oracle-split-read"}]}')}}]);
