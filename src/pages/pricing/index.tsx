@@ -769,8 +769,8 @@ function Pricing() {
                 <html data-active-page="index" />
             </Head>
             <CommonLayout
-                title={`refine | Build your React-based CRUD applications, without constraints!`}
-                description="refine offers lots of out-of-the box functionality for rapid development, without compromising extreme customizability. It ships with Ant Design, an enterprise-level UI toolkit."
+                title={`Bluepipe | 我们不生产数据，我们只是数据的搬运工`}
+                description="我们不生产数据，我们只是数据的搬运工，任何时间，任何地点，任何数据，使命必达。"
             >
                 <CommonHeader hasSticky={true} />
                 <div

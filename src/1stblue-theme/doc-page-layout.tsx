@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React from "react";
 import { CommonFooter } from "./common-footer";
-import { DocHeader } from "./doc-header";
 import { DocSidebar } from "./doc-sidebar";
 import { CommonHeader } from "./common-header";
 

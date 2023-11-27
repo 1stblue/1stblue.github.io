@@ -13,6 +13,7 @@ export const DocPaginator = (props) => {
                 <Link
                     href={previous.permalink}
                     className={clsx(
+                        "pagination-nav__link",
                         "group",
                         "flex-1",
                         "p-4 2xl:p-6",
@@ -62,6 +63,8 @@ export const DocPaginator = (props) => {
                 <Link
                     href={next.permalink}
                     className={clsx(
+                        "pagination-nav__link",
+                        "pagination-nav__link--next",
                         "group",
                         "flex-1",
                         "p-4",

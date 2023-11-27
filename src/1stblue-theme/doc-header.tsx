@@ -1,4 +1,4 @@
-import SearchBar from "@theme/SearchBar";
+// import SearchBar from "@theme/SearchBar";
 import clsx from "clsx";
 import React, { useState } from "react";
 import { CommonGithubStarButton } from "./common-github-star-button";
@@ -37,7 +37,7 @@ const Desktop = () => {
                 // "max-w-[1644px]",
             )}
         >
-            <RefineLogo
+            {/* <RefineLogo
                 className={clsx("lg:min-w-[256px]")}
                 title="Documentation"
             />
@@ -50,7 +50,7 @@ const Desktop = () => {
                 >
                     <SearchBar />
                 </div>
-            </div>
+            </div> */}
 
             <div className={clsx("w-[256px] h-full relative")}>
                 <div
@@ -60,7 +60,7 @@ const Desktop = () => {
                         "items-center",
                     )}
                 >
-                    <div className={clsx("xl:hidden flex")}>
+                    {/* <div className={clsx("xl:hidden flex")}>
                         <SearchBar
                             CustomButton={React.forwardRef<
                                 HTMLButtonElement,
@@ -75,7 +75,7 @@ const Desktop = () => {
                                 );
                             })}
                         />
-                    </div>
+                    </div> */}
                     <DocVersionDropdown />
                     <Divider />
                     <CommonGithubStarButton />

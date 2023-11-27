@@ -97,7 +97,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
               <LandingStartActionIcon />
               <span className={clsx('text-base', 'font-semibold')}>开始云体验</span>
             </Link>
-            <Link to="/docs/tutorial">
+            <Link to="/docs">
               <button
                 type="button"
                 className={clsx(

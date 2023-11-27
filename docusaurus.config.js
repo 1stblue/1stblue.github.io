@@ -3,7 +3,6 @@
 
 require("dotenv").config();
 
-const tutorialData = require("./tutorial-units");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,23 +38,12 @@ const config = {
         [
             "@docusaurus/preset-classic",
             {
-                docs: Boolean(process.env.DISABLE_DOCS)
-                    ? false
-                    : {
+                docs:  {
                           path: "./docs",
                           sidebarPath: require.resolve("./sidebars.js"),
                           editUrl:
                           "https://github.com/1stblue/1stblue.github.io/tree/main/",
-                          showLastUpdateAuthor: true,
-                          showLastUpdateTime: true,
-                          disableVersioning:
-                              process.env.DISABLE_VERSIONING === "true",
-                          versions: {
-                              current: {
-                                  label: "4.xx.xx",
-                              },
-                          },
-                          lastVersion: "current",
+                          
                           admonitions: {
                               tag: ":::",
                               keywords: [
@@ -128,8 +116,9 @@ const config = {
                       },
                   ],
               ]),
-        "./plugins/intercom.js",
-        "./plugins/clarity.js",
+        // "./plugins/intercom.js",
+        // "./plugins/clarity.js",
+       
     ],
     themeConfig: {
         prism: {
@@ -159,13 +148,13 @@ const config = {
                 },
             ],
         },
-        image: "img/refine_social.png",
-        algolia: {
-            appId: "KRR9VEUPCT",
-            apiKey: "cd0188125dcd31fb4b011b5e536d963a",
-            indexName: "refine",
-            contextualSearch: true,
-        },
+        // image: "img/refine_social.png",
+        // algolia: {
+        //     appId: "KRR9VEUPCT",
+        //     apiKey: "cd0188125dcd31fb4b011b5e536d963a",
+        //     indexName: "refine",
+        //     contextualSearch: true,
+        // },
         metadata: [
             {
                 name: "keywords",
@@ -173,156 +162,146 @@ const config = {
                     "react-admin, react-framework, internal-tool, admin-panel, ant-design, material ui, mui",
             },
         ],
-        navbar: {
-            logo: {
-                alt: "refine",
-                src: "img/refine_logo.png",
-            },
-            items: [
-                { to: "blog", label: "Blog", position: "left" },
-                {
-                    type: "docsVersionDropdown",
-                    position: "right",
-                    dropdownActiveClassDisabled: true,
-                },
-                {
-                    href: "https://github.com/1stblue/1stblue.github.io",
-                    position: "right",
-                    className: "header-icon-link header-github-link",
-                },
-                {
-                    href: "https://discord.gg/refine",
-                    position: "right",
-                    className: "header-icon-link header-discord-link",
-                },
-                {
-                    href: "https://twitter.com/refine_dev",
-                    position: "right",
-                    className: "header-icon-link header-twitter-link",
-                },
-            ],
-        },
-        footer: {
-            logo: {
-                alt: "refine",
-                src: "/img/refine_logo.png",
-            },
-            links: [
-                {
-                    title: "Resources",
-                    items: [
-                        {
-                            label: "Getting Started",
-                            to: "docs",
-                        },
-                        {
-                            label: "Tutorials",
-                            to: "docs/tutorial/",
-                        },
-                        {
-                            label: "Blog",
-                            to: "blog",
-                        },
-                    ],
-                },
-                {
-                    title: "Product",
-                    items: [
-                        {
-                            label: "Examples",
-                            to: "examples",
-                        },
-                        {
-                            label: "Integrations",
-                            to: "integrations",
-                        },
-                        {
-                            label: "Become an Expert",
-                            to: "become-a-refine-expert",
-                        },
-                    ],
-                },
-                {
-                    title: "Company",
-                    items: [
-                        {
-                            label: "About",
-                            to: "about",
-                        },
-                        {
-                            label: "Store 🎁",
-                            to: "https://store.refine.dev",
-                        },
-                    ],
-                },
-                // {
-                //     title: "__LEGAL",
-                //     items: [
-                //         {
-                //             label: "License",
-                //             to: "https://github.com/1stblue/1stblue.github.io/tree/main/LICENSE",
-                //         },
-                //         // {
-                //         //     label: "Terms",
-                //         //     to: "/enterprise",
-                //         // },
-                //         // {
-                //         //     label: "Privacy",
-                //         //     to: "/privacy-policy",
-                //         // },
-                //         // {
-                //         //     label: "info@refine.dev",
-                //         //     to: "mailto:info@refine.dev",
-                //         // },
-                //     ],
-                // },
-                {
-                    title: "__SOCIAL",
-                    items: [
-                        {
-                            href: "https://github.com/1stblue/1stblue.github.io",
-                            label: "github",
-                        },
-                        {
-                            href: "https://discord.gg/refine",
-                            label: "discord",
-                        },
-                        {
-                            href: "https://reddit.com/r/refine",
-                            label: "reddit",
-                        },
-                        {
-                            href: "https://twitter.com/refine_dev",
-                            label: "twitter",
-                        },
-                        {
-                            href: "https://www.linkedin.com/company/refine-dev",
-                            label: "linkedin",
-                        },
-                    ],
-                },
-            ],
-        },
+        // navbar: {
+        //     logo: {
+        //         alt: "refine",
+        //         src: "img/logo.png",
+        //     },
+        //     items: [
+        //         { to: "blog", label: "Blog", position: "left" },
+        //         {
+        //             type: "docsVersionDropdown",
+        //             position: "right",
+        //             dropdownActiveClassDisabled: true,
+        //         },
+        //         {
+        //             href: "https://github.com/1stblue/1stblue.github.io",
+        //             position: "right",
+        //             className: "header-icon-link header-github-link",
+        //         },
+        //         {
+        //             href: "https://discord.gg/refine",
+        //             position: "right",
+        //             className: "header-icon-link header-discord-link",
+        //         },
+        //         {
+        //             href: "https://twitter.com/refine_dev",
+        //             position: "right",
+        //             className: "header-icon-link header-twitter-link",
+        //         },
+        //     ],
+        // },
+        // footer: {
+        //     logo: {
+        //         alt: "refine",
+        //         src: "/img/logo.png",
+        //     },
+        //     links: [
+        //         {
+        //             title: "Resources",
+        //             items: [
+        //                 {
+        //                     label: "Getting Started",
+        //                     to: "docs",
+        //                 },
+        //                 {
+        //                     label: "Tutorials",
+        //                     to: "docs",
+        //                 },
+        //                 {
+        //                     label: "Blog",
+        //                     to: "blog",
+        //                 },
+        //             ],
+        //         },
+        //         {
+        //             title: "Product",
+        //             items: [
+        //                 {
+        //                     label: "Examples",
+        //                     to: "examples",
+        //                 },
+        //                 {
+        //                     label: "Integrations",
+        //                     to: "integrations",
+        //                 },
+        //                 {
+        //                     label: "Become an Expert",
+        //                     to: "become-a-refine-expert",
+        //                 },
+        //             ],
+        //         },
+        //         {
+        //             title: "Company",
+        //             items: [
+        //                 {
+        //                     label: "About",
+        //                     to: "about",
+        //                 },
+        //                 {
+        //                     label: "Store 🎁",
+        //                     to: "https://store.refine.dev",
+        //                 },
+        //             ],
+        //         },
+        //         // {
+        //         //     title: "__LEGAL",
+        //         //     items: [
+        //         //         {
+        //         //             label: "License",
+        //         //             to: "https://github.com/1stblue/1stblue.github.io/tree/main/LICENSE",
+        //         //         },
+        //         //         // {
+        //         //         //     label: "Terms",
+        //         //         //     to: "/enterprise",
+        //         //         // },
+        //         //         // {
+        //         //         //     label: "Privacy",
+        //         //         //     to: "/privacy-policy",
+        //         //         // },
+        //         //         // {
+        //         //         //     label: "info@refine.dev",
+        //         //         //     to: "mailto:info@refine.dev",
+        //         //         // },
+        //         //     ],
+        //         // },
+        //         {
+        //             title: "__SOCIAL",
+        //             items: [
+        //                 {
+        //                     href: "https://github.com/1stblue/1stblue.github.io",
+        //                     label: "github",
+        //                 },
+        //                 {
+        //                     href: "https://discord.gg/refine",
+        //                     label: "discord",
+        //                 },
+        //                 {
+        //                     href: "https://reddit.com/r/refine",
+        //                     label: "reddit",
+        //                 },
+        //                 {
+        //                     href: "https://twitter.com/refine_dev",
+        //                     label: "twitter",
+        //                 },
+        //                 {
+        //                     href: "https://www.linkedin.com/company/refine-dev",
+        //                     label: "linkedin",
+        //                 },
+        //             ],
+        //         },
+        //     ],
+        // },
         docs: {
             sidebar: {
                 autoCollapseCategories: true,
             },
         },
         colorMode: {
-            defaultMode: "dark",
+            defaultMode: "light",
         },
     },
     customFields: {
-        /** Footer Fields */
-        footerDescription:
-            '<strong style="font-weight:700;">refine</strong> is a React-based framework for the rapid development of web applications. It eliminates the repetitive tasks demanded by <strong style="font-weight:700;">CRUD</strong> operations and provides industry standard solutions.',
-        contactTitle: "Contact",
-        contactDescription: [
-            "Refine Development Inc.",
-            "256 Chapman Road STE 105-4 Newark, DE 19702",
-        ],
-        contactEmail: "info@refine.dev",
-        /** ---- */
         /** Live Preview */
         LIVE_PREVIEW_URL:
             process.env.LIVE_PREVIEW_URL ?? "http://localhost:3030/preview",
