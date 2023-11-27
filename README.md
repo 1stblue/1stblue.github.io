@@ -28,7 +28,7 @@ This command generates static content into the `build` directory and can be serv
 ### convert to pdf
 
 ```
-npx --yes docs-to-pdf docusaurus --initialDocURLs="https://1stblue.github.io/docs/" --contentSelector="div.refine-prose" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,button" --coverImage="https://1stblue.github.io/img/favicon.png" --coverTitle="Bluepipe" --outputPDFFilename="converted-pdf.pdf" 
+npx --yes docs-to-pdf docusaurus --initialDocURLs="http://localhost:3000/docs" --contentSelector="div.refine-prose" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page,button" --coverImage="https://1stblue.github.io/img/favicon.png" --coverTitle="Bluepipe" --outputPDFFilename="converted-pdf.pdf" 
 ```
 
 ### Deployment

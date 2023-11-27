@@ -4,7 +4,7 @@ import { openFigma } from "../utils/open-figma";
 import { menuItems, secondaryMenuItems, socialLinks } from "./footer-data";
 import { HeartOutlinedIcon } from "./icons/heart-outlined";
 import Link from "@docusaurus/Link";
-import { RefineLogoSingleIcon } from "./icons/refine-logo-single";
+import { BluepipeLogoIcon } from "./icons/1stblue-logo";
 import { PHBadgeIcon } from "./icons/ph-badge";
 
 export const LandingFooter = () => {
@@ -26,7 +26,7 @@ export const LandingFooter = () => {
                     "text-gray-900 dark:text-gray-0",
                 )}
             >
-                Refine Inc.
+                Bluepipe Inc.
             </div>
             <div
                 className={clsx(
@@ -36,7 +36,7 @@ export const LandingFooter = () => {
                     "text-gray-600 dark:text-gray-400",
                 )}
             >
-                256 Chapman Road STE 105-4 Newark, DE 19702
+                中国浙江省杭州市余杭区
             </div>
             <a
                 href="mailto:info@refine.dev"
@@ -49,7 +49,7 @@ export const LandingFooter = () => {
                     "hover:no-underline",
                 )}
             >
-                info@refine.dev
+                info@1stblue.cloud
             </a>
         </div>
     );
@@ -127,39 +127,6 @@ export const LandingFooter = () => {
                         "mx-auto",
                     )}
                 >
-                    <div
-                        className={clsx(
-                            "px-4 landing-sm:px-8 landing-lg:px-12",
-                            "py-4 landing-lg:py-6",
-                            "flex",
-                            "items-center",
-                            "justify-between",
-                        )}
-                    >
-                        <Link
-                            to="/"
-                            onContextMenu={openFigma}
-                            className={clsx(
-                                "hover:no-underline",
-                                "text-gray-900 dark:text-gray-0",
-                            )}
-                        >
-                            <RefineLogoSingleIcon />
-                        </Link>
-                        <a
-                            href="https://www.producthunt.com/posts/refine-3?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-refine&#0045;3"
-                            target="_blank"
-                            rel="noreferrer"
-                            className={clsx("hover:no-underline")}
-                        >
-                            <PHBadgeIcon
-                                className={clsx(
-                                    "text-gray-900 dark:text-gray-0",
-                                    "fill-gray-100 dark:fill-gray-700",
-                                )}
-                            />
-                        </a>
-                    </div>
                     <div
                         className={clsx(
                             "px-4 landing-sm:px-8 landing-lg:px-12",

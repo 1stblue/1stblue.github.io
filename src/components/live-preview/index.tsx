@@ -4,7 +4,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import base64url from "base64url";
 // @ts-expect-error Docusaurus components has an issue with TypeScript
 import CodeBlock from "@theme/CodeBlock";
-// @ts-expect-error Docusaurus components has an issue with TypeScript
 import { useDocsVersion } from "@docusaurus/theme-common/internal";
 import styles from "./styles.module.css";
 import BrowserWindow from "../../components/browser-window";

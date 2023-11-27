@@ -62,7 +62,7 @@ export const MENU_ITEMS: MenuItemType[] = [
           {
             label: '测试集',
             description: 'Ready-made snippets for your projects.',
-            link: '/docs/testing',
+            link: '/docs/faq',
             icon: ContributeIcon
           }
         ]
@@ -74,7 +74,7 @@ export const MENU_ITEMS: MenuItemType[] = [
         {
           label: 'Tutorial',
           description: 'Create your first Refine application.',
-          link: '/docs/tutorial/contributing',
+          link: '/docs/',
           icon: TutorialIcon
         },
         {

@@ -13,6 +13,6 @@ export default function DocItemPaginator() {
 
     const previous =  metadata.previous;
     const next =  metadata.next;
-
+    console.log("DocItemPaginator", previous, next);
     return <DocPaginator previous={previous} next={next} />;
 }
