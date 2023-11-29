@@ -769,8 +769,8 @@ function Pricing() {
                 <html data-active-page="index" />
             </Head>
             <CommonLayout
-                title={`Bluepipe | 我们不生产数据，我们只是数据的搬运工`}
-                description="我们不生产数据，我们只是数据的搬运工，任何时间，任何地点，任何数据，使命必达。"
+                title={`Bluepipe | 数据因自由流动而美好`}
+                description="帮助您构建可靠、高效、可持续发展的数据流"
             >
                 <CommonHeader hasSticky={true} />
                 <div

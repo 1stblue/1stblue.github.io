@@ -37,82 +37,80 @@ export type NavbarItemType = {
 export type MenuItemType = NavbarPopoverItemType | NavbarItemType;
 
 export const MENU_ITEMS: MenuItemType[] = [
-    {
-        isPopover: true,
-        label: '产品',
-        items: [
-          {
-            label: 'Cloud',
-            description: 'Everything you need to get started.',
-            link: '/docs/faq',
-            icon: ExamplesIcon
-          },
-          {
-            label: '解决方案',
-            description: 'Ready-made snippets for your projects.',
-            link: '/docs/examples',
-            icon: RefineWeekIcon
-          },
-          {
-            label: 'On Premise',
-            description: 'Everything you need to get started.',
-            link: '/docs/faq',
-            icon: HackathonsIcon
-          },
-          {
-            label: '测试集',
-            description: 'Ready-made snippets for your projects.',
-            link: '/docs/faq',
-            icon: ContributeIcon
-          }
-        ]
+  {
+    isPopover: true,
+    label: '产品',
+    items: [
+      {
+        label: 'Cloud Free Tier',
+        description: 'Cloud Free Tier',
+        link: '/docs/faq',
+        icon: MeetIcon
       },
+      {
+        label: '典型场景',
+        description: '典型场景',
+        link: '/examples',
+        icon: RefineWeekIcon
+      },
+      {
+        label: 'Cloud Team / Enterprise',
+        description: 'Cloud Team / Enterprise',
+        link: '/pricing',
+        icon: ExamplesIcon
+      },
+      {
+        label: '成功故事',
+        description: '成功故事',
+        link: '/about',
+        icon: StoreIcon
+      },
+      {
+        label: 'On Premise',
+        description: 'On Premise',
+        link: '/pricing',
+        icon: HackathonsIcon
+      },
+    ]
+  },
   {
     isPopover: true,
     label: '资源',
     items: [
-        {
-          label: 'Tutorial',
-          description: 'Create your first Refine application.',
-          link: '/docs/',
-          icon: TutorialIcon
-        },
-        {
-          label: 'Integrations',
-          description: 'Discover the Refine ecosystem.',
-          link: '/integrations',
-          icon: IntegrationsIcon
-        },
       {
-        label: 'Documentation',
+        label: '快速开始',
+        description: 'Create your first Bluepipe connection.',
+        link: '/docs/getting-started/quickstart',
+        icon: TutorialIcon
+      },
+      {
+        label: '博客',
+        description: 'Articles about Bluepipe development.',
+        link: '/blog',
+        icon: BlogIcon
+      }, {
+        label: '文档',
         description: 'Everything you need to get started.',
         link: '/docs/',
         icon: DocumentsIcon
       },
-
       {
-        label: '博客',
-        description: 'Articles about web development.',
-        link: '/blog',
-        icon: BlogIcon
-      }
+        label: '下载',
+        description: '',
+        link: '/docs/',
+        icon: IntegrationsIcon
+      },
     ]
   },
   {
     isPopover: false,
     label: "连接器",
-    href:  "/integrations",
-},
+    href: "/integrations",
+  },
   {
     isPopover: false,
-    label: 'Pricing',
+    label: '价格',
     href: '/pricing'
   }
-  /*    {
-        isPopover: false,
-        label: "Hackathon",
-        icon: HackathonAltIcon,
-        href: "https://s.refine.dev/hackathon2",
-    }, */
 ];
 

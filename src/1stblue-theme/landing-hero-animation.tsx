@@ -227,25 +227,23 @@ export const LandingHeroAnimation = React.memo(function HeroAnimation() {
                     </div>
                 </div>
                 <LandingHeroBeamSvg
-                    className={clsx(
-                        "z-[0]",
-                        "absolute",
-                        "left-1/2",
-                        "top-2/3",
-                        "scale-y-125",
-                        "-translate-x-1/2",
-                        "translate-y-0",
-                        "landing-lg:translate-y-16",
-                        "dark:animate-landing-hero-beam-line",
-                    )}
+                  className={clsx(
+                    "z-[0]",
+                    "absolute",
+                    "left-1/2",
+                    "top-1/2",
+                    "-translate-x-1/2",
+                    "translate-y-0",
+                    "landing-lg:translate-y-16",
+                    "dark:animate-landing-hero-beam-line",
+                )}
                 />
                 <LandingHeroBeamGlowSvg
                     className={clsx(
                         "z-[0]",
                         "absolute",
                         "left-1/2",
-                        "top-2/3",
-                        "scale-y-125",
+                        "top-1/2",
                         "-translate-x-1/2",
                         "translate-y-0",
                         "landing-lg:translate-y-16",
@@ -257,7 +255,7 @@ export const LandingHeroAnimation = React.memo(function HeroAnimation() {
                         filter: "drop-shadow(rgba(71, 235, 235,0.1) 0px 0px 0px) drop-shadow(rgba(71, 235, 235,0.15) 0px 0px 10px)",
                     }}
                 />
-                <div
+             <div
                     className={clsx(
                         "-mt-6",
                         "pt-6",
@@ -266,9 +264,9 @@ export const LandingHeroAnimation = React.memo(function HeroAnimation() {
                         "absolute",
                         "left-1/2",
                         "-translate-x-1/2",
-                        "top-full",
-                        "landing-lg:top-[calc(50%+110px)]",
-                        "translate-y-80",
+                        "top-1/2",
+                        "landing-lg:top-[calc(50%+64px)]",
+                        "translate-y-64",
                         "z-[1]",
                     )}
                 >
