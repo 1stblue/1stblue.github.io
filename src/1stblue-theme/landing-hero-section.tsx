@@ -57,7 +57,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
           </div>
           <div className={clsx('flex', 'items-center', 'justify-start', 'gap-4', 'landing-lg:gap-6')}>
             <Link
-              to="/docs/getting-started/quickstart"
+              to="/docs/getting-started"
               className={clsx(
                 'self-start',
                 'rounded-3xl',

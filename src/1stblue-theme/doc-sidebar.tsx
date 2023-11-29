@@ -273,6 +273,7 @@ const SidebarLink = ({
                 isShiny ? "px-4 py-3" : "px-0.5 py-1",
                 "text-sm font-normal leading-6",
                 "flex items-start justify-start",
+                dashed && "pl-6",
                 dashed && !line && "pl-0",
                 line && !dashed && "pl-5",
                 line && dashed && "pl-5",
@@ -285,9 +286,9 @@ const SidebarLink = ({
                 item.className,
             )}
         >
-            {dashed && (
+            {/* {dashed && (
                 <DashIcon className="z-[1] h-6 w-6 flex-shrink-0 opacity-70" />
-            )}
+            )} */}
             <div className={"flex items-center"}>
                 {isShiny && <RefineLogoShiny className="mr-2 flex-shrink-0" />}
                 <span className="z-[1] flex-shrink-0">{item.label}</span>
@@ -473,7 +474,7 @@ export const DocSidebar = () => {
                 className={clsx(
                     "pl-5",
                     "pr-3",
-                    "py-12",
+                    // "py-4",
                     "border-r border-r-gray-200 dark:border-r-gray-700",
                 )}
             >

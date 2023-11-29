@@ -12,45 +12,45 @@ const list = [
     items: [
       {
         title: 'Fully Tested',
-        link: '/docs/quick-start',
+        link: '/docs',
         description:
-          'Deploy to your own infrastructure without worrying about regulations, performance, and stability. Maintain your current security best practices with no compromises.'
+          '通过全自动化的集成测试框架来发现或者验证系统中的薄弱环节或者边界值。'
       },
       {
         title: '安全为重，风控先行',
-        link: '/docs/quick-start',
+        link: '/docs',
         description: '并发控制、开关集合、无锁表、NO_SQL_CACHE、PGA内存等'
       },
       {
         title: '流批融合与应急响应',
-        link: '/docs/quick-start',
+        link: '/docs',
         description:
-          'Out-of-the-box support for widely accepted authorization models including ACL, RBAC & ABAC.'
+          '通过全自动化的集成测试框架来发现或者验证系统中的薄弱环节或者边界值。'
       }
     ]
   },
   {
-    tag: '极致效率',
-    title: '⾼效、⾃动、⾃适应',
+    tag: '性能',
+    title: '极致效率',
     description: '运⾏效率；⾃适应弹性调度；极简体验，⽤完即⾛',
     theme: 'heading-base--theme-blue-gradient',
     items: [
       {
         title: '运⾏效率',
-        link: '/docs/quick-start',
+        link: '/docs',
         description:
-          'Deploy to your own infrastructure without worrying about regulations, performance, and stability. Maintain your current security best practices with no compromises.'
+          '性能在日常运行中往往不是关键问题，但性能储备是应急响应质量的关键指标。在某个客户测试现场，我们的软件完成了 45 分钟内将 30 亿行（约 500GB）无索引单表同步到另一个数据库，性能远超竞争对手'
       },
       {
         title: '⾃适应弹性调度',
-        link: '/docs/quick-start',
-        description: '网络分配和serverless'
+        link: '/docs',
+        description: '满足数据交付 SLA 的前提下，基于网络连通性、网络价格、动态负载等进行最高效率的调度分配'
       },
       {
         title: '极简体验，⽤完即⾛',
-        link: '/docs/quick-start',
+        link: '/docs',
         description:
-          'Out-of-the-box support for widely accepted authorization models including ACL, RBAC & ABAC.'
+          '基于我们对数据库的深刻理解，往往默认参数就能提供最好的效果，自动学习并进行调度优化，以尽可能地减少人工运维工作'
       }
     ]
   },
@@ -62,20 +62,20 @@ const list = [
     items: [
       {
         title: '可扩展性强',
-        link: '/docs/quick-start',
+        link: '/docs',
         description:
           'Deploy to your own infrastructure without worrying about regulations, performance, and stability. Maintain your current security best practices with no compromises.'
       },
       {
         title: '技术中立，无任何锁定',
-        link: '/docs/quick-start',
-        description: '网络分配和serverless'
+        link: '/docs',
+        description: '坚持无供应商锁定，无网络环境锁定。我们的软件能够方便地部署在阿里云、AWS、Azure、甚至您自己的笔记本电脑上，从而使您的数据能够安全、自由地流动。'
       },
       {
-        title: '扩展与集成简单',
-        link: '/docs/quick-start',
+        title: '集成简单',
+        link: '/docs',
         description:
-          'Out-of-the-box support for widely accepted authorization models including ACL, RBAC & ABAC.'
+          '我们提供了不同的 SDK 方便客户将我们的能力集成到别的产品中去，从而实现更顺滑的体验'
       }
     ]
   }
