@@ -4,10 +4,7 @@ import React from 'react';
 
 import { CommonLayout } from '../1stblue-theme/common-layout';
 import { LandingFooter } from '../1stblue-theme/landing-footer';
-import { LandingCommunity } from '../1stblue-theme/landing-community';
-import { LandingPackages } from '../1stblue-theme/landing-packages';
 import { LandingHeroSection } from '../1stblue-theme/landing-hero-section';
-import { LandingTryItSection } from '../1stblue-theme/landing-try-it-section';
 import { CommonHeader } from '../1stblue-theme/common-header';
 import { LandingCoreAdvantages } from '../1stblue-theme/landing-core-advantages';
 
@@ -39,12 +36,6 @@ function Home() {
               <LandingHeroSection />
             </div>
             <LandingCoreAdvantages  />
-            {/* <div className={clsx('flex flex-col', 'gap-12 landing-md:gap-6')}>
-              <LandingPackages />
-            
-            </div>
-            <LandingCommunity />
-            <LandingTryItSection /> */}
           </div>
           <LandingFooter />
         </div>

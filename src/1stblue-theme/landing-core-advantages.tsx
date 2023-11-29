@@ -1,13 +1,6 @@
 import clsx from 'clsx';
 import React, { FC } from 'react';
-import {
-  AccessControlIcon,
-  BlackBoxIcon,
-  IdentityIcon,
-  MonitorIcon,
-  SelfHostedIcon,
-  SupportIcon
-} from '../components/landing/icons';
+
 import Link from '@docusaurus/Link';
 
 const list = [

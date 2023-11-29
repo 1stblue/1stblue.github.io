@@ -1,6 +1,6 @@
 import React from "react";
 
-export const IntegrationsIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const ConnectorsIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         width="40"
         height="40"

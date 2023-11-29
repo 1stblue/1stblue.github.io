@@ -2,7 +2,7 @@
 import { HackathonAltIcon } from '../icons/hackathon-alt';
 import {
   DocumentsIcon,
-  IntegrationsIcon,
+  ConnectorsIcon,
   TutorialIcon,
   ExamplesIcon,
   AwesomeIcon,
@@ -98,14 +98,14 @@ export const MENU_ITEMS: MenuItemType[] = [
         label: '下载',
         description: '',
         link: '/docs/',
-        icon: IntegrationsIcon
+        icon: ConnectorsIcon
       },
     ]
   },
   {
     isPopover: false,
     label: "连接器",
-    href: "/integrations",
+    href: "/connectors",
   },
   {
     isPopover: false,

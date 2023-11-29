@@ -4,7 +4,7 @@ import Head from "@docusaurus/Head";
 
 import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
 import { CommonHeader } from "@site/src/1stblue-theme/common-header";
-import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
+import { LandingFooter } from "@site/src/1stblue-theme/landing-footer";
 import { PricingInfoIcon } from "@site/src/1stblue-theme/icons/pricing-info";
 import { PricingCheckIcon } from "@site/src/1stblue-theme/icons/pricing-check";
 import { PricingTimesIcon } from "@site/src/1stblue-theme/icons/pricing-times";
@@ -519,10 +519,10 @@ const pricingData = [
         ],
     },
     {
-        title: "Integrations",
+        title: "Connectors",
         items: [
             {
-                description: "Data Source Integrations",
+                description: "Data Source Connectors",
                 community: (
                     <div className="flex items-center justify-center flex-wrap gap-4">
                         <PricingRestIcon name="REST" />
@@ -544,7 +544,7 @@ const pricingData = [
                 ),
             },
             {
-                description: "3rd Party API Integrations",
+                description: "3rd Party API Connectors",
                 community: <PricingCross />,
                 enterprise: (
                     <div className="flex items-center justify-center flex-wrap gap-4">
@@ -564,7 +564,7 @@ const pricingData = [
                 ),
             },
             {
-                description: "Access to Integrations",
+                description: "Access to Connectors",
                 community: <PricingText>Frontend only</PricingText>,
                 enterprise: <PricingText bold>Frontend + Backend</PricingText>,
             },
@@ -658,7 +658,7 @@ const pricingData = [
                 enterprise: <PricingCheck />,
             },
             {
-                description: "3rd Party Integrations",
+                description: "3rd Party Connectors",
                 community: <PricingCross />,
                 enterprise: (
                     <div className="flex items-center justify-center flex-wrap gap-4">
@@ -819,7 +819,7 @@ function Pricing() {
                         </div>
                     </div>
                 </div>
-                <BlogFooter />
+                <LandingFooter />
             </CommonLayout>
         </>
     );

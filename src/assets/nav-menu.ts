@@ -1,7 +1,7 @@
 import { NavMenu } from "../types/nav-menu";
 import {
     DocumentsIcon,
-    IntegrationsIcon,
+    ConnectorsIcon,
     TutorialIcon,
     ExamplesIcon,
     AwesomeIcon,
@@ -25,10 +25,10 @@ export const POPOVERMENUS: NavMenu[] = [
                 icon: DocumentsIcon,
             },
             {
-                label: "Integrations",
+                label: "Connectors",
                 description: "Discover the refine ecosystem",
                 link: "/integrations",
-                icon: IntegrationsIcon,
+                icon: ConnectorsIcon,
             },
             {
                 label: "Tutorial",

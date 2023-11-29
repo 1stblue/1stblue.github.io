@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgIntegrations = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
+const SvgConnectors = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="33"
@@ -49,4 +49,4 @@ const SvgIntegrations = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export default SvgIntegrations;
+export default SvgConnectors;

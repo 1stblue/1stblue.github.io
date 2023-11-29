@@ -81,10 +81,10 @@ function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }) {
                 className={clsx(
                     "hidden xl:block",
                     "w-full",
-                    "sticky right-0 top-[67px]",
+                    "sticky right-0 top-[80px]",
                     "max-w-[280px]",
                     "overflow-auto",
-                    "h-[calc(100vh-67px)]",
+                    "h-[calc(100vh-80px)]",
                     "pl-3",
                     "pr-3",
                     "py-12",
