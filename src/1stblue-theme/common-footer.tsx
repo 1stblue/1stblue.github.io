@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-import { socialLinks } from "./footer-data";
 
 export const CommonFooter = () => {
     return (
@@ -29,50 +28,6 @@ export const CommonFooter = () => {
                     )}
                 >
                     Bluepipe © 2023
-                </div>
-
-                <div
-                    className={clsx(
-                        "flex flex-col sm:flex-row justify-center items-center",
-                    )}
-                >
-                    <div
-                        className={clsx(
-                            "dark:text-gray-400 text-gray-700",
-                            "text-xs sm:text-base",
-                            "font-light",
-                            "sm:mr-4",
-                        )}
-                    >
-                        Join us on
-                    </div>
-                    <div
-                        className={clsx(
-                            "flex gap-10 sm:gap-5",
-                            "dark:text-gray-500 text-gray-400",
-                            "mt-4 sm:mt-0",
-                        )}
-                    >
-                        {socialLinks.map(({ href, icon: Icon }, i) => {
-                            return (
-                                <a
-                                    key={i}
-                                    href={href}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className={clsx(
-                                        "flex items-center gap-4 no-underline",
-                                    )}
-                                >
-                                    <Icon
-                                        className={clsx(
-                                            "w-9 h-9 sm:w-6 sm:h-6",
-                                        )}
-                                    />
-                                </a>
-                            );
-                        })}
-                    </div>
                 </div>
             </div>
         </footer>

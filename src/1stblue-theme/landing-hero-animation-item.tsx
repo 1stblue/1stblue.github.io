@@ -92,7 +92,7 @@ export const LandingHeroAnimationItem = React.memo(
                         horizontal === "right" && ["pl-6"],
                     )}
                 >
-                    <div
+                    {/* <div
                         className={clsx(
                             "font-disket",
                             "font-bold",
@@ -104,7 +104,7 @@ export const LandingHeroAnimationItem = React.memo(
                         )}
                     >
                         {section}
-                    </div>
+                    </div> */}
                     <div
                         className={clsx(
                             "font-medium",
@@ -114,12 +114,14 @@ export const LandingHeroAnimationItem = React.memo(
                             "dark:bg-clip-text",
                             "dark:bg-landing-hero-item-name-gradient",
                             horizontal === "left" && "text-left",
+                            horizontal === "left" && "ml-2",
                             horizontal === "right" && "text-right",
+                            horizontal === "right" && "mr-4",
                         )}
                     >
                         <ChangingTextElement
                             ref={ref}
-                            first={previousName ?? name}
+                            first={name}
                             second={name}
                             tick={50}
                         />
