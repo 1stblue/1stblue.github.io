@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[6564],{8650:(e,s,t)=>{t.r(s),t.d(s,{UseCases:()=>l,default:()=>u});var a=t(7294),c=t(6550);const l=()=>a.createElement(c.l_,{to:"/"}),u=l}}]);
