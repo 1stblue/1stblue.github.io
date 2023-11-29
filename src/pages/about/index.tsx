@@ -1,6 +1,6 @@
 import Head from "@docusaurus/Head";
 import { FooterRedditIcon as RedditIcon } from "@site/src/1stblue-theme/icons/footer-reddit";
-import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
+import { LandingFooter } from "@site/src/1stblue-theme/landing-footer";
 import { CommonHeader } from "@site/src/1stblue-theme/common-header";
 import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
 import { Istanbul500Icon } from "@site/src/1stblue-theme/icons/500";
@@ -619,7 +619,7 @@ const About: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <BlogFooter />
+                <LandingFooter />
             </div>
         </>
     );

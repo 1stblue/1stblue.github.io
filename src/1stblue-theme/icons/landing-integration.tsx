@@ -1,6 +1,6 @@
 import React, { SVGProps } from "react";
 
-export const LandingIntegrationIcon = (props: SVGProps<SVGSVGElement>) => (
+export const LandingConnectorIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width={31}
         height={31}

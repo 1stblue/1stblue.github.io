@@ -108,7 +108,7 @@ module.exports = {
             boxShadow: {
                 modal: "4px 8px 16px rgba(42, 42, 66, 0.25)",
                 tile: "6px 8px 16px 0 rgba(42, 42, 66, 0.4)",
-                integrationTile: "3px 4px 8px 0 rgba(42, 42, 66, 0.25)",
+                connectorTile: "3px 4px 8px 0 rgba(42, 42, 66, 0.25)",
                 tagTile: "3px -2px 8px 0 rgba(42, 42, 66, 0.25)",
                 startTiles: "4px 8px 16px rgba(42, 42, 66, 0.25)",
                 menuItem: "2px 4px 8px rgba(36, 36, 54, 0.2)",

@@ -7,7 +7,7 @@ import {
 } from "@docusaurus/theme-common/internal";
 import clsx from "clsx";
 import React from "react";
-import { HEADER_HEIGHT } from "./doc-header";
+import { HEADER_HEIGHT } from "./common-header";
 import { ChevronDownIcon } from "./icons/chevron-down";
 import { DashIcon } from "./icons/dash";
 import { NewBadgeShiny } from "./icons/new-badge-shiny";

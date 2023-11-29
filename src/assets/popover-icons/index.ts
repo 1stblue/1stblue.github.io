@@ -1,6 +1,6 @@
 export { default as DocumentsIcon } from "./documents";
 export { default as RightArrow } from "./right-arrow";
-export { default as IntegrationsIcon } from "./integrations";
+export { default as ConnectorsIcon } from "./integrations";
 export { default as TutorialIcon } from "./tutorial";
 export { default as UIFrameworksIcon } from "./ui-frameworks";
 export { default as ExamplesIcon } from "./examples";

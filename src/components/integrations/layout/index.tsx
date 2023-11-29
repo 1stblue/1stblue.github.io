@@ -3,13 +3,13 @@ import Head from "@docusaurus/Head";
 import clsx from "clsx";
 import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
 import { CommonHeader } from "@site/src/1stblue-theme/common-header";
-import { BlogFooter } from "@site/src/1stblue-theme/blog-footer";
+import { LandingFooter } from "@site/src/1stblue-theme/landing-footer";
 
-const IntegrationsLayout = ({ children }: React.PropsWithChildren<{}>) => {
+const ConnectorsLayout = ({ children }: React.PropsWithChildren<{}>) => {
     return (
         <CommonLayout>
-            <Head title="Integrations | refine">
-                <html data-page="integrations" data-customized="true" />
+            <Head title="连接器 | bluepipe">
+                <html data-page="connectors" data-customized="true" />
             </Head>
             <div className={clsx("refine-prose, pb-16")}>
                 <CommonHeader hasSticky />
@@ -23,9 +23,9 @@ const IntegrationsLayout = ({ children }: React.PropsWithChildren<{}>) => {
                     {children}
                 </div>
             </div>
-            <BlogFooter />
+            <LandingFooter />
         </CommonLayout>
     );
 };
 
-export default IntegrationsLayout;
+export default ConnectorsLayout;

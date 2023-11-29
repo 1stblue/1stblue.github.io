@@ -1,20 +1,13 @@
-import Link from "@docusaurus/Link";
-import clsx from "clsx";
-import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import { BluepipeLogoIcon } from './icons/1stblue-logo';
+import { HamburgerIcon } from './icons/hamburger';
+import { Menu } from './common-header/menu';
+import { MobileMenuModal } from './common-header/mobile-menu-modal';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-import { HamburgerIcon } from "./icons/hamburger";
-import { RefineLogoIcon } from "./icons/refine-logo";
-import {BluepipeLogoIcon } from './icons/1stblue-logo';
-
-import { openFigma } from "../utils/open-figma";
-import { Menu } from "./common-header/menu";
-import { MobileMenuModal } from "./common-header/mobile-menu-modal";
-import { CommonThemeToggle } from "./common-theme-toggle";
-import { TopAnnouncement } from "./top-announcement";
-
-import { LandingGithubStarButton } from "./landing-github-star-button";
-
+export const HEADER_HEIGHT = 80;
 type Props = {
     hasSticky?: boolean;
     trackProgress?: boolean;
@@ -32,7 +25,6 @@ export const CommonHeader = ({ trackProgress }: Props) => {
 
     return (
         <>
-            {/* <TopAnnouncement /> */}
             <header className={clsx("sticky", "top-0", "z-10")}>
                 <div
                     className={clsx(
@@ -117,8 +109,6 @@ export const CommonHeader = ({ trackProgress }: Props) => {
                                 "landing-lg:w-[200px]",
                             )}
                         >
-                            {/* <LandingGithubStarButton /> */}
-                            {/* <CommonThemeToggle /> */}
                         </div>
                         <MobileMenuModal
                             isModalOpen={isModalOpen}

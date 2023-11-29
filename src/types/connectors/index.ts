@@ -1,8 +1,8 @@
-export type IntegrationsType = {
-    [key: string]: Integration[];
+export type ConnectorsType = {
+    [key: string]: Connector[];
 };
 
-export type Integration = {
+export type Connector = {
     name: string;
     icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
     description: string;

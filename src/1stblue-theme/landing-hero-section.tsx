@@ -1,12 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import { LandingHeroGithubStars } from './landing-hero-github-stars';
 import { LandingStartActionIcon } from './icons/landing-start-action';
 
-import { LandingHeroAnimation } from './landing-hero-animation';
-import { LandingCopyCommandButton } from './landing-copy-command-button';
 import Link from '@docusaurus/Link';
-import { LandingHeroShowcaseSection } from './landing-hero-showcase-section';
 
 export const LandingHeroSection = ({ className }: { className?: string }) => {
   return (
@@ -22,14 +18,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <div
-        className={clsx(
-          'px-2 landing-sm:px-0',
-          'w-full',
-          'relative',
-          'py-4'
-        )}
-      >
+      <div className={clsx('px-2 landing-sm:px-0', 'w-full', 'relative', 'py-4')}>
         <div
           className={clsx(
             'flex',
@@ -41,7 +30,6 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
             'landing-lg:py-8'
           )}
         >
-          {/* <LandingHeroGithubStars /> */}
           <div className={clsx('flex', 'flex-col', 'gap-6')}>
             <h1
               className={clsx(
@@ -64,7 +52,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
                 'landing-xs:max-w-[384px]'
               )}
             >
-             帮助您构建可靠、高效、可持续发展的数据流
+              帮助您构建可靠、高效、可持续发展的数据流
             </p>
           </div>
           <div className={clsx('flex', 'items-center', 'justify-start', 'gap-4', 'landing-lg:gap-6')}>
@@ -93,7 +81,7 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
               <LandingStartActionIcon />
               <span className={clsx('text-base', 'font-semibold')}>快速开始</span>
             </Link>
-            <Link href="https://demo.1stblue.cloud" >
+            <Link href="https://demo.1stblue.cloud">
               <button
                 type="button"
                 className={clsx(
@@ -122,12 +110,9 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
           </div>
         </div>
         <div className={clsx('mt-8')}>
-      <img src="/img/opt-video.gif" className="object-none mt-1 w-100%" alt="" />
-          {/* <LandingHeroAnimation /> */}
+          <img src="/img/opt-video.gif" className="object-none mt-1 w-100%" alt="" />
         </div>
       </div>
-
-      {/* <LandingHeroShowcaseSection /> */}
     </div>
   );
 };

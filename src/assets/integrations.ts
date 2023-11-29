@@ -1,4 +1,4 @@
-import { IntegrationsType } from "../types/integrations";
+import { ConnectorsType } from "../types/connectors";
 import {
     Ably,
     Airtable,
@@ -35,7 +35,7 @@ import {
     Kinde,
 } from "./integration-icons";
 
-export const integrations: IntegrationsType = {
+export const integrations: ConnectorsType = {
     "ui-framework-packages": [
         {
             name: "Material UI",

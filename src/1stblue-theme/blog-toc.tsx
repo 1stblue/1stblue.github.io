@@ -88,10 +88,10 @@ export const BlogTOC = (props) => {
             className={clsx(
                 "hidden blog-md:block",
                 "w-full",
-                "sticky right-0 top-[67px]",
+                "sticky right-0 top-[80px]",
                 "max-w-[280px]",
                 "overflow-auto",
-                "h-[calc(100vh-67px)]",
+                "h-[calc(100vh-80px)]",
                 "px-3",
                 "blog-md:py-16",
                 "border-l dark:border-l-gray-700 border-l-gray-100",

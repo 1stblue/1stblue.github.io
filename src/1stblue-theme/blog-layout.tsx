@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { CommonLayout } from "./common-layout";
 import { CommonHeader } from "./common-header";
-import { BlogFooter } from "./blog-footer";
+import { LandingFooter } from "./landing-footer";
 import clsx from "clsx";
-import { BannerSidebar } from "../components/banner/banner-sidebar";
-import { BannerModal } from "../components/banner/banner-modal";
 import { useLocation } from "@docusaurus/router";
 import useScrollTracker from "../hooks/use-scroll-tracker";
 
@@ -29,8 +27,6 @@ export const RefineBlogLayout = (props: any) => {
 
     return (
         <CommonLayout {...layoutProps}>
-            {/* If there's TOC, then we can say that this is a blog post page. */}
-            {/* Then we can pass `trackProgress` prop to the header. */}
             <CommonHeader hasSticky={true} trackProgress={!!toc} />
             <div
                 className={clsx(
@@ -64,7 +60,7 @@ export const RefineBlogLayout = (props: any) => {
                     </div>
                 )}
             </div>
-            <BlogFooter />
+            <LandingFooter />
             {/* <BannerModal /> */}
         </CommonLayout>
     );
