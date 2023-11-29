@@ -1,6 +1,6 @@
 ---
 id: data-verification
-title: 数据校验
-sidebar_label: 数据校验
+title: 一致性检查
+sidebar_label: 一致性检查
 sidebar_position: 4
 ---
