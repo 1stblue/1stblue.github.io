@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 import { openFigma } from "../utils/open-figma";
-import { menuItems, secondaryMenuItems, socialLinks } from "./footer-data";
+import { menuItems, secondaryMenuItems } from "./footer-data";
 import { HeartOutlinedIcon } from "./icons/heart-outlined";
 import Link from "@docusaurus/Link";
 import { BluepipeLogoIcon } from "./icons/1stblue-logo";
@@ -26,7 +26,7 @@ export const LandingFooter = () => {
                     "text-gray-900 dark:text-gray-0",
                 )}
             >
-                Bluepipe Inc.
+                关于萃蓝
             </div>
             <div
                 className={clsx(
@@ -36,78 +36,12 @@ export const LandingFooter = () => {
                     "text-gray-600 dark:text-gray-400",
                 )}
             >
-                中国浙江省杭州市余杭区
+                有团队、有钱、有三方认证
             </div>
-            <a
-                href="mailto:info@refine.dev"
-                className={clsx(
-                    "font-normal",
-                    "text-sm",
-                    "leading-5",
-                    "text-gray-600 dark:text-gray-400",
-                    "hover:text-gray-800 dark:hover:text-gray-300",
-                    "hover:no-underline",
-                )}
-            >
-                info@1stblue.cloud
-            </a>
+            
         </div>
     );
 
-    const social = (
-        <div
-            className={clsx(
-                "py-6 landing-lg:py-0",
-                "flex",
-                "flex-col",
-                "landing-sm:items-end",
-            )}
-        >
-            <div className={clsx("flex", "flex-col", "gap-4")}>
-                <div
-                    className={clsx(
-                        "text-sm",
-                        "leading-6",
-                        "font-semibold",
-                        "text-gray-900 dark:text-gray-0",
-                        "landing-lg:text-right",
-                    )}
-                >
-                    Join us on
-                </div>
-                <div
-                    className={clsx(
-                        "flex",
-                        "items-center",
-                        "gap-8",
-                        "landing-lg:gap-4",
-                        "justify-start",
-                    )}
-                >
-                    {socialLinks.map(({ href, icon: Icon }) => (
-                        <a
-                            href={href}
-                            key={href}
-                            target="_blank"
-                            rel="noreferrer"
-                            className={clsx(
-                                "text-gray-600 dark:text-gray-400",
-                                "hover:text-gray-800 dark:hover:text-gray-300",
-                                "hover:no-underline",
-                            )}
-                        >
-                            <Icon
-                                className={clsx(
-                                    "w-8 h-8",
-                                    "landing-lg:w-6 landing-lg:h-6",
-                                )}
-                            />
-                        </a>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
 
     return (
         <footer className={clsx("w-full")}>
@@ -198,15 +132,6 @@ export const LandingFooter = () => {
                                 </div>
                             </div>
                         ))}
-                        <div
-                            className={clsx(
-                                "hidden",
-                                "landing-lg:flex",
-                                "ml-auto",
-                            )}
-                        >
-                            {social}
-                        </div>
                     </div>
                     <div
                         className={clsx(
@@ -219,7 +144,6 @@ export const LandingFooter = () => {
                         )}
                     >
                         {info}
-                        {social}
                     </div>
                 </div>
             </div>
@@ -253,7 +177,7 @@ export const LandingFooter = () => {
                             "justify-start",
                         )}
                     >
-                        {secondaryMenuItems.map((menu) => (
+                        {/* {secondaryMenuItems.map((menu) => (
                             <a
                                 href={menu.href}
                                 key={menu.label}
@@ -274,7 +198,7 @@ export const LandingFooter = () => {
                             >
                                 {menu.label}
                             </a>
-                        ))}
+                        ))} */}
                     </div>
                     <div
                         className={clsx(
@@ -288,7 +212,7 @@ export const LandingFooter = () => {
                         )}
                     >
                         {
-                            "© 2023, Refine from San Francisco to wherever you're with "
+                            "© 2023, Bluepipe from HangZhou to wherever you're with "
                         }
                         <HeartOutlinedIcon
                             className={clsx(
