@@ -1,0 +1,8 @@
+{
+  "label": "分类",
+  "position": 0,
+  "link": {
+    "type": "doc",
+    "id":"concept"
+  }
+}
