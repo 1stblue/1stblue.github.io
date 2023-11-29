@@ -35,7 +35,7 @@ function DocCategoryGeneratedIndexPageContent({ categoryGeneratedIndex }) {
                 className={clsx(
                     "flex flex-1 flex-col",
                     "items-center justify-start",
-                    "px-4 sm:px-0 py-4 sm:py-14",
+                    "px-4 sm:px-0 py-4 sm:py-4",
                     "w-full",
                 )}
             >

@@ -80,7 +80,7 @@ export const MENU_ITEMS: MenuItemType[] = [
       {
         label: '快速开始',
         description: 'Create your first Bluepipe connection.',
-        link: '/docs/getting-started/quickstart',
+        link: 'docs/getting-started',
         icon: TutorialIcon
       },
       {
@@ -91,13 +91,13 @@ export const MENU_ITEMS: MenuItemType[] = [
       }, {
         label: '文档',
         description: 'Everything you need to get started.',
-        link: '/docs/',
+        link: '/docs/tutorial',
         icon: DocumentsIcon
       },
       {
         label: '下载',
         description: '',
-        link: '/docs/',
+        link: '/docs/support/download/',
         icon: ConnectorsIcon
       },
     ]
