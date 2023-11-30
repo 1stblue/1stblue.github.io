@@ -1,8 +1,7 @@
 ---
-id: faq-connection
-title: 问题 1
-sidebar_label: 问题 1
-sidebar_position: 1
+id: faq
+sidebar_position: 99
 ---
 
-## 我发我哦fwef
+# 常见问题
+
