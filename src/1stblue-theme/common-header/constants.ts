@@ -19,6 +19,7 @@ import {
 export type NavbarPopoverItemType = {
   isPopover: true;
   label: string;
+  split?: boolean;
   items: {
     label: string;
     description: string;
@@ -76,30 +77,21 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     isPopover: true,
     label: '资源',
+    split: true,
     items: [
       {
-        label: '快速开始',
-        description: 'Create your first Bluepipe connection.',
-        link: 'docs/getting-started',
-        icon: TutorialIcon
-      },
-      {
-        label: '博客',
-        description: 'Articles about Bluepipe development.',
-        link: '/blog',
-        icon: BlogIcon
-      }, {
         label: '文档',
         description: 'Everything you need to get started.',
         link: '/docs/tutorial',
         icon: DocumentsIcon
       },
       {
-        label: '下载',
-        description: '',
-        link: '/docs/support/download/',
-        icon: ConnectorsIcon
-      },
+        label: '博客',
+        description: 'Articles about Bluepipe development.',
+        link: '/blog',
+        icon: BlogIcon
+      }, 
+     
     ]
   },
   {

@@ -54,6 +54,7 @@ export const NavbarPopoverItem: React.FC<NavbarPopoverItemProps> = ({
                             className={clsx(
                                 "text-gray-900 dark:text-gray-300",
                                 "transition-colors duration-150 ease-in-out inline-block",
+                                "hover:text-refine-blue"
                                 // isPermanentDark && "!text-gray-300",
                             )}
                         >
@@ -64,8 +65,9 @@ export const NavbarPopoverItem: React.FC<NavbarPopoverItemProps> = ({
                             className={clsx(
                                 "transition duration-150 ease-out",
                                 "-mr-2",
+                                "text-sm leading-6",
                                 "text-gray-500 dark:text-gray-400",
-                                isShowing ? "translate-y-0.5" : "",
+                                // isShowing ? "translate-y-0.5" : "",
                             )}
                         />
                     </Popover.Button>
@@ -84,7 +86,7 @@ export const NavbarPopoverItem: React.FC<NavbarPopoverItemProps> = ({
                         >
                             <PointIcon
                                 id={item.label}
-                                className={clsx("absolute", "top-[-9px]",  "left-12")}
+                                className={clsx("absolute", "top-[-9px]",  "left-6")}
                                 style={{ transform: "translateX(-50%)" }}
                             />
                             <div

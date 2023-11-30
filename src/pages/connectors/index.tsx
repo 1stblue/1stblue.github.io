@@ -6,6 +6,7 @@ import { Connector } from "@site/src/types/connectors";
 import Card from "../../components/integrations/card";
 
 const List = ({ data }: { data: Connector[] }) => {
+   
     return (
         <div
             className={clsx(
@@ -13,8 +14,10 @@ const List = ({ data }: { data: Connector[] }) => {
                 "grid-cols-1 lg:grid-cols-2",
                 "gap-8",
                 "mt-8",
+                "min-h-[calc(100vh-615px)]",
             )}
         >
+            {!data?.length ? <div>暂无数据</div> : null}
             {data.map((item) => (
                 <Card
                     key={item.name}
