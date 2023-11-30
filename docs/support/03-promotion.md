@@ -1,9 +1,9 @@
 ---
 id: promotion
-title: 向团队介绍BluePipe
-sidebar_label: 向团队介绍 BluePipe
 sidebar_position: 3
 ---
+
+# 向团队介绍 BLUEPIPE
 
 希望团队尽快用上`BluePipe`，不知道怎么介绍？别担心，以下是我们为您准备的资料。
 

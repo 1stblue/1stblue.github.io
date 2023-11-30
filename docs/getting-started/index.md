@@ -1,10 +1,10 @@
 ---
 id: quickstart
-# title: 快速开始
+# title: 快速上手
 ---
 
 
-# 快速开始 {#quickstart}
+# 快速上手 {#quickstart}
 
 ## 创建连接 {#creating-connection}
 

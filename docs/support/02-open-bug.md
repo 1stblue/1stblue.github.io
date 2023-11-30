@@ -1,9 +1,9 @@
 ---
 id: open-bug
-title: 提交 Bug
-sidebar_label: 提交 Bug
 sidebar_position: 2
 ---
+
+# 反馈 BUG
 
 ## 阿拉
 
