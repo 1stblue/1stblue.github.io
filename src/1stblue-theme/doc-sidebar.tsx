@@ -475,6 +475,7 @@ export const DocSidebar = () => {
                     "pl-5",
                     "pr-3",
                     // "py-4",
+                    "pb-12",
                     "border-r border-r-gray-200 dark:border-r-gray-700",
                 )}
             >

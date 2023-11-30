@@ -40,7 +40,8 @@ export const NavbarItem: React.FC<NavbarItemProps> = ({ item }) => {
                 "text-sm leading-6 font-normal text-gray-900 dark:text-gray-300",
                 "transition-colors duration-150 ease-in-out",
                 "no-underline",
-                item.label === "Hackathon"
+                                "hover:text-refine-blue",
+                                item.label === "Hackathon"
                     ? [
                           "py-1",
                           "px-2",
