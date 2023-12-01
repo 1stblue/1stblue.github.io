@@ -84,14 +84,14 @@ export const DocFooter = () => {
     return (
         <footer className={clsx("flex", "flex-col", "gap-6", "mt-16", "mb-6")}>
             {canDisplayTagsRow && <TagsRow tags={tags} />}
-            {canDisplayEditMetaRow && (
+            {/* {canDisplayEditMetaRow && (
                 <EditMetaRow
                     editUrl={editUrl}
                     lastUpdatedAt={lastUpdatedAt}
                     lastUpdatedBy={lastUpdatedBy}
                     formattedLastUpdatedAt={formattedLastUpdatedAt}
                 />
-            )}
+            )} */}
         </footer>
     );
 };

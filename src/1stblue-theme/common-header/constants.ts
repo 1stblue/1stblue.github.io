@@ -75,25 +75,15 @@ export const MENU_ITEMS: MenuItemType[] = [
     ]
   },
   {
-    isPopover: true,
-    label: '资源',
-    split: true,
-    items: [
-      {
-        label: '文档',
-        description: 'Everything you need to get started.',
-        link: '/docs/tutorial',
-        icon: DocumentsIcon
-      },
-      {
-        label: '博客',
-        description: 'Articles about Bluepipe development.',
-        link: '/blog',
-        icon: BlogIcon
-      }, 
-     
-    ]
+    label: '文档',
+    isPopover: false,
+    href: '/docs/tutorial',
   },
+  {
+    label: '博客',
+    isPopover: false,
+    href: '/blog',
+  }, 
   {
     isPopover: false,
     label: "连接器",

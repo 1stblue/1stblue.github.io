@@ -97,6 +97,20 @@
 }
 
 .refine-prose table {
+	@apply table-zebra hover table !important;
+}
+
+.refine-prose tr,
+.refine-prose th,
+.refine-prose td {
+	@apply border-none !important;
+}
+
+.refine-prose thead tr:first-child,
+.refine-prose tbody tr:last-child {
+	border-bottom: 1px solid var(--color-border-muted) !important;
+}
+/* .refine-prose table {
     @apply prose-table:border-none;
 }
 
@@ -134,7 +148,7 @@
 
 .refine-prose table thead tr {
     @apply border-none;
-}
+} */
 
 .refine-toc-item {
     @apply cursor-pointer;

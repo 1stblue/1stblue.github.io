@@ -734,6 +734,7 @@ module.exports = {
     },
     plugins: [
         require("@tailwindcss/typography"),
+        require("daisyui"),
         plugin(({ addVariant }) => {
             addVariant("light", `[data-theme="light"] &`);
         }),

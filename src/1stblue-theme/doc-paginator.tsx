@@ -8,7 +8,7 @@ export const DocPaginator = (props) => {
     const { previous, next } = props;
 
     return (
-        <div className={clsx("grid grid-cols-2", "gap-4 2xl:gap-8", "w-full")}>
+        <div className={clsx("grid grid-cols-2", "gap-4", "w-full")}>
             {previous && (
                 <Link
                     href={previous.permalink}
@@ -16,14 +16,14 @@ export const DocPaginator = (props) => {
                         "pagination-nav__link",
                         "group",
                         "flex-1",
-                        "p-4 2xl:p-6",
+                        "p-4",
                         "rounded-lg",
                         "border border-gray-200 dark:border-gray-700",
                         "hover:bg-gray-100 hover:dark:bg-gray-700",
                         "hover:no-underline",
                     )}
                 >
-                    <div className="flex-1 flex items-start justify-center flex-col gap-2 2xl:gap-4 text-left">
+                    <div className="flex-1 flex items-start justify-center flex-col gap-2 text-left">
                         <div
                             className={clsx(
                                 "flex items-center gap-2",
@@ -75,7 +75,7 @@ export const DocPaginator = (props) => {
                         !previous && "col-start-2",
                     )}
                 >
-                    <div className="flex-1 flex items-end justify-center flex-col gap-2 2xl:gap-4 text-right">
+                    <div className="flex-1 flex items-end justify-center flex-col gap-2 text-right">
                         <div
                             className={clsx(
                                 "flex items-center gap-2",
