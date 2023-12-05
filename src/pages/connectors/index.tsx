@@ -58,7 +58,9 @@ const List = ({ data, loading }: { data: Connector[]; loading: boolean }) => {
           {loading ? (
             <span className="loading loading-infinity loading-lg text-refine-blue inline-block m-auto col-span-1 lg:col-span-2"></span>
           ) : null}
-          {!filterData?.length && !loading ? <div className='m-auto col-span-1 lg:col-span-2'>暂无数据</div> : null}
+          {!filterData?.length && !loading ? (
+            <div className="m-auto col-span-1 lg:col-span-2">暂无数据</div>
+          ) : null}
           {filterData.map(item => (
             <Card
               key={item.name}
@@ -96,7 +98,58 @@ const Connectors: React.FC = () => {
             return {
               id: item.id,
               name: item.title,
-              description: item.description,
+              description: (
+                <div className='flex flex-wrap items-start'>
+                  {item?.vendor ? (
+                    <span
+                      className={clsx(
+                        'no-underline hover:no-underline',
+                        'text-xs',
+                        'bg-gray-100 dark:bg-gray-700',
+                        'text-gray-600 dark:text-gray-400',
+                        'rounded',
+                        'py-1',
+                        'px-2',
+                        'mx-1'
+                      )}
+                    >
+                      {item.vendor}
+                    </span>
+                  ) : undefined}
+                  {item?.stage ? (
+                    <span
+                      className={clsx(
+                        'no-underline hover:no-underline',
+                        'text-xs',
+                        'bg-gray-100 dark:bg-gray-700',
+                        'text-gray-600 dark:text-gray-400',
+                        'rounded',
+                        'py-1',
+                        'px-2',
+                        'mx-1'
+                      )}
+                    >
+                      {item.stage}
+                    </span>
+                  ) : undefined}
+                  {item?.version ? (
+                    <span
+                      className={clsx(
+                        'no-underline hover:no-underline',
+                        'text-xs',
+                        'bg-gray-100 dark:bg-gray-700',
+                        'text-gray-600 dark:text-gray-400',
+                        'rounded',
+                        'py-1',
+                        'px-2',
+                        'mx-1'
+                      )}
+                    >
+                      {item.version}
+                    </span>
+                  ) : undefined}
+                </div>
+              ),
               url: `/docs/concept/connectors/${item.id}`,
               icon: `https://demo.1stblue.cloud/${item?.link}icon.svg`
             };
