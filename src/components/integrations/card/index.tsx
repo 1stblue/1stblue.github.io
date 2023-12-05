@@ -5,7 +5,7 @@ import React from "react";
 
 type LargeCardProps = {
     title: string;
-    description: string;
+    description: Element;
     linkUrl: string;
     icon: string;
     // icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -53,8 +53,8 @@ const Card: React.FC<LargeCardProps> = ({
                         "text-gray-600 dark:text-gray-300",
                         "text-xs sm:text-sm",
                     )}
-                    dangerouslySetInnerHTML={{ __html: description }}
-                />
+                    // dangerouslySetInnerHTML={{ __html: description }}
+                >{description}</div>
                
             </div>
         </Link>
