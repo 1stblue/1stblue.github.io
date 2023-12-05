@@ -23,7 +23,8 @@ export type NavbarPopoverItemType = {
   items: {
     label: string;
     description: string;
-    link: string;
+    link?: string;
+    href?: string;
     icon: React.FC;
   }[];
 };
@@ -32,6 +33,7 @@ export type NavbarItemType = {
   isPopover?: false;
   label: string;
   icon?: React.FC;
+  link?: string;
   href?: string;
 };
 
@@ -45,54 +47,56 @@ export const MENU_ITEMS: MenuItemType[] = [
       {
         label: 'Cloud Free Tier',
         description: 'Cloud Free Tier',
-        link: '/docs/faq',
+        // link: '/docs/support/faq',
+        href: 'https://demo.1stblue.cloud/',
         icon: MeetIcon
       },
       {
         label: '典型场景',
         description: '典型场景',
-        link: '/examples',
+        link: '/docs/support/promotion',
         icon: RefineWeekIcon
       },
       {
         label: 'Cloud Team / Enterprise',
         description: 'Cloud Team / Enterprise',
-        link: '/pricing',
+        // link: '/pricing',
+        href: 'https://demo.1stblue.cloud/',
         icon: ExamplesIcon
       },
       {
         label: '成功故事',
         description: '成功故事',
-        link: '/about',
+        link: '/docs/support/promotion',
         icon: StoreIcon
       },
       {
         label: 'On Premise',
         description: 'On Premise',
-        link: '/pricing',
+        link: '/docs/support/download',
         icon: HackathonsIcon
-      },
+      }
     ]
   },
   {
     label: '文档',
     isPopover: false,
-    href: '/docs/tutorial',
+    href: '/docs'
   },
   {
     label: '博客',
     isPopover: false,
-    href: '/blog',
-  }, 
-  {
-    isPopover: false,
-    label: "连接器",
-    href: "/connectors",
+    href: '/blog'
   },
   {
     isPopover: false,
-    label: '价格',
-    href: '/pricing'
+    label: '连接器',
+    href: '/connectors'
   }
+  // {
+  //   isPopover: false,
+  //   label: '价格',
+  //   href: '/pricing'
+  // }
 ];
 

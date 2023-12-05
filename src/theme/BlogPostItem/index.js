@@ -26,10 +26,11 @@ export default function BlogPostItem({ className }) {
                 <Link itemProp="url" to={permalink}>
                     <div className="not-prose relative m-0 h-40 hover:brightness-90">
                         <img
-                            src={`https://refine-web.imgix.net${frontMatter.image?.replace(
-                                "https://refine.ams3.cdn.digitaloceanspaces.com",
-                                "",
-                            )}?h=160`}
+                            // src={`https://refine-web.imgix.net${frontMatter.image?.replace(
+                            //     "https://refine.ams3.cdn.digitaloceanspaces.com",
+                            //     "",
+                            // )}?h=160`}
+                            src={`${frontMatter.image}`}
                             alt={title}
                             className="absolute inset-0 mt-0 h-full w-full rounded-[10px] object-cover transition duration-150"
                             loading="lazy"

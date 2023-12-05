@@ -4,7 +4,8 @@ export type ConnectorsType = {
 
 export type Connector = {
     name: string;
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+    id: string;
+    icon: string;
     description: string;
     url?: string;
     status: string;
