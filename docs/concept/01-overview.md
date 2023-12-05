@@ -3,7 +3,7 @@ id: overview
 sidebar_position: 1
 ---
 
-# 基本理念
+# 概述
 
 ## 拉拉
 
