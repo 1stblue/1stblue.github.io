@@ -102,10 +102,12 @@ export const BlogPostPageView = ({ children }) => {
             <div>
                 <img
                     className="mb-2 w-full rounded-xl"
-                    src={`https://refine-web.imgix.net${frontMatter.image?.replace(
-                        "https://refine.ams3.cdn.digitaloceanspaces.com",
-                        "",
-                    )}?w=800`}
+                    // src={`https://refine-web.imgix.net${frontMatter.image?.replace(
+                    //     "https://refine.ams3.cdn.digitaloceanspaces.com",
+                    //     "",
+                    // )}?w=800`}
+                    
+                    src={`${frontMatter.image}`}
                     alt={title}
                 />
             </div>
@@ -129,9 +131,9 @@ export const BlogPostPageView = ({ children }) => {
                             )}
                         </div>
                     </div>
-                    <div className="m-6 mb-12">
+                    {/* <div className="m-6 mb-12">
                         <BannerRandom />
-                    </div>
+                    </div> */}
                 </div>
                 <h1 className="text-xl md:text-4xl" itemProp="headline">
                     {isBlogPostPage ? (

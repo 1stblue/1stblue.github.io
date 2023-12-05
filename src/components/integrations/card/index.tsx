@@ -1,3 +1,4 @@
+import Link from "@docusaurus/Link";
 import { contributor } from "@site/src/types/connectors";
 import clsx from "clsx";
 import React from "react";
@@ -6,19 +7,20 @@ type LargeCardProps = {
     title: string;
     description: string;
     linkUrl: string;
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+    icon: string;
+    // icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 };
 
 const Card: React.FC<LargeCardProps> = ({
     title,
     description,
-    icon: Icon,
+    icon,
     linkUrl,
 }) => {
     return (
-        <a
-            target="_blank"
-            href={linkUrl}
+        <Link
+            // target="_blank"
+            to={linkUrl}
             className={clsx(
                 "flex gap-4 sm:gap-8",
                 "no-underline",
@@ -29,7 +31,12 @@ const Card: React.FC<LargeCardProps> = ({
             rel="noreferrer"
         >
             <div className={clsx()}>
-                <Icon className={clsx("w-6 h-6 sm:w-12 sm:h-12")} />
+                {/* <Icon className={clsx("w-6 h-6 sm:w-12 sm:h-12")} /> */}
+                <img
+                src={icon}
+                loading="lazy"
+                className={clsx("w-6 h-6 sm:w-12 sm:h-12")}
+            />
             </div>
 
             <div className={clsx("flex flex-col gap-2")}>
@@ -50,7 +57,7 @@ const Card: React.FC<LargeCardProps> = ({
                 />
                
             </div>
-        </a>
+        </Link>
     );
 };
 

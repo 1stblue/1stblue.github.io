@@ -12,7 +12,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
     const Icon = item.icon;
 
     return (
-        <Link to={item.link} className="no-underline">
+        <Link to={item?.href || item?.link} className="no-underline">
             <div
                 className={clsx(
                     "flex items-start",

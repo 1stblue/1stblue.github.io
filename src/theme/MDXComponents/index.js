@@ -1,6 +1,5 @@
 import MDXComponents from "@theme-original/MDXComponents";
 
-import { BannerRandom } from "@site/src/components/banner/banner-random";
 import DiscordBanner from "@site/src/components/blog/discord-banner";
 import GithubBanner from "@site/src/components/blog/github-banner";
 import PromotionBanner from "@site/src/components/blog/promotion";
@@ -33,7 +32,6 @@ export default {
     CodeSandboxExample,
     ExampleLocalPrompt,
     ExampleSourcePrompt,
-    BannerRandom,
     GuideBadge,
     RouterBadge,
     GlobalConfigBadge,
