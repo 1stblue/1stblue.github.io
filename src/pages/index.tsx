@@ -17,7 +17,6 @@ function Home() {
         <html data-active-page="index" />
         <title>{title}</title>
         <meta property="og:title" content={title} />
-        <link rel="preload" href="https://refine.new/embed-form" as="document" />
       </Head>
       <CommonLayout description="数据迁移你只需要这一个工具">
         <div className={clsx()}>
@@ -26,7 +25,7 @@ function Home() {
             className={clsx(
               'flex flex-col',
               'gap-16 landing-sm:gap-20 landing-md:gap-28 landing-lg:gap-40',
-              'w-full max-w-[592px] landing-sm:max-w-[656px] landing-md:max-w-[896px] landing-lg:max-w-[1200px]',
+              'w-full max-w-[83%]',
               'px-2 landing-sm:px-0',
             //   'pb-12 landing-sm:pb-16 landing-md:pb-20 landing-lg:pb-40',
               'mx-auto'
