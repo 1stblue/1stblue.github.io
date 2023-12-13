@@ -63,8 +63,7 @@ export const CommonHeader = ({ trackProgress }: Props) => {
                             "flex",
                             "items-center",
                             "justify-between",
-                            "max-w-[896px]",
-                            "landing-lg:max-w-[1200px]",
+                            "max-w-[83%]",
                         )}
                     >
                         <div

@@ -1,75 +1,144 @@
+import React, { Suspense, useCallback, useEffect, useMemo } from 'react';
 import clsx from 'clsx';
-import React, { useCallback, useEffect, useMemo } from 'react';
-
 import ConnectorsLayout from '@site/src/components/integrations/layout';
-import { Connector } from '@site/src/types/connectors';
-import Card from '../../components/integrations/card';
-
-const List = ({ data, loading }: { data: Connector[]; loading: boolean }) => {
-  const [checked, setChecked] = React.useState<string[]>(['rdbms', 'nosql', 'bigdata']);
-  const cateData = [
-    {
-      label: 'RDBMS',
-      value: 'rdbms',
-      items: ['oracle', 'mysql', 'sqlserver', 'postgres']
-    },
-    {
-      label: 'No SQL',
-      value: 'nosql',
-      items: ['mongodb']
-    },
-    {
-      label: 'Big Data',
-      value: 'bigdata',
-      items: ['hdfs', 'kafka', 'hive']
-    }
-  ];
+import { Avatar, Badge, Box, Button, Card, Checkbox, Image, Loader } from '@mantine/core';
+import { useConnectorList } from '@site/src/components/tests/server';
+import Link from '@docusaurus/Link';
+import TimeoutLoadingOverlay from '@site/src/components/timeout-loading-overlay';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+const cateData = [
+  {
+    label: 'RDBMS',
+    value: 'rdbms',
+    items: ['oracle', 'mysql', 'sqlserver', 'postgres']
+  },
+  {
+    label: 'No SQL',
+    value: 'nosql',
+    items: ['mongodb']
+  },
+  {
+    label: 'Big Data',
+    value: 'bigdata',
+    items: ['hdfs', 'kafka', 'hive']
+  }
+];
+const ConnectorCard = ({ checked }) => {
+  const {
+    siteConfig: { customFields }
+  } = useDocusaurusContext();
+  const { data: connectorList, error } = useConnectorList();
+  if (error) return <div>暂无数据</div>;
   const filterData = useMemo(() => {
-    return data.filter(item => {
+    return connectorList.filter(item => {
       return checked.some(cate => {
         return cateData.find(cateItem => cateItem.value === cate)?.items?.includes(item.id);
       });
     });
-  }, [checked, data]);
+  }, [checked, connectorList]);
+  return !filterData?.length ? (
+    <div className="m-auto col-span-1 lg:col-span-2 xl:col-span-3">暂无数据</div>
+  ) : (
+    <>
+      {filterData.map(item => (
+        <Card padding={0} className="hover:shadow-lg h-fit" radius="lg" withBorder>
+          <Card.Section className={clsx('flex gap-4 sm:gap-8', 'no-underline', 'p-4 pb-3 sm:p-8 sm:pb-6')}>
+            <div className={clsx('w-6 h-6 sm:w-12 sm:h-12 flex items-center justify-center')}>
+              <Image fit="fill" alt={item.id} src={`${customFields.FETCH_PREFIX}/${item?.link}icon.svg`} />
+            </div>
+
+            <div className={clsx('flex flex-col gap-2')}>
+              <div
+                className={clsx('text-gray-700 dark:text-gray-200', 'font-semibold flex items-center gap-2')}
+              >
+                {item?.title}
+              </div>
+              <div
+                className={clsx('text-gray-600 dark:text-gray-300', 'text-xs sm:text-sm')}
+                // dangerouslySetInnerHTML={{ __html: description }}
+              >
+                <div className="flex flex-wrap items-start gap-2">
+                  {item?.version ? (
+                    <Badge variant="outline" color="gray">
+                      {item.version}
+                    </Badge>
+                  ) : undefined}
+                  {item?.stage ? (
+                    <Badge variant="outline" color="gray">
+                      {item.stage}
+                    </Badge>
+                  ) : undefined}
+                  {item?.vendor ? (
+                    <Badge variant="outline" color="gray">
+                      {item.vendor}
+                    </Badge>
+                  ) : undefined}
+                </div>
+              </div>
+            </div>
+          </Card.Section>
+          <div className="flex items-center w-full">
+            <Link className="text-sm no-underline w-full" to={`/docs/concept/connectors/${item.id}`}>
+              <Button size="xs" variant="subtle" fullWidth>
+                查看文档
+              </Button>
+            </Link>
+            <Link className="text-sm no-underline w-full" to={`/tests?keyword=${item.id}`}>
+              <Button size="xs" variant="subtle" fullWidth>
+                测试报告
+              </Button>
+            </Link>
+          </div>
+        </Card>
+      ))}
+    </>
+  );
+};
+
+const List = () => {
+  const [checked, setChecked] = React.useState<string[]>(['rdbms', 'nosql', 'bigdata']);
+  const [visible, setVisible] = React.useState(true);
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+  useEffect(() => {
+    if (visible) {
+      setTimeout(() => {
+        setVisible(false);
+      }, 500);
+    }
+  }, [visible]);
   return (
     <div className="flex gap-8 items-start">
       <div className="flex-none w-fit">
-        {cateData.map(cate => (
-          <div className="flex gap-4 items-center my-2">
-            <input
-              type="checkbox"
-              onChange={e =>
-                setChecked(check => {
-                  return checked.includes(cate.value)
-                    ? checked.filter(item => item !== cate.value)
-                    : [...checked, cate.value];
-                })
-              }
-              checked={checked.includes(cate.value)}
-              className="checkbox"
-              aria-label={cate.label}
-            />
-            <span>{cate.label}</span>
-          </div>
-        ))}
+        <Checkbox.Group
+          value={checked}
+          onChange={value => {
+            setChecked(value);
+            setVisible(true);
+          }}
+        >
+          {cateData.map(cate => (
+            <div className="flex gap-4 items-center my-2">
+              <Checkbox value={cate.value} label={cate.label} />
+            </div>
+          ))}
+        </Checkbox.Group>
       </div>
       <div className="flex-grow">
-        <div className={clsx('grid', 'grid-cols-1 lg:grid-cols-2', 'gap-8', 'min-h-[calc(100vh-615px)]')}>
-          {loading ? (
-            <span className="loading loading-infinity loading-lg text-refine-blue inline-block m-auto col-span-1 lg:col-span-2"></span>
-          ) : null}
-          {!filterData?.length && !loading ? (
-            <div className="m-auto col-span-1 lg:col-span-2">暂无数据</div>
-          ) : null}
-          {filterData.map(item => (
-            <Card
-              key={item.name}
-              title={item.name}
-              description={item.description}
-              linkUrl={item.url}
-              icon={item.icon}
-            />
-          ))}
+        <div
+          className={clsx(
+            'grid',
+            'grid-cols-1 lg:grid-cols-2 xl:grid-cols-3',
+            'gap-8',
+            'relative',
+            'min-h-[calc(100vh-525px)]'
+          )}
+        >
+          <TimeoutLoadingOverlay visible={visible} onVisibleChange={setVisible} overlayBlur={10} />
+          <Suspense fallback={<Loader />}>
+            <ConnectorCard checked={checked}></ConnectorCard>
+          </Suspense>
         </div>
       </div>
     </div>
@@ -77,102 +146,14 @@ const List = ({ data, loading }: { data: Connector[]; loading: boolean }) => {
 };
 
 const Connectors: React.FC = () => {
-  const [loading, setLoading] = React.useState(false);
-  const [connectorList, setConnectorList] = React.useState<Connector[]>([]);
-  const fetchConnectorList = useCallback(async () => {
-    try {
-      setLoading(true);
-
-      const response = await fetch(`/api/v1/connection/spec/list`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        }
-      });
-
-      const json = await response.json();
-      if (json?.code) {
-        setConnectorList(
-          json?.data?.map(item => {
-            return {
-              id: item.id,
-              name: item.title,
-              description: (
-                <div className='flex flex-wrap items-start'>
-                  {item?.vendor ? (
-                    <span
-                      className={clsx(
-                        'no-underline hover:no-underline',
-                        'text-xs',
-                        'bg-gray-100 dark:bg-gray-700',
-                        'text-gray-600 dark:text-gray-400',
-                        'rounded',
-                        'py-1',
-                        'px-2',
-                        'mx-1'
-                      )}
-                    >
-                      {item.vendor}
-                    </span>
-                  ) : undefined}
-                  {item?.stage ? (
-                    <span
-                      className={clsx(
-                        'no-underline hover:no-underline',
-                        'text-xs',
-                        'bg-gray-100 dark:bg-gray-700',
-                        'text-gray-600 dark:text-gray-400',
-                        'rounded',
-                        'py-1',
-                        'px-2',
-                        'mx-1'
-                      )}
-                    >
-                      {item.stage}
-                    </span>
-                  ) : undefined}
-                  {item?.version ? (
-                    <span
-                      className={clsx(
-                        'no-underline hover:no-underline',
-                        'text-xs',
-                        'bg-gray-100 dark:bg-gray-700',
-                        'text-gray-600 dark:text-gray-400',
-                        'rounded',
-                        'py-1',
-                        'px-2',
-                        'mx-1'
-                      )}
-                    >
-                      {item.version}
-                    </span>
-                  ) : undefined}
-                </div>
-              ),
-              url: `/docs/concept/connectors/${item.id}`,
-              icon: `https://demo.1stblue.cloud/${item?.link}icon.svg`
-            };
-          }) || []
-        );
-      }
-      console.log(json);
-    } catch (error) {
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-  useEffect(() => {
-    fetchConnectorList();
-  }, []);
   return (
-    <ConnectorsLayout>
+    <ConnectorsLayout title="连接器">
       <div className={clsx('max-w-[624px]')}>
         <div
           className={clsx(
             'font-semibold',
             'text-gray-700 dark:text-gray-200',
-            'text-xl sm:text-[40px] sm:leading-[56px]'
+            'text-xl sm:text-[30px] sm:leading-[46px]'
           )}
         >
           连接器
@@ -190,8 +171,7 @@ const Connectors: React.FC = () => {
       </div>
 
       <div className={clsx('my-10', 'border-b border-gray-200 dark:border-gray-700')} />
-
-      <List data={connectorList} loading={loading} />
+      <List />
     </ConnectorsLayout>
   );
 };

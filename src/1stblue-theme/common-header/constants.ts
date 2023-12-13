@@ -92,6 +92,11 @@ export const MENU_ITEMS: MenuItemType[] = [
     isPopover: false,
     label: '连接器',
     href: '/connectors'
+  },
+  {
+    isPopover: false,
+    label: '测试集',
+    href: '/tests'
   }
   // {
   //   isPopover: false,

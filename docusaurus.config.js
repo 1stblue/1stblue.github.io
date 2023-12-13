@@ -15,7 +15,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
+  staticDirectories: ['public', 'static'],
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: '1stblue', // Usually your GitHub org/user name.
@@ -160,7 +160,8 @@ const config = {
   },
   customFields: {
     /** Live Preview */
-    LIVE_PREVIEW_URL: process.env.LIVE_PREVIEW_URL ?? 'http://localhost:3030/preview'
+    LIVE_PREVIEW_URL: process.env.LIVE_PREVIEW_URL ?? 'http://localhost:3030/preview',
+    FETCH_PREFIX: process.env.FETCH_PREFIX ?? 'http://localhost'
     /** ---- */
   },
   webpack: {
