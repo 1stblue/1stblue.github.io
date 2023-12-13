@@ -161,7 +161,7 @@ const config = {
   customFields: {
     /** Live Preview */
     LIVE_PREVIEW_URL: process.env.LIVE_PREVIEW_URL ?? 'http://localhost:3030/preview',
-    FETCH_PREFIX: process.env.FETCH_PREFIX ?? 'http://localhost'
+    FETCH_PREFIX: process.env.FETCH_PREFIX ?? 'https://demo.1stblue.cloud'
     /** ---- */
   },
   webpack: {
