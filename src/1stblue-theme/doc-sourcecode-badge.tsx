@@ -19,7 +19,7 @@ export const SourceCodeBadge = ({ path }: { path?: string }) => {
                 "text-gray-0",
                 "py-2 pl-2 pr-3",
                 "rounded",
-                "bg-refine-pink",
+                "bg-bluepipe-pink",
                 "font-mono",
                 "flex gap-2 items-center",
                 "hover:no-underline hover:text-gray-0",

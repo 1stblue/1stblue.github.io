@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 import { CloudTipIcon, GithubIcon } from "../../landing/icons";
 
 const token = "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";
-const repo = "refine";
+const repo = "bluepipe";
 const org = "pankod";
 
 const GithubBanner = () => {
@@ -42,7 +42,7 @@ const GithubBanner = () => {
                         Star us on github
                     </h1>
                     <p className="mb-0 text-base leading-tight">
-                        <b>refine</b> is an{" "}
+                        <b>bluepipe</b> is an{" "}
                         <b>open-source React-based framework</b>
                         for building <b>CRUD applications</b> without
                         constraints. Please show us your <b>support</b> with a

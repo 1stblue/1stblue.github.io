@@ -29,10 +29,8 @@ const CodeBlockTitle = ({
                 "text-[13px]",
                 "leading-5",
                 "text-gray-600",
-                "dark:text-gray-300",
 
                 "border-b",
-                "dark:border-b-gray-700",
                 "font-mono",
                 "flex items-center",
                 "gap-2",
@@ -97,9 +95,7 @@ export const CodeBlockString = ({
                 "rounded-md",
                 // "bg-gray-700",
                 "bg-gray-50",
-                "dark:bg-gray-800",
                 "border",
-                "dark:border-gray-700",
                 "mb-6",
                 "relative",
             )}

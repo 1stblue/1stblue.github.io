@@ -17,15 +17,15 @@ export const CommonDetails = (props) => {
             {...props}
             className={clsx(
                 props.className,
-                "refine-details",
-                "border dark:border-gray-700 border-gray-200",
+                "bluepipe-details",
+                "border  border-gray-200",
                 "rounded-lg",
                 "overflow-hidden",
                 "mb-4",
             )}
             summary={summary}
         >
-            <div className={clsx("refine-details-content")}>{children}</div>
+            <div className={clsx("bluepipe-details-content")}>{children}</div>
         </DetailsGeneric>
     );
 };

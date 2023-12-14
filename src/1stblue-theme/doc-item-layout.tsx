@@ -33,7 +33,6 @@ export const DocItemLayout = ({ children }) => {
                 <div className={clsx("max-w-screen-content w-full", "min-h-[calc(100vh-80px-64px-64px)]")}>
                     <DocVersionBanner />
                     <div className={clsx("flex flex-col", "mb-8")}>
-                        {/* {tutorial?.isTutorial ? null : <DocBreadcrumbs />} */}
                         <DocBreadcrumbs />
                         <div
                             className={clsx(
@@ -49,7 +48,7 @@ export const DocItemLayout = ({ children }) => {
                         </div>
                     </div>
                         <DocTOCMobile />
-                    <div className={clsx("refine-prose")}>
+                    <div className={clsx("bluepipe-prose")}>
                         <DocItemContent>{children}</DocItemContent>
                     </div>
                     <DocItemFooter />

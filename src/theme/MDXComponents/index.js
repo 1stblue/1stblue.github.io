@@ -4,9 +4,6 @@ import DiscordBanner from "@site/src/components/blog/discord-banner";
 import GithubBanner from "@site/src/components/blog/github-banner";
 import PromotionBanner from "@site/src/components/blog/promotion";
 import TwitterBanner from "@site/src/components/blog/twitter-banner";
-import CodeSandboxExample from "@site/src/components/codesandbox-example";
-import ExampleLocalPrompt from "@site/src/components/example-local-prompt";
-import ExampleSourcePrompt from "@site/src/components/example-source-prompt";
 import GeneralConceptsLink from "@site/src/components/general-concepts-link";
 import { GlobalConfigBadge } from "@site/src/components/global-config-badge";
 import { GuideBadge } from "@site/src/components/guide-badge";
@@ -29,9 +26,6 @@ export default {
     Tabs: CommonTabs,
     TabItem: CommonTabItem,
     GeneralConceptsLink,
-    CodeSandboxExample,
-    ExampleLocalPrompt,
-    ExampleSourcePrompt,
     GuideBadge,
     RouterBadge,
     GlobalConfigBadge,

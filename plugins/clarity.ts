@@ -2,7 +2,7 @@ import type { Plugin } from "@docusaurus/types";
 
 export default async function microsoftClarity(): Promise<Plugin> {
     return {
-        name: "docusaurus-plugin-refine-clarity",
+        name: "docusaurus-plugin-bluepipe-clarity",
         injectHtmlTags() {
             return {
                 headTags: [

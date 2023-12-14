@@ -12,7 +12,7 @@ export const SecurityIcon = (props: SVGProps<SVGSVGElement>) => (
         {...props}
         className={clsx(
             props.className,
-            "dark:text-refine-green-alt text-refine-green",
+            " text-bluepipe-green",
         )}
     >
         <rect

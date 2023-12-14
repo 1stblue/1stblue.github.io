@@ -13,8 +13,7 @@ const list = [
       {
         title: 'Fully Tested',
         link: '/docs',
-        description:
-          '通过全自动化的集成测试框架来发现或者验证系统中的薄弱环节或者边界值。'
+        description: '通过全自动化的集成测试框架来发现或者验证系统中的薄弱环节或者边界值。'
       },
       {
         title: '安全为重，风控先行',
@@ -24,8 +23,7 @@ const list = [
       {
         title: '流批融合与应急响应',
         link: '/docs',
-        description:
-          '通过全自动化的集成测试框架来发现或者验证系统中的薄弱环节或者边界值。'
+        description: '通过全自动化的集成测试框架来发现或者验证系统中的薄弱环节或者边界值。'
       }
     ]
   },
@@ -69,13 +67,13 @@ const list = [
       {
         title: '技术中立，无任何锁定',
         link: '/docs',
-        description: '坚持无供应商锁定，无网络环境锁定。我们的软件能够方便地部署在阿里云、AWS、Azure、甚至您自己的笔记本电脑上，从而使您的数据能够安全、自由地流动。'
+        description:
+          '坚持无供应商锁定，无网络环境锁定。我们的软件能够方便地部署在阿里云、AWS、Azure、甚至您自己的笔记本电脑上，从而使您的数据能够安全、自由地流动。'
       },
       {
         title: '集成简单',
         link: '/docs',
-        description:
-          '我们提供了不同的 SDK 方便客户将我们的能力集成到别的产品中去，从而实现更顺滑的体验'
+        description: '我们提供了不同的 SDK 方便客户将我们的能力集成到别的产品中去，从而实现更顺滑的体验'
       }
     ]
   }
@@ -93,14 +91,7 @@ export const LandingCoreAdvantages: FC<Props> = ({ className }) => {
           <div key={index} className={clsx('heading-base', item.theme)}>
             <div className="heading-base__inner">
               <div className="heading-base__eyebrow">
-                <span
-                  className={clsx(
-                    'font-normal',
-                    'text-base',
-                    'text-gray-600 dark:text-gray-300',
-                    'text--size-eyebrow'
-                  )}
-                >
+                <span className={clsx('font-normal', 'text-base', 'text-gray-600 ', 'text--size-eyebrow')}>
                   {item.tag}
                 </span>
               </div>
@@ -113,7 +104,7 @@ export const LandingCoreAdvantages: FC<Props> = ({ className }) => {
                     'landing-sm:max-w-[588px]',
                     'landing-sm:tracking-[-2%]',
                     'font-extrabold',
-                    'text-gray-900 dark:text-gray-0'
+                    'text-gray-900 '
                   )}
                 >
                   {item.title}
@@ -122,12 +113,7 @@ export const LandingCoreAdvantages: FC<Props> = ({ className }) => {
               <div className="heading-base__subhead">
                 <span className="text--size-subhead-lg">
                   <p
-                    className={clsx(
-                      'font-normal',
-                      'text-base',
-                      'text-gray-600 dark:text-gray-300',
-                      'landing-xs:max-w-[384px]'
-                    )}
+                    className={clsx('font-normal', 'text-base', 'text-gray-600 ', 'landing-xs:max-w-[384px]')}
                   >
                     <span>{item.description}</span>
                   </p>
@@ -138,8 +124,8 @@ export const LandingCoreAdvantages: FC<Props> = ({ className }) => {
           </div>
           <div
             className={clsx(
-                "mt-12 landing-sm:mt-16 landing-md:mt-20 landing-lg:mt-40",
-                'pb-12 landing-sm:pb-16 landing-md:pb-20 landing-lg:pb-40',
+              'mt-12 landing-sm:mt-16 landing-md:mt-20 landing-lg:mt-40',
+              'pb-12 landing-sm:pb-16 landing-md:pb-20 landing-lg:pb-40',
               'grid',
               'grid-cols-1 landing-md:grid-cols-2 landing-lg:grid-cols-3',
               'gap-4 landing-sm:gap-12 landing-md:gap-6'
@@ -156,23 +142,15 @@ export const LandingCoreAdvantages: FC<Props> = ({ className }) => {
                     'flex-col landing-sm:flex-row landing-md:flex-col',
                     'items-start',
                     'gap-6',
-                    'dark:bg-landing-noise',
-                    'dark:bg-gray-800 bg-gray-50',
+                    ' bg-gray-50',
                     'rounded-2xl landing-sm:rounded-3xl'
                   )}
                 >
                   <div className={clsx('flex', 'flex-col', 'gap-4', 'h-full')}>
-                    <div
-                      className={clsx(
-                        'text-xl',
-                        'font-semibold',
-                        'flex-none',
-                        'text-gray-900 dark:text-gray-0'
-                      )}
-                    >
+                    <div className={clsx('text-xl', 'font-semibold', 'flex-none', 'text-gray-900 ')}>
                       {child.title}
                     </div>
-                    <div className={clsx('text-base', 'flex-grow', 'dark:text-gray-400 text-gray-600')}>
+                    <div className={clsx('text-base', 'flex-grow', ' text-gray-600')}>
                       {child.description}
                     </div>
                     <Link to={child.link} className={'flex items-center flex-none'}>

@@ -7,12 +7,10 @@ export const CommonSummary = ({ children, className, ...props }) => {
         <summary
             className={clsx(
                 "bg-gray-50",
-                "dark:bg-gray-800",
                 "p-2",
                 "flex items-center gap-2",
                 "before:hidden",
                 "-mb-px",
-                "dark:border-b dark:border-b-gray-700",
             )}
             {...props}
         >
@@ -20,10 +18,10 @@ export const CommonSummary = ({ children, className, ...props }) => {
                 className={clsx("w-8 h-8", "flex items-center justify-center")}
             >
                 <TriangleDownIcon
-                    className={clsx("refine-details-triangle", "text-gray-500")}
+                    className={clsx("bluepipe-details-triangle", "text-gray-500")}
                 />
             </div>
-            <span className="text-gray-900 dark:text-gray-0">{children}</span>
+            <span className="text-gray-900">{children}</span>
         </summary>
     );
 };

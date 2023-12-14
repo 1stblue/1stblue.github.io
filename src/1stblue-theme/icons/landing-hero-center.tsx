@@ -10,16 +10,9 @@ export const LandingHeroCenterSvg = (props: React.SVGProps<SVGSVGElement>) => (
             fill="none"
             {...props}
         >
-            {/* <image
-                className="hidden dark:block"
-                href="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/landing-hero-animation/center-logo-dark.png"
-                x={0}
-                y={0}
-                width={128}
-                height={128}
-            /> */}
+      
             <image
-                className="block dark:hidden"
+                className="block"
                 href="/img/logo.svg"
                 x={0}
                 y={0}

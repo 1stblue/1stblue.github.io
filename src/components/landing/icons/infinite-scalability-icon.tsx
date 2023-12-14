@@ -12,7 +12,7 @@ export const InfiniteScalabilityIcon = (props: SVGProps<SVGSVGElement>) => (
         {...props}
         className={clsx(
             props.className,
-            "dark:text-refine-cyan-alt text-refine-cyan",
+            " text-bluepipe-cyan",
         )}
     >
         <rect

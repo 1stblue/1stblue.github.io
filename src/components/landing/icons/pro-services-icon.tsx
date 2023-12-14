@@ -10,7 +10,7 @@ export const ProServicesIcon = (props: SVGProps<SVGSVGElement>) => (
         viewBox="0 0 64 64"
         fill="none"
         {...props}
-        className={clsx(props.className, "text-refine-red")}
+        className={clsx(props.className, "text-bluepipe-red")}
     >
         <rect
             width={64}

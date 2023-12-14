@@ -7,10 +7,10 @@ import { CommonLayout } from "@site/src/1stblue-theme/common-layout";
 const PrivacyPolicy: React.FC = () => {
     return (
         <CommonLayout>
-            <Head title="Privacy Policy | refine">
+            <Head title="Privacy Policy | bluepipe">
                 <html data-page="privacy_policy" data-customized="true" />
             </Head>
-            <div className="refine-prose">
+            <div className="bluepipe-prose">
                 <CommonHeader hasSticky={true} />
 
                 <div className="flex-1 flex flex-col pt-8 lg:pt-16 pb-32 max-w-[800px] w-full mx-auto px-2">
@@ -210,10 +210,10 @@ const PrivacyPolicy: React.FC = () => {
                         </li>
                         <li>
                             <p>
-                                <strong>Website</strong> refers to refine.new,
+                                <strong>Website</strong> refers to bluepipe.new,
                                 accessible from{" "}
-                                <a href="https://refine.new/">
-                                    https://refine.new/
+                                <a href="https://bluepipe.new/">
+                                    https://bluepipe.new/
                                 </a>
                             </p>
                         </li>
@@ -1571,7 +1571,7 @@ const PrivacyPolicy: React.FC = () => {
                         resident, You can contact Us:
                     </p>
                     <ul>
-                        <li>By email: info@refine.dev</li>
+                        <li>By email: info@bluepipe.dev</li>
                     </ul>
                     <p>
                         Only You, or a person registered with the California
@@ -1858,7 +1858,7 @@ const PrivacyPolicy: React.FC = () => {
                         can contact us:
                     </p>
                     <ul>
-                        <li>By email: info@refine.dev</li>
+                        <li>By email: info@bluepipe.dev</li>
                     </ul>
                 </div>
                 <LandingFooter />

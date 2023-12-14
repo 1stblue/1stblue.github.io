@@ -30,7 +30,7 @@ export const LandingTile = ({
                 className={clsx(
                     "w-full",
                     "h-full",
-                    "bg-refine-bg",
+                    "bg-bluepipe-bg",
                     "bg-landing-tile-tile-bg",
                     "rounded-[13px]",
                     "overflow-hidden",
@@ -68,9 +68,9 @@ export const LandingTile = ({
                                 "landing-lg:w-16",
                                 "landing-lg:h-16",
                                 "flex-shrink-0",
-                                "border border-refine-landing-tile-icon-border",
+                                "border border-bluepipe-landing-tile-icon-border",
                                 "rounded-full",
-                                "bg-refine-bg",
+                                "bg-bluepipe-bg",
                                 "flex items-center justify-center",
                             )}
                         >

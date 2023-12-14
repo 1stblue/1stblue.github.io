@@ -1,6 +1,6 @@
 import React, { Suspense, useCallback, useEffect, useMemo } from 'react';
 import clsx from 'clsx';
-import ConnectorsLayout from '@site/src/components/integrations/layout';
+import ConnectorsLayout from '@site/src/components/layout';
 import { Avatar, Badge, Box, Button, Card, Checkbox, Image, Loader } from '@mantine/core';
 import { useConnectorList } from '@site/src/components/tests/server';
 import Link from '@docusaurus/Link';
@@ -48,13 +48,11 @@ const ConnectorCard = ({ checked }) => {
             </div>
 
             <div className={clsx('flex flex-col gap-2')}>
-              <div
-                className={clsx('text-gray-700 dark:text-gray-200', 'font-semibold flex items-center gap-2')}
-              >
+              <div className={clsx('text-gray-700 ', 'font-semibold flex items-center gap-2')}>
                 {item?.title}
               </div>
               <div
-                className={clsx('text-gray-600 dark:text-gray-300', 'text-xs sm:text-sm')}
+                className={clsx('text-gray-600 ', 'text-xs sm:text-sm')}
                 // dangerouslySetInnerHTML={{ __html: description }}
               >
                 <div className="flex flex-wrap items-start gap-2">
@@ -149,28 +147,15 @@ const Connectors: React.FC = () => {
   return (
     <ConnectorsLayout title="连接器">
       <div className={clsx('max-w-[624px]')}>
-        <div
-          className={clsx(
-            'font-semibold',
-            'text-gray-700 dark:text-gray-200',
-            'text-xl sm:text-[30px] sm:leading-[46px]'
-          )}
-        >
+        <div className={clsx('font-semibold', 'text-gray-700 ', 'text-xl sm:text-[30px] sm:leading-[46px]')}>
           连接器
         </div>
-        <div
-          className={clsx(
-            'font-semibold',
-            'text-gray-700 dark:text-gray-300',
-            'text-xs sm:text-base',
-            'mt-4 sm:mt-8'
-          )}
-        >
+        <div className={clsx('font-semibold', 'text-gray-700 ', 'text-xs sm:text-base', 'mt-4 sm:mt-8')}>
           20+高质量连接器，可扩展性强
         </div>
       </div>
 
-      <div className={clsx('my-10', 'border-b border-gray-200 dark:border-gray-700')} />
+      <div className={clsx('my-10', 'border-b border-gray-200 ')} />
       <List />
     </ConnectorsLayout>
   );

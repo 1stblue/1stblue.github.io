@@ -10,7 +10,7 @@ export const BadgeTooltip = ({ children, content }: Props) => {
     return (
         <div
             className={clsx(
-                "refine-info-badge",
+                "bluepipe-info-badge",
                 "relative",
                 "group",
                 "inline-flex",

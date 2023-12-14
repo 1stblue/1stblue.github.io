@@ -30,7 +30,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en']
+    locales: ['zh-Hans']
   },
 
   presets: [
@@ -44,17 +44,7 @@ const config = {
 
           admonitions: {
             tag: ':::',
-            keywords: [
-              'additional',
-              'note',
-              'tip',
-              'info-tip',
-              'info',
-              'caution',
-              'danger',
-              'sourcecode',
-              'create-example'
-            ]
+            keywords: ['additional', 'note', 'tip', 'info-tip', 'info', 'caution', 'danger', 'sourcecode']
           }
         },
         blog: false,
@@ -62,9 +52,7 @@ const config = {
           customCss: [
             require.resolve('./src/1stblue-theme/css/fonts.css'),
             require.resolve('./src/1stblue-theme/css/custom.css'),
-            require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/split-pane.css'),
-            require.resolve('./src/css/demo-page.css')
+            require.resolve('./src/css/custom.css')
           ]
         },
         gtag: {
@@ -93,7 +81,6 @@ const config = {
         }
       };
     },
-    './plugins/examples.js',
     ...(process.env.DISABLE_BLOG
       ? []
       : [
@@ -117,7 +104,7 @@ const config = {
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/nightOwlLight'),
-      darkTheme: require('prism-react-renderer/themes/vsDark'),
+      // darkTheme: require('prism-react-renderer/themes/vsDark'),
       magicComments: [
         // Remember to extend the default highlight class name as well!
         {
@@ -155,12 +142,13 @@ const config = {
       }
     },
     colorMode: {
-      defaultMode: 'light'
-    }
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
   },
   customFields: {
     /** Live Preview */
-    LIVE_PREVIEW_URL: process.env.LIVE_PREVIEW_URL ?? 'http://localhost:3030/preview',
     FETCH_PREFIX: process.env.FETCH_PREFIX ?? 'https://demo.1stblue.cloud'
     /** ---- */
   },
