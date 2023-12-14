@@ -12,7 +12,7 @@ export const BlackBoxIcon = (props: SVGProps<SVGSVGElement>) => (
         {...props}
         className={clsx(
             props.className,
-            "dark:text-refine-purple-alt text-refine-purple",
+            " text-bluepipe-purple",
         )}
     >
         <rect

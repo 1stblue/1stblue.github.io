@@ -39,19 +39,12 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
                 'landing-sm:max-w-[588px]',
                 'landing-sm:tracking-[-2%]',
                 'font-extrabold',
-                'text-gray-900 dark:text-gray-0'
+                'text-gray-900 '
               )}
             >
               数据因自由流动而美好
             </h1>
-            <p
-              className={clsx(
-                'font-normal',
-                'text-base',
-                'text-gray-600 dark:text-gray-300',
-                'landing-xs:max-w-[384px]'
-              )}
-            >
+            <p className={clsx('font-normal', 'text-base', 'text-gray-600 ', 'landing-xs:max-w-[384px]')}>
               帮助您构建可靠、高效、可持续发展的数据流
             </p>
           </div>
@@ -61,8 +54,8 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
               className={clsx(
                 'self-start',
                 'rounded-3xl',
-                '!text-gray-0 dark:!text-gray-900',
-                'bg-refine-blue dark:bg-refine-cyan-alt',
+                '!text-gray-0 ',
+                'bg-bluepipe-blue ',
                 'transition-[filter]',
                 'duration-150',
                 'ease-in-out',
@@ -92,9 +85,9 @@ export const LandingHeroSection = ({ className }: { className?: string }) => {
                   'py-3',
                   'px-6',
                   'rounded-3xl',
-                  'bg-refine-blue dark:bg-refine-cyan-alt',
-                  'bg-opacity-10 dark:bg-opacity-10',
-                  'text-refine-blue dark:text-refine-cyan-alt',
+                  'bg-bluepipe-blue ',
+                  'bg-opacity-10',
+                  'text-bluepipe-blue ',
                   ' leading-5',
                   'leading-6',
                   'font-jetBrains-mono',

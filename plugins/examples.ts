@@ -111,14 +111,14 @@ const addColorToTags = (tags: string[]) => {
 
 export default function plugin(): Plugin {
     return {
-        name: "docusaurus-plugin-refine-examples",
+        name: "docusaurus-plugin-bluepipe-examples",
         configureWebpack(config) {
             return {
                 resolve: {
                     alias: {
                         "@examples": path.join(
                             config.resolve?.alias?.["@generated"],
-                            "docusaurus-plugin-refine-examples",
+                            "docusaurus-plugin-bluepipe-examples",
                             "default",
                         ),
                     },
@@ -127,7 +127,7 @@ export default function plugin(): Plugin {
         },
         async contentLoaded({ allContent, actions }): Promise<void> {
             if (!process.env.DISABLE_EXAMPLES) {
-                console.log("Composing refine examples...");
+                console.log("Composing bluepipe examples...");
 
                 const { createData } = actions;
 

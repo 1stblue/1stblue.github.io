@@ -12,7 +12,7 @@ export const AccessControlIcon = (props: SVGProps<SVGSVGElement>) => (
         {...props}
         className={clsx(
             props.className,
-            "dark:text-refine-blue-alt text-refine-blue",
+            " text-bluepipe-blue",
         )}
     >
         <rect

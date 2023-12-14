@@ -74,7 +74,7 @@ const ConnectorsAccordion: React.FC = () => {
           ]}
         />
       </Group>
-      <div className={clsx('my-10', 'border-b border-gray-200 dark:border-gray-700')} />
+      <div className={clsx('my-10', 'border-b border-gray-200 ')} />
       <div className={clsx('relative', 'min-h-[calc(100vh-435px)]')}>
         <TimeoutLoadingOverlay visible={visible} onVisibleChange={setVisible} overlayBlur={10} />
         <Accordion
@@ -112,14 +112,12 @@ const TestReportAccordionItem = ({ item, accordion }) => {
             </div>
 
             <div className={clsx('flex flex-col gap-2')}>
-              <div
-                className={clsx('text-gray-700 dark:text-gray-200', 'font-semibold flex items-center gap-2')}
-              >
+              <div className={clsx('text-gray-700 ', 'font-semibold flex items-center gap-2')}>
                 {item?.source?.title}
                 {item?.source?.version ? <Badge>{item?.source.version}</Badge> : undefined}
               </div>
               <div
-                className={clsx('text-gray-600 dark:text-gray-300', 'text-xs sm:text-sm')}
+                className={clsx('text-gray-600 ', 'text-xs sm:text-sm')}
                 // dangerouslySetInnerHTML={{ __html: description }}
               >
                 <div className="flex flex-wrap items-start gap-2">
@@ -147,14 +145,12 @@ const TestReportAccordionItem = ({ item, accordion }) => {
               />
             </div>
             <div className={clsx('flex flex-col gap-2')}>
-              <div
-                className={clsx('text-gray-700 dark:text-gray-200', 'font-semibold flex items-center gap-2')}
-              >
+              <div className={clsx('text-gray-700 ', 'font-semibold flex items-center gap-2')}>
                 {item?.target?.title}
                 {item?.target?.version ? <Badge>{item?.target.version}</Badge> : undefined}
               </div>
               <div
-                className={clsx('text-gray-600 dark:text-gray-300', 'text-xs sm:text-sm')}
+                className={clsx('text-gray-600 ', 'text-xs sm:text-sm')}
                 // dangerouslySetInnerHTML={{ __html: description }}
               >
                 <div className="flex flex-wrap items-start gap-2">

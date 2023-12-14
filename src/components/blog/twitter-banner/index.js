@@ -7,13 +7,13 @@ const TwitterBanner = ({ children }) => {
             <div className="flex flex-col justify-center items-center md:items-start gap-4">
                 <div className="text-center md:text-left">
                     <h1 className="text-white font-montserrat text-2xl leading-tight mb-0">
-                        WANT TO HEAR THE LATEST DEVELOPMENTS ABOUT refine?
+                        WANT TO HEAR THE LATEST DEVELOPMENTS ABOUT bluepipe?
                     </h1>
                     <p className="mb-0 uppercase font-montserrat text-white">
                         Follow us on Twitter.
                     </p>
                 </div>
-                <Link to="https://twitter.com/refine_dev">
+                <Link to="https://twitter.com/bluepipe_dev">
                     <button className="bg-transparent text-white font-bold py-2 px-8 rounded-lg border-white cursor-pointer font-montserrat uppercase text-xl border-solid active:scale-[0.99]">
                         Follow Us
                     </button>
@@ -39,8 +39,8 @@ const TwitterBanner = ({ children }) => {
                                 #ReactJS
                             </a>
                         </p>
-                        &mdash; refine (@refine_dev){" "}
-                        <a href="https://twitter.com/refine_dev/status/1565321477628510208?ref_src=twsrc%5Etfw">
+                        &mdash; bluepipe (@bluepipe_dev){" "}
+                        <a href="https://twitter.com/bluepipe_dev/status/1565321477628510208?ref_src=twsrc%5Etfw">
                             September 1, 2022
                         </a>
                     </blockquote>

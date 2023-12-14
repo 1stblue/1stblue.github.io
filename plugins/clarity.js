@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 async function microsoftClarity() {
     return {
-        name: "docusaurus-plugin-refine-clarity",
+        name: "docusaurus-plugin-bluepipe-clarity",
         injectHtmlTags() {
             return {
                 headTags: [

@@ -49,5 +49,5 @@ export const secondaryMenuItems = [
     },
 ];
 
-export const footerDescription = `refine is a React-based framework for the rapid development of web applications. It eliminates the repetitive tasks demanded by CRUD operations and provides industry standard solutions.`;
+export const footerDescription = `bluepipe is a React-based framework for the rapid development of web applications. It eliminates the repetitive tasks demanded by CRUD operations and provides industry standard solutions.`;
 

@@ -9,7 +9,7 @@ export const SwizzleBadge = () => {
                 "text-gray-0",
                 "py-2 px-3",
                 "rounded",
-                "bg-refine-blue",
+                "bg-bluepipe-blue",
                 "font-mono",
             )}
         >

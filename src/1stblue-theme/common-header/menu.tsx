@@ -14,15 +14,13 @@ export const Menu: React.FC = () => {
           return (
             <NavbarPopoverItem key={`navbar-${item.label}`} item={item}>
               {!item?.split ? (
-                <div
-                  className={clsx('grid grid-cols-2 gap-4', 'p-4', 'w-[672px]', 'dark:bg-gray-900 bg-white')}
-                >
+                <div className={clsx('grid grid-cols-2 gap-4', 'p-4', 'w-[672px]', ' bg-white')}>
                   {item.items.map(subItem => (
                     <MenuItem key={subItem.label} item={subItem} />
                   ))}
                 </div>
               ) : (
-                <div className={clsx('grid gap-4', 'p-4', 'w-[336px]', 'dark:bg-gray-900 bg-white')}>
+                <div className={clsx('grid gap-4', 'p-4', 'w-[336px]', ' bg-white')}>
                   {item.items.map(subItem => (
                     <MenuItem key={subItem.label} item={subItem} />
                   ))}

@@ -28,7 +28,7 @@ const PropTag: React.FC<React.PropsWithChildren<Props>> = ({
                     "py-0.5",
                     "px-2",
                     "rounded",
-                    "bg-refine-orange",
+                    "bg-bluepipe-orange",
                     "tracking-wide",
                     "align-middle",
                 )}
@@ -47,7 +47,7 @@ const PropTag: React.FC<React.PropsWithChildren<Props>> = ({
                     "text-sm",
                     "text-gray-0",
                     "rounded-full",
-                    "bg-refine-red",
+                    "bg-bluepipe-red",
                     "ml-1",
                     "w-4 h-4",
                     "align-middle",
@@ -70,7 +70,7 @@ const PropTag: React.FC<React.PropsWithChildren<Props>> = ({
                     "py-0.5",
                     "px-2",
                     "rounded",
-                    "bg-refine-red",
+                    "bg-bluepipe-red",
                     "tracking-wide",
                     "align-middle",
                 )}
@@ -92,7 +92,7 @@ const PropTag: React.FC<React.PropsWithChildren<Props>> = ({
                     "py-0.5",
                     "px-2",
                     "rounded",
-                    "bg-refine-green",
+                    "bg-bluepipe-green",
                     "tracking-wide",
                     "align-middle",
                 )}

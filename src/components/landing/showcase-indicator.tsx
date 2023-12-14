@@ -45,7 +45,6 @@ export const ShowcaseIndicator = React.memo(function ShowcaseIndicatorBase({
                         "-translate-x-1/2",
                         "-translate-y-1/2",
                         "bg-landing-hero-xray-dot-center-bg-light",
-                        "dark:bg-landing-hero-xray-dot-center-bg",
                         "pointer-events-auto",
                     )}
                 />
@@ -73,8 +72,7 @@ export const ShowcaseIndicator = React.memo(function ShowcaseIndicatorBase({
                                 "h-4",
                                 "rounded-full",
                                 "border-2",
-                                "border-refine-blue",
-                                "dark:border-refine-cyan",
+                                "border-bluepipe-blue",
                             )}
                             style={{
                                 animationDelay: `${d}ms`,

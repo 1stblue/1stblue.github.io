@@ -40,7 +40,7 @@ export const RefineBlogLayout = (props: any) => {
                
                 <div
                     className={clsx(
-                        "refine-prose",
+                        "bluepipe-prose",
                         "flex-1",
                         "min-w-0",
                         "xl:px-8",
@@ -61,7 +61,6 @@ export const RefineBlogLayout = (props: any) => {
                 )}
             </div>
             <LandingFooter />
-            {/* <BannerModal /> */}
         </CommonLayout>
     );
 };

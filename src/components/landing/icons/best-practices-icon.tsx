@@ -12,7 +12,7 @@ export const BestPracticeIcon = (props: SVGProps<SVGSVGElement>) => (
         {...props}
         className={clsx(
             props.className,
-            "dark:text-refine-yellow text-refine-orange",
+            " text-bluepipe-orange",
         )}
     >
         <rect

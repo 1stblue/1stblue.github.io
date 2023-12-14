@@ -9,7 +9,6 @@ export { default as ExpertIcon } from "./expert";
 export { default as ContributeIcon } from "./contribute";
 export { default as UseCasesIcon } from "./use-cases";
 export { default as RefineWeekIcon } from "./refine-week";
-export { default as AboutUsIcon } from "./about-us";
 export { default as RefineStoreIcon } from "./refine-store";
 export { default as RefineIcon } from "./refine";
 export { default as ChevronDownIcon } from "./chevron-down";
