@@ -25,6 +25,7 @@ Docker部署仅用于进行产品原型验证，不能用于生产环境。
 ### 软件依赖
 
 * Docker 24.* 及以上
+* 终端浏览器：Chrome 109.* 及以上
 
 ### 网络要求
 
@@ -34,6 +35,7 @@ Docker部署仅用于进行产品原型验证，不能用于生产环境。
 ## 安装 Docker
 
 ### 通过yum安装
+
 #### 增加yum源
 
 ```powershell
@@ -52,7 +54,9 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```powershell
 sudo systemctl start docker
 ```
+
 ### 其他方式
+
 更多安装详情请查看Docker官方文档
 [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
 
