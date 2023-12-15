@@ -3,7 +3,7 @@ id: deploy-docker
 sidebar_position: 1
 ---
 
-# 采用 Docker 本地部署
+# 采用 Docker 部署
 
 :::caution
 Docker部署仅用于进行产品原型验证，不能用于生产环境。
