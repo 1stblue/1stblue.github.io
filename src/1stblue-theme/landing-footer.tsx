@@ -8,7 +8,7 @@ export const LandingFooter = () => {
     <div className={clsx('py-6 landing-lg:py-0', 'flex', 'flex-col', 'gap-4', 'landing-lg:max-w-[224px]')}>
       <div className={clsx('font-semibold', 'text-sm', 'leading-6', 'text-gray-900')}>关于萃蓝</div>
       <div className={clsx('font-normal', 'text-sm', 'leading-5', 'text-gray-600')}>
-        有团队、有钱、有三方认证
+
       </div>
     </div>
   );
@@ -107,7 +107,7 @@ export const LandingFooter = () => {
               'justify-start'
             )}
           >
-           
+
           </div>
           <div
             className={clsx(
@@ -120,8 +120,7 @@ export const LandingFooter = () => {
               'font-normal'
             )}
           >
-            {"© 2023, Bluepipe from HangZhou to wherever you're with "}
-            <HeartOutlinedIcon className={clsx('ml-1', 'text-bluepipe-red', 'inline', 'leading-5')} />
+            {"© 2023, 1stblue.com."}
           </div>
         </div>
       </div>
