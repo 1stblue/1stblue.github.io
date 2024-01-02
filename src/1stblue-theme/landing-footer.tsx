@@ -120,7 +120,7 @@ export const LandingFooter = () => {
               'font-normal'
             )}
           >
-            {"© 2023, 1stblue.com."}
+            {"© 2024, 1stblue.com"}
           </div>
         </div>
       </div>
