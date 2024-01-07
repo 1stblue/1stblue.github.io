@@ -5,14 +5,8 @@ sidebar_label: 配置与下载
 sidebar_position: 1
 ---
 
-## Maven 仓库
+## SDK与CLI
 
-```xml
-<dependency>
-    <groupId>com.firstblue</groupId>
-    <artifactId>edge-client</artifactId>
-    <version>1.2.10</version>
-</dependency>
-```
+我们提供了`Python`语言的SDK和CLI工具，您可通过下列地址随时获取最新版本：
 
-## SDK 下载
+[https://github.com/1stblue/sdk/releases/tag/latest](https://github.com/1stblue/sdk/releases/tag/latest)
