@@ -73,7 +73,7 @@
 }
 
 .bluepipe-prose table {
-  @apply hover table !important;
+  @apply table !important;
 }
 
 .bluepipe-prose tr,
