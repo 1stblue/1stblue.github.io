@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1stblue.github.io/blog</id>
     <title>1stblue.com Blog</title>
-    <updated>2024-04-23T00:00:00.000Z</updated>
+    <updated>2024-06-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1stblue.github.io/blog"/>
     <subtitle>1stblue.com Blog</subtitle>
     <icon>https://1stblue.github.io/img/favicon.png</icon>
     <rights>Copyright © 2024 1stblue.</rights>
+    <entry>
+        <title type="html"><![CDATA[Release Notes (v.0.11.0)]]></title>
+        <id>https://1stblue.github.io/blog/v0.11.0-release-notes</id>
+        <link href="https://1stblue.github.io/blog/v0.11.0-release-notes"/>
+        <updated>2024-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[主要变化]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要变化">主要变化<a href="#主要变化" class="hash-link" aria-label="主要变化的直接链接" title="主要变化的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="控制台">控制台<a href="#控制台" class="hash-link" aria-label="控制台的直接链接" title="控制台的直接链接">​</a></h3><ul><li>作业配置下放到<code>表</code>层级；此变化可以帮助用户更精细地控制数据复制的范围；</li><li>基于结果表的<code>global search</code>能力。</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="utility">Utility<a href="#utility" class="hash-link" aria-label="Utility的直接链接" title="Utility的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="启动项">启动项<a href="#启动项" class="hash-link" aria-label="启动项的直接链接" title="启动项的直接链接">​</a></h3><ul><li>默认采用<code>20%</code>物理内存模式，以适应<code>POC</code>阶段广泛存在的与其他服务混合部署需求。</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接器">连接器<a href="#连接器" class="hash-link" aria-label="连接器的直接链接" title="连接器的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-database改进"><code>Oracle Database</code>（改进）<a href="#oracle-database改进" class="hash-link" aria-label="oracle-database改进的直接链接" title="oracle-database改进的直接链接">​</a></h3><ul><li><code>CDC</code>：全面支持超过30个字符的表和字段；</li><li>支持<code>ROWID</code>和<code>XID</code>附加列。</li></ul>]]></content>
+        <author>
+            <name>aleafs</name>
+            <uri>https://github.com/aleafs</uri>
+        </author>
+        <category label="Release Notes" term="Release Notes"/>
+        <category label="v0.11.0" term="v0.11.0"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release Notes (v.0.10.1)]]></title>
         <id>https://1stblue.github.io/blog/v0.10.1-release-notes</id>

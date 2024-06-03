@@ -4,11 +4,21 @@
         <title>1stblue.com Blog</title>
         <link>https://1stblue.github.io/blog</link>
         <description>1stblue.com Blog</description>
-        <lastBuildDate>Tue, 23 Apr 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
         <copyright>Copyright © 2024 1stblue.</copyright>
+        <item>
+            <title><![CDATA[Release Notes (v.0.11.0)]]></title>
+            <link>https://1stblue.github.io/blog/v0.11.0-release-notes</link>
+            <guid>https://1stblue.github.io/blog/v0.11.0-release-notes</guid>
+            <pubDate>Mon, 03 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[主要变化]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要变化">主要变化<a href="#主要变化" class="hash-link" aria-label="主要变化的直接链接" title="主要变化的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="控制台">控制台<a href="#控制台" class="hash-link" aria-label="控制台的直接链接" title="控制台的直接链接">​</a></h3><ul><li>作业配置下放到<code>表</code>层级；此变化可以帮助用户更精细地控制数据复制的范围；</li><li>基于结果表的<code>global search</code>能力。</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="utility">Utility<a href="#utility" class="hash-link" aria-label="Utility的直接链接" title="Utility的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="启动项">启动项<a href="#启动项" class="hash-link" aria-label="启动项的直接链接" title="启动项的直接链接">​</a></h3><ul><li>默认采用<code>20%</code>物理内存模式，以适应<code>POC</code>阶段广泛存在的与其他服务混合部署需求。</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接器">连接器<a href="#连接器" class="hash-link" aria-label="连接器的直接链接" title="连接器的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-database改进"><code>Oracle Database</code>（改进）<a href="#oracle-database改进" class="hash-link" aria-label="oracle-database改进的直接链接" title="oracle-database改进的直接链接">​</a></h3><ul><li><code>CDC</code>：全面支持超过30个字符的表和字段；</li><li>支持<code>ROWID</code>和<code>XID</code>附加列。</li></ul>]]></content:encoded>
+            <category>Release Notes</category>
+            <category>v0.11.0</category>
+        </item>
         <item>
             <title><![CDATA[Release Notes (v.0.10.1)]]></title>
             <link>https://1stblue.github.io/blog/v0.10.1-release-notes</link>
