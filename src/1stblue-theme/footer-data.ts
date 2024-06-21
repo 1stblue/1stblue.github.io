@@ -10,7 +10,7 @@ export const menuItems = [
         items: [
             {
                 label: "用户协议",
-                href: "http://www.12348.gov.cn/",
+                href: "/user-agreement",
             },
         ],
     },
@@ -26,10 +26,7 @@ export const menuItems = [
     {
         label: "网站备案",
         items: [
-            {
-                label: "隐私协议",
-                href: "http://www.12348.gov.cn/",
-            },
+
         ],
     },
 ];

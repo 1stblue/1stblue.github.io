@@ -1,10 +1,11 @@
 ---
 slug: bluepipe-with-lakehouse
 authors: [ aleafs ]
-tags: [ lakehouse, network ]
+image: /img/blog-static/cover-bridge.jpeg
+tags: [ lakehouse, network, Oracle ]
 ---
 
-# 跨网络构建数据管道最佳实践
+# 构建跨网络数据管道最佳实践
 
 本文以[云器](https://yunqi.tech/) `Lakehouse` 为例，介绍利用`bluepipe`构建跨网络的数据复制最佳实践。
 
