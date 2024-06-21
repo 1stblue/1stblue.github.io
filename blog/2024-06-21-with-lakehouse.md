@@ -36,11 +36,25 @@ tags: [ lakehouse, network, Oracle ]
 
 `bluepipe`基于`Oracle LogMiner`实现对变更数据的捕捉。与此同时，在以下几个方面做了深度优化：
 
-* **对`DDL`行为的深度兼容**。在`LogMiner`默认策略下，当发生`DDL`行为后，相关表上后续的`DML`
-  操作均无法正确解析，从而导致无法正确捕捉到变更。`bluepipe`维护了字典文件的自动构建策略，保证表结构变更后仍然能捕捉到正确的增量数据。
-* **大事务优化**。`Oracle Redo Log`中记录了完整的事务(`Transaction`)过程，而业务上通常仅希望拿到`commit`
-  之后的数据，因此，需要在传输过程中使用`buffer`来暂存尚未`commit`的变更记录。`bluepipe`基于独特的内存管理技术，单节点上也能轻松应对千万量级的大事务。
-* **全面支持名称超过 30 字符的表**。表名或者列名超过 30
-  字符时，[`LogMiner`无法对其日志进行解析](https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html)；`bluepipe`
-  基于高效的流批融合技术，全面支持了此种情况下的增量数据捕捉与投递。
-* **适配支持`RAC`架构**。
+### 对`DDL`行为的深度兼容
+
+在`LogMiner`默认策略下，当发生`DDL`行为后，相关表上后续的`DML`操作均无法正确解析，从而导致无法正确捕捉到变更。
+
+`bluepipe`维护了字典文件的自动构建策略，保证表结构变更后仍然能捕捉到正确的增量数据。
+
+### 大事务优化
+
+`Oracle Redo Log`中记录了完整的事务(`Transaction`)过程，而业务上通常仅希望拿到`commit`
+之后的数据，因此，需要在传输过程中使用`buffer`来暂存尚未`commit`的变更记录。
+
+`bluepipe`基于独特的内存管理技术，单节点上也能轻松应对千万量级的大事务。
+
+### 全面支持名称超过 30 字符的表
+
+`Oracle 12.2`版本之后，对表名、字段名的最大长度支持到了 128 字节。
+但因为种种原因，`LogMiner`对于无`OGG LICENSE`的实例，至今仍不支持对包含长名称的表的 DML
+解析，详情参考[官方文档](https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html)。
+
+`bluepipe`基于高效的流批融合技术，全面支持了此种情况下的增量数据捕捉与投递。
+
+### 适配支持`RAC`架构
