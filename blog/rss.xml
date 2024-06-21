@@ -10,7 +10,7 @@
         <language>zh-Hans</language>
         <copyright>Copyright © 2024 1stblue.</copyright>
         <item>
-            <title><![CDATA[跨网络构建数据管道最佳实践]]></title>
+            <title><![CDATA[构建跨网络数据管道最佳实践]]></title>
             <link>https://1stblue.github.io/blog/bluepipe-with-lakehouse</link>
             <guid>https://1stblue.github.io/blog/bluepipe-with-lakehouse</guid>
             <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
@@ -23,6 +23,7 @@
 基于高效的流批融合技术，全面支持了此种情况下的增量数据捕捉与投递。</li><li><strong>适配支持<code>RAC</code>架构</strong>。</li></ul>]]></content:encoded>
             <category>lakehouse</category>
             <category>network</category>
+            <category>Oracle</category>
         </item>
         <item>
             <title><![CDATA[Release Notes (v.0.11.0)]]></title>

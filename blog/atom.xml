@@ -9,7 +9,7 @@
     <icon>https://1stblue.github.io/img/favicon.png</icon>
     <rights>Copyright © 2024 1stblue.</rights>
     <entry>
-        <title type="html"><![CDATA[跨网络构建数据管道最佳实践]]></title>
+        <title type="html"><![CDATA[构建跨网络数据管道最佳实践]]></title>
         <id>https://1stblue.github.io/blog/bluepipe-with-lakehouse</id>
         <link href="https://1stblue.github.io/blog/bluepipe-with-lakehouse"/>
         <updated>2024-06-21T00:00:00.000Z</updated>
@@ -26,6 +26,7 @@
         </author>
         <category label="lakehouse" term="lakehouse"/>
         <category label="network" term="network"/>
+        <category label="Oracle" term="Oracle"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Release Notes (v.0.11.0)]]></title>
