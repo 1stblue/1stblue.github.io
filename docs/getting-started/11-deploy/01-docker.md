@@ -34,11 +34,12 @@ Docker部署仅用于进行产品原型验证，不能用于生产环境。
 ## 安装 Docker
 
 ### 通过yum安装
+
 #### 增加yum源
 
 ```powershell
 sudo yum install -y yum-utils
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 ```
 
 #### 安装
@@ -52,7 +53,9 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```powershell
 sudo systemctl start docker
 ```
+
 ### 其他方式
+
 更多安装详情请查看Docker官方文档
 [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
 
