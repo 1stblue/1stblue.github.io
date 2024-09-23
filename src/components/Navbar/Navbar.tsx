@@ -6,12 +6,14 @@ import User from "./User";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center text-[14px]">
+    <header className="w-[1120px] h-[56px]">
+      <nav className="flex items-center text-[14px]">
         <Logo />
         <Menu />
         <Telephone />
         <User />
         <Tryout />
-    </nav>
+      </nav>
+   </header>
   )
 }

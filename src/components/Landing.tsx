@@ -11,21 +11,23 @@ import Navbar from "./Navbar/Navbar";
 
 export default function Landing() {
   return (
-    <div className="w-full px-[280px]">
-        <header className="w-[1120px] h-[56px]">
-            <Navbar />
-        </header>
-        <main>
-            <Hero />
-            <FastAndEfficient />
-            <AccurateAndPrecise />
-            <HighAdaptability />
-            <ConsistentExperience />
-            <Customer />
-            <Blog />
-            <CTA />
-        </main>
-        <Footer />
+    <div className="w-full">
+     <section className="w-[1680px] h-[830px] px-[280px] bg-[url('/bg-mid.svg')]">
+        <Navbar />
+        <Hero />
+     </section>
+     <section>
+        <FastAndEfficient />
+        <AccurateAndPrecise />
+        <HighAdaptability />
+        <ConsistentExperience />
+        <Customer />
+        <Blog />
+        <CTA />
+     </section>
+     <section>
+       <Footer />
+     </section>
     </div>
   )
 }

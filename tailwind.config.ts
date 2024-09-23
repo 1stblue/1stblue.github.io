@@ -9,9 +9,14 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-  		fontFamily: {
-  			'bp-en': 'Inconsolata'
-  		},
+		fontFamily: {
+		sans: [
+			'"PingFang SC"', // MacOS 上的中文字体
+			'"Microsoft YaHei"', // Windows 上的中文字体
+			'sans-serif', // 默认字体
+		],
+		inconsolata: ['Inconsolata', 'monospace'], // 英文字体
+		},
   		fontSize: {
   			'bp-h1': '64px',
   			'bp-h2': '48px',
