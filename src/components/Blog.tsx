@@ -25,7 +25,7 @@ export default function Blog() {
   ]
   return (
     <section className="w-[1680px] m-auto">
-      <div className='w-[1120px] m-auto h-[628px] flex'>
+      <div className='w-[1120px] m-auto h-[682px] flex'>
         <div className="mt-[64px] flex flex-col items-center">
           <div className="w-[216px] h-[50px]
           font-sans font-[600] text-[36px] leading-[50.4px] text-[#000000]">

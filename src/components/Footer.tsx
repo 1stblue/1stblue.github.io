@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className='w-full bg-black text-white'>
       <div className="w-[1680px] m-auto">
-        <div className='flex flex-col w-[1120px] m-auto h-[518px] mt-[96px]'>
+        <div className='flex flex-col w-[1120px] m-auto h-[518px]'>
           <div className='flex mt-[96px]'>
             <div className='text-white'>
               <Image src="./logo-footer.svg" alt='logo' width={124.02} height={28.8} />
