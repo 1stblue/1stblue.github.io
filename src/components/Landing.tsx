@@ -23,9 +23,7 @@ export default function Landing() {
      <Customer />
      <Blog />
      <CTA />
-     <section>
-       <Footer />
-     </section>
+     <Footer />
     </div>
   )
 }

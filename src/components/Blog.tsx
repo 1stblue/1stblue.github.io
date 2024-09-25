@@ -34,7 +34,7 @@ export default function Blog() {
           <div className="grid grid-cols-2 gap-[32px] mt-[64px]">
             {
               list.map((item, index) => (
-                <div className="w-[544px] h-[172px] flex bg-[#F0F3FF] border-[1px]
+                <div key={index} className="w-[544px] h-[172px] flex bg-[#F0F3FF] border-[1px]
                  border-[#00000033] rounded-[8px]">
                   <Image src={item.img} width={172} height={172} alt={item.title?.slice(0, 6)} />
                   <div className="flex flex-col ml-[24px] mt-[24px] mr-[32px]">
