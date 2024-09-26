@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from './Navbar/Logo'
 import Image from 'next/image'
 
 export default function Footer() {
