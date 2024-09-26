@@ -39,9 +39,11 @@ export default function Package() {
               </div>
               <div className="mt-[40px] h-[632px] flex gap-[32px]">
                 {list.map((item, index) => (
-                        <div className="w-[352px] h-[632px]
-                        rounded-[8px] border-[1px] border-[#D0D0D0] bg-[#FFFFFF]
-                        pl-[24px] pt-[38px]">
+                        <div
+                         key={index}
+                         className="w-[352px] h-[632px]
+                         rounded-[8px] border-[1px] border-[#D0D0D0] bg-[#FFFFFF]
+                         pl-[24px] pt-[38px]">
                             <div className="w-[72px] h-[34px]
                             font-sans font-[600] text-[24px] leading-[33.6px] text[#000000]">
                                 {item.title}
@@ -78,8 +80,8 @@ export default function Package() {
                                 font-sans font-[400] text-[16px] leading-[22.4px] text-[#666666]">{item.preList}</div>}
                                 <div className="mt-[16px]">
                                     {item.list.map((n, index) => (
-                                        <div className="flex">
-                                            <Image key={index} src={'/icons/勾.svg'} alt="" width={25} height={25} />
+                                        <div className="flex" key={index}>
+                                            <Image src={'/icons/勾.svg'} alt="" width={25} height={25} />
                                             <p className="ml-[15px]
                                             font-sans font-[400] text-[16px] leading-[32px] text-[#666666]">{n}</p>
                                         </div>
