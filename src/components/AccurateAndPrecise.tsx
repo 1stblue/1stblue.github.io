@@ -5,7 +5,7 @@ import ArrowButton from './ui/ArrowButton'
 export default function AccurateAndPrecise() {
   return (
     <section className='bg-[#F2F7FE]'>
-      <div className='w-[1680px] m-auto h-[776px]'>
+      <div className='w-[1680px] bg-[#F2F7FE] m-auto h-[776px]'>
         <div className='w-[1120px] m-auto flex flex-col items-center justify-center'>
             <div className='w-[352px] h-[17px] mt-[64px]
             font-sans font-[400] text-[12px] leading-[16.8px] text-center text-bp-blue-1'>

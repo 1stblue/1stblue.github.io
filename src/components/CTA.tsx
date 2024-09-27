@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 export default function CTA() {
   return (
     <section className="w-full bg-[url('/bg-blue.svg')] bg-repeat">
-      <div className="w-[1680px] m-auto h-[394px]">
+      <div className="w-[1680px] bg-[url('/bg-blue.svg')] m-auto h-[394px]">
         <div className='w-[1120px] m-auto h-[394px] flex'>
           <div className='w-[600.83px] h-[202px] m-auto mt-[96px] text-[#FFFFFF]
           flex flex-col items-center'>
