@@ -31,7 +31,7 @@ export default function Package() {
     ]
   return (
     <section className="w-full bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
-        <div className="w-[1680px] m-auto h-[858px]">
+        <div className="w-[1680px] m-auto h-[858px] bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
            <div className="w-[1120px] m-auto flex flex-col items-center">
               <div className="w-[395px] h-[58px] mt-[64px]
               font-sans font-[600] text-[48px] leading-[57.6px] text-center text-[#000000] ">
