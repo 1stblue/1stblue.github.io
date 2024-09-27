@@ -16,7 +16,7 @@ export default function Docs() {
                 <Content />
                 <RightAside />
             </div>
-            <div>分页</div>
+            <div> </div>
         </section>
         <Footer />
     </div>
