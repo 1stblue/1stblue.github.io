@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev:t": "next dev --turbo --port 3030",
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -21,9 +21,12 @@
     "dlx": "^0.2.1",
     "lucide-react": "^0.445.0",
     "next": "14.2.13",
+    "next-themes": "^0.3.0",
+    "nextra": "^3.0.1",
+    "nextra-theme-docs": "^3.0.1",
     "pnpm": "^9.11.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "shadcn": "^2.0.7",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
