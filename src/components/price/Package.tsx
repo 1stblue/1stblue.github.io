@@ -73,7 +73,7 @@ export default function Package() {
                                 ))}
                             </div>
                             <div>
-                                <Button className="bg-[#0165FF] w-[304px] h-[52px] mt-[20px] hover:bg-[#0165FF]">立即试用</Button>
+                                <Button className="bg-[#0165FF] w-[304px] h-[52px] mt-[20px] hover:bg-[#0165FF]">即将邀测</Button>
                             </div>
                             <div className="mt-[33px]">
                                 {item.preList && <div className="h-[22px]

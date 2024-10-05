@@ -32,7 +32,7 @@ export default function Hero() {
             借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据。我们保证数据的一致性。就这么简单
           </div>
           <div>
-            <Button variant="bp-primary" size="bp" className='w-[114px] h-[52px] bg-[linear-gradient(276.85deg,_#C7E9F5_-25.73%,_#1EABF4_10.58%,_#0165FF_53.63%,_#0028F3_112.96%)]'>立即试用</Button>
+            <Button variant="bp-primary" size="bp" className='w-[114px] h-[52px] bg-[linear-gradient(276.85deg,_#C7E9F5_-25.73%,_#1EABF4_10.58%,_#0165FF_53.63%,_#0028F3_112.96%)]'>即将邀测</Button>
           </div>
         </div>
         <Image

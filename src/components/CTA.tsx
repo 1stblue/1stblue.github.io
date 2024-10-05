@@ -14,11 +14,11 @@ export default function CTA() {
             </div>
             <div className='w-[481px] h-[44px] mt-[16px]
             font-sans font-[400] text-[16px] leading-[22.4px] text-center'>
-             借助 Bluepipe，您可以自由地在不同数据库、API、甚至SaaS产品之间流转数据。我们保证数据的一致性。就这么简单
+             借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据。我们保证数据的一致性。就这么简单
             </div>
             <div className=''>
               <Button variant="bp-primary-black" className='w-[144px] h-[52px] mt-[40px] text-[#000000] text-center'>
-                立即试用
+                即将邀测
               </Button>
             </div>
           </div>
