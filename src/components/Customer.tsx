@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Customer() {
   return (
-    <section className='w-[1680] m-auto'>
+    <section className='w-[1680px] m-auto'>
       <div className="w-[1120px] m-auto h-[790px] flex flex-col items-center">
         <div className="w-[1120px] h-[320px]
         bg-[url('/mask-group.svg')] bg-cover bg-center">
