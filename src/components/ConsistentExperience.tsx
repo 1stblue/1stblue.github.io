@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ConsistentExperience() {
   return (
-    <section className='w-[1680] m-auto'>
+    <section className='w-[1680px] m-auto'>
       <div className='w-[1120px] m-auto h-[628px] flex'>
         <Image className='mt-[20px] ml-[36px]' src="/consistent.svg" width={548} height={548} alt="consistent" />
         <div className='mt-[147px] ml-[88px] flex flex-col'>

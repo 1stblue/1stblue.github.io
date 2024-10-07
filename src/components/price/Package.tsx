@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "../ui/button"
+import ArrowButton from "../ui/ArrowButton"
 
 export default function Package() {
     const list = [
@@ -73,7 +73,15 @@ export default function Package() {
                                 ))}
                             </div>
                             <div>
-                                <Button className="bg-[#0165FF] w-[304px] h-[52px] mt-[20px] hover:bg-[#0165FF]">立即试用</Button>
+                                <ArrowButton
+                                   className="w-[304px] h-[52px] rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]
+                                flex justify-center items-center font-[600]"
+                                    textWhite
+                                    textClassName="text-[16px] leading-[22.4px]"
+                                    imgClassName="right-[115px]"
+                                >
+                                    即将邀测
+                                </ArrowButton>
                             </div>
                             <div className="mt-[33px]">
                                 {item.preList && <div className="h-[22px]

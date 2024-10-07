@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function HighAdaptability() {
   return (
-    <section className='w-[1680] m-auto'>
+    <section className='w-[1680px] m-auto'>
       <div className='w-[1120px] m-auto h-[616px] flex'>
         <div className='mt-[150px] flex flex-col'>
           <div className='w-[352] h-[17px]

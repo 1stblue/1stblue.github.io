@@ -55,7 +55,7 @@ export default function Footer() {
               ©️ 2024 1stBlue LTD. All rights reserved</div>
             <div className='w-[297px] h-[17px] mt-[32px]
              font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
-              沪ICP备20017118号-1</div>
+              浙ICP备2024076741号</div>
           </div>
         </div>
       </div>
