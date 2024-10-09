@@ -6,7 +6,7 @@ export default function FastAndEfficient() {
   return (
       <section>
         <div className='w-[67%] m-auto flex justify-between'>
-          <div className='w-[45%] mt-[120px] flex flex-col'>
+          <div className='w-[45%] py-[120px] flex flex-col'>
             <div className='
             font-sans font-[400] text-[12px] leading-[16.8px] text-bp-blue-1'>
               极速高效
@@ -23,7 +23,7 @@ export default function FastAndEfficient() {
             </div>
           </div>
           <div className='w-[45%] flex flex-row-reverse'>
-             <Image className='mr-0 my-[87px]' src={Fast} alt="fast" />
+             <Image className='mr-0 py-[87px]' src={Fast} alt="fast" />
           </div>
         </div>
       </section>

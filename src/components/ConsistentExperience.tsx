@@ -5,11 +5,11 @@ import Consistent from '../../public/consistent.svg';
 export default function ConsistentExperience() {
   return (
     <section>
-      <div className='w-[67%] m-auto flex justify-between items-center'>
-        <div className='w-[45%]'>
+      <div className='w-[67%] m-auto flex justify-between'>
+        <div className='w-[45%] py-[103px] flex items-center'>
           <Image src={Consistent} alt="consistent" />
         </div>
-        <div className='w-[45%] flex flex-row-reverse'>
+        <div className='w-[45%] py-[167px] flex items-center'>
           <div className='flex flex-col'>
             <div className='
             font-sans font-[600] text-[12px] leading-[16.8px] text-bp-blue-1'>
