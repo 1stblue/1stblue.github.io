@@ -10,28 +10,28 @@ import Image from "next/image";
 
 export default function Version() {
   return (
-    <section className='w-full'>
-      <div className='w-[1680px] m-auto'>
-        <div className='w-[1120px] m-auto flex flex-col items-center'>
-          <div className="w-[395px] h-[50px] mt-[64px]
+    <section>
+      <div>
+        <div className='w-[67%] m-auto flex flex-col items-center'>
+          <div className="h-[50px] mt-[64px]
           font-sans font-[600] text-[36px] leading-[50.4px] text-center text-[#000000]">
           各版本对比详情
           </div>
-        <Table className="w-[1120px] mt-[24px]">
-          <TableHeader className="w-[1120px] h-[81px]
+         <Table className=" mt-[24px]">
+          <TableHeader className=" h-[81px]
           font-sans font-[600] text-[24px] leading-[33.6px] text-[#000000]
           border-b-[1px] border-b-[#666666]"
           >
             <TableRow className="text-[#000000]">
               <TableHead></TableHead>
-              <TableHead className="w-[302.4px] text-[#000000] pl-[24px]">社区版</TableHead>
-              <TableHead className="w-[302.4px] text-[#000000] pl-[24px]">企业版</TableHead>
-              <TableHead className="w-[302.4px] text-[#000000] pl-[24px]">专属版</TableHead>
+              <TableHead className=" text-[#000000] pl-[24px]">社区版</TableHead>
+              <TableHead className=" text-[#000000] pl-[24px]">企业版</TableHead>
+              <TableHead className=" text-[#000000] pl-[24px]">专属版</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow className="h-[61px]">
-              <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
+              <TableCell className="h-[60.97px] bg-[#F4F4FA]
               pl-[24px] mt-[15px]
               font-sans font-[400] text-[16px] leading-[32px] ">
               全增量融合
@@ -327,7 +327,7 @@ export default function Version() {
               </TableCell>
             </TableRow>
           </TableBody>
-        </Table>
+         </Table>
         </div>
       </div>
     </section>

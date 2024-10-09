@@ -30,36 +30,37 @@ export default function Package() {
         }
     ]
   return (
-    <section className="w-full bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
-        <div className="w-[1680px] m-auto h-[858px] bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
-           <div className="w-[1120px] m-auto flex flex-col items-center">
-              <div className="w-[395px] h-[58px] mt-[64px]
+    <section className="bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
+        <div className="max-w-[1920px] m-auto">
+        <div className="w-[67%] m-auto">
+           <div className="flex flex-col items-center">
+              <div className="mt-[64px]
               font-sans font-[600] text-[48px] leading-[57.6px] text-center text-[#000000] ">
               选择适合你的服务
               </div>
-              <div className="mt-[40px] h-[632px] flex gap-[32px]">
+              <div className="mt-[40px] mb-[64px] flex gap-[32px]">
                 {list.map((item, index) => (
                         <div
                          key={index}
-                         className="w-[352px] h-[632px]
+                         className="
                          rounded-[8px] border-[1px] border-[#D0D0D0] bg-[#FFFFFF]
-                         pl-[24px] pt-[38px]">
-                            <div className="w-[72px] h-[34px]
+                         px-[24px] pt-[38px]">
+                            <div className="
                             font-sans font-[600] text-[24px] leading-[33.6px] text[#000000]">
                                 {item.title}
                             </div>
-                            <div className="w-[303px] h-[48px] mt-[7px]
+                            <div className="mt-[7px]
                             font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
                                 {item.desc}
                             </div>
-                            <div className="text-[#0165FF] h-[38px] mt-[26px]">
+                            <div className="text-[#0165FF]  mt-[26px]">
                                 {!!item.price ? <>
-                                <span className="w-[16px] h-[29px]
+                                <span className="
                                 font-[SF Pro] font-[590] text-[24px] leading-[28.64px] ">¥</span>
-                                <span className="h-[38px] mx-[4px] font-[590] text-[32px] leading-[38.19px] ">{item.price}</span>
-                                <span className="w-[100px] h-[28px]
+                                <span className=" mx-[4px] font-[590] text-[32px] leading-[38.19px] ">{item.price}</span>
+                                <span className="
                                 font-sans font-[600] text-[20px] leading-[28px]">元/链路/月</span></> : <>
-                                <span className="h-[38px] mx-[4px] font-[590] text-[32px] leading-[38.19px] ">定制价格</span>
+                                <span className=" mx-[4px] font-[590] text-[32px] leading-[38.19px] ">定制价格</span>
                                 </>
                                 }
                             </div>
@@ -72,14 +73,8 @@ export default function Package() {
                                     ">{i}</span>
                                 ))}
                             </div>
-                            <div>
-                                <ArrowButton
-                                   className="w-[304px] h-[52px] rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]
-                                flex justify-center items-center font-[600]"
-                                    textWhite
-                                    textClassName="text-[16px] leading-[22.4px]"
-                                    imgClassName="right-[115px]"
-                                >
+                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px] ">
+                                <ArrowButton textWhite>
                                     即将邀测
                                 </ArrowButton>
                             </div>
@@ -100,6 +95,7 @@ export default function Package() {
                 }
               </div>
            </div>   
+        </div>
         </div>
     </section>
   )

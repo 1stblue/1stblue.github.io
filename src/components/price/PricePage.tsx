@@ -9,12 +9,16 @@ import Footer from '../Footer'
 export default function PricePage() {
   return (
     <div>
-      <section className="w-[1680px] m-auto px-[280px]">
-        <Navbar />
-     </section>
-     <Package />
-     <Version />
-     <FAQ />
+      <div className='max-w-[1920px] m-auto'>
+        <section>
+          <Navbar />
+        </section>
+      </div>
+        <Package />
+      <div className='max-w-[1920px] m-auto'>
+        <Version />
+        <FAQ />
+      </div>
      <CTA />
      <Footer />
     </div>

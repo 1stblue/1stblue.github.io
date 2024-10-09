@@ -8,7 +8,7 @@ export default function Tryout() {
     setTxt(window?.location?.pathname === '/price' ? '了解更多' : '免费试用');
   }, []);
   return (
-    <div className='ml-[32px]'>
+    <div>
       <ArrowButton className='bg-bp-blue-1 w-[104px] h-[32px] mr-0 rounded-[100px]' textWhite>
         {txt}
       </ArrowButton>

@@ -24,21 +24,21 @@ export default function Blog() {
     }
   ]
   return (
-    <section className="w-[1680px] m-auto">
-      <div className='w-[1120px] m-auto h-[682px] flex'>
+    <section>
+      <div className='w-[67%] m-auto  flex justify-center items-center'>
         <div className="mt-[64px] flex flex-col items-center">
-          <div className="w-[216px] h-[50px]
+          <div className="
           font-sans font-[600] text-[36px] leading-[50.4px] text-[#000000]">
           探索新的技术
           </div>
           <div className="grid grid-cols-2 gap-[32px] mt-[64px]">
             {
               list.map((item, index) => (
-                <div key={index} className="w-[544px] h-[172px] flex bg-[#F0F3FF] border-[1px]
+                <div key={index} className=" flex bg-[#F0F3FF] border-[1px]
                  border-[#00000033] rounded-[8px]">
                   <Image src={item.img} width={172} height={172} alt={item.title?.slice(0, 6)} />
                   <div className="flex flex-col ml-[24px] mt-[24px] mr-[32px]">
-                      <div className="w-[316px] h-[60px]
+                      <div className="
                       font-sans font-[600] text-[18px] leading-[24px] text-[#000000]">{item.title}</div>
                       <div className="font-sans font-[400] text-[14px] leading-[22.4px] text-[#666666]">{item.description}</div>
                   </div>
