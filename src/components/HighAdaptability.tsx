@@ -5,7 +5,7 @@ import Adaptability from '../../public/high-adaptability.svg';
 export default function HighAdaptability() {
   return (
     <section>
-      <div className='w-[67%] m-auto flex justify-between items-center'>
+      <div className='w-[67%] m-auto flex justify-between'>
         <div className='w-[45%] mt-[150px] flex flex-col'>
           <div className='
           font-sans font-[600] text-[12px] leading-[16.8px] text-bp-blue-1'>
@@ -23,8 +23,8 @@ export default function HighAdaptability() {
             <p>没有供应商锁定</p>
           </div>
         </div>
-       <div className='w-[45%] flex flex-row-reverse'>
-        <Image className="mr-0 mt-[123px]" src={Adaptability} alt="high-adopter" />
+       <div className='w-[45%] mt-[123px] flex flex-row-reverse'>
+        <Image className="mr-0" src={Adaptability} alt="high-adopter" />
        </div>
     </div>
     </section>
