@@ -8,14 +8,14 @@ import {
 
 export default function FAQ() {
   return (
-    <section className='w-full'>
-      <div className='w-[1680px] m-auto'>
+    <section>
+      <div className='w-[67%] m-auto'>
         <div className='flex flex-col items-center'>
-          <div className="w-[395px] h-[50px] mt-[128px]
+          <div className="h-[50px] mt-[128px]
           font-sans font-[600] text-[36px] leading-[50.4px] text-center text-[#000000]">
             FAQ
           </div>
-          <div className="w-[736px] mt-[60px] mb-[160px]">
+          <div className="w-[66%] mt-[60px] mb-[160px]">
             <Accordion type="single" collapsible
              className="ml-[24px] mt-[20px]"
             >
