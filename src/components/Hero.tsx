@@ -22,13 +22,13 @@ export default function Hero() {
     }
   ]
   return (
-    <div className='flex flex-col gap-[88px]'>
-      <div className='flex'>
-        <div className='flex flex-col'>
-          <div className='w-[395px] h-[116px] mt-[108px] font-sans font-[600] text-[48px] leading-[57.6px] text-[#000000]'>
+    <div className='w-[67%] m-auto pb-[69px] flex flex-col gap-[88px]'>
+      <div className='flex justify-between'>
+        <div className='w-[40%] flex flex-col'>
+          <div className='mt-[108px] font-sans font-[600] text-[48px] leading-[57.6px] text-[#000000]'>
           数据因自由流动而价值无限
           </div>
-          <div className='w-[435px] h-[87px] mt-[16px] mb-[24px] font-sans, font-[400px] text-[18px] leading-[28.8px] text-[#000000]'>
+          <div className=' mt-[16px] mb-[24px] font-sans, font-[400px] text-[18px] leading-[28.8px] text-[#000000]'>
             借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据。我们保证数据的一致性。就这么简单
           </div>
           <div>
@@ -43,19 +43,20 @@ export default function Hero() {
             </ArrowButton>
           </div>
         </div>
-        <Image
-          src="/Hero-image.svg"
-          alt="hero-image"
-          width={720}
-          height={400}
-          layout='fixed'
-          // className=' z-[1000]'
-        />
+        <div className='w-[60%] flex flex-row-reverse'>
+          <Image
+            src="/Hero-image.svg"
+            alt="hero-image"
+            width={720}
+            height={400}
+            layout='fixed'
+          />
+        </div>
       </div>
-      <div className='flex gap-[32px]'>
+      <div className='flex gap-[32px] justify-between items-center'>
         {list.map((item, index) => (
           <div key={index} className='border-solid border-[1px] border-[#7A91C0] rounded-[16px]
-          w-[352px] h-[214px] bg-[#FFFFFF]
+           h-[214px] bg-[#FFFFFF]
           pt-[20px] pb-[32px] px-[32px]
           '>
             <Image src={item.icon} alt={item.title} width={48} height={48} className='bg-[#D3D7EE] rounded-[8px]'></Image>
@@ -63,7 +64,7 @@ export default function Hero() {
             font-sans font-[600] text-[16px] leading-[22.4px] text-[#000000]
             mt-[24px] mb-[8px]
             '>{item.title}</div>
-            <div className='w-[288px] h-[60px] font-sans font-[400] text-[14px] leading-[19.6px] text-[#000000]'>{item.desc}</div>
+            <div className=' font-sans font-[400] text-[14px] leading-[19.6px] text-[#000000]'>{item.desc}</div>
           </div>
         ))}
       </div>
