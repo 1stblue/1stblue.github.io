@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { MAIL_ADDRESS } from '@/constant'
 
 export default function Footer() {
   return (
@@ -22,8 +23,9 @@ export default function Footer() {
                   font-sans font-[400] text-[16px] leading-[19px]'>
                     400-1234-888</p> */}
                   <p className=' mt-[12px]
-                  font-sans font-[400] text-[16px] leading-[19px]'>
-                    sales@1stblue.com</p>
+                   font-sans font-[400] text-[16px] leading-[19px]'>
+                    <a href={`mailto:${MAIL_ADDRESS}`}>{MAIL_ADDRESS}</a>
+                  </p>
                 </div>
               </div>
               <div className='flex'>
@@ -62,7 +64,7 @@ export default function Footer() {
             border-t-[1px] border-[#FFFFFF4D]'>
               <div className=' mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px]'>
-                ©️ 2024 1stBlue LTD. All rights reserved</div>
+                &copy; 2024 1stblue LTD. All rights reserved</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
                 浙ICP备2024076741号</div>

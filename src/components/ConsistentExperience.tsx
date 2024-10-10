@@ -13,7 +13,7 @@ export default function ConsistentExperience() {
           <div className='flex flex-col'>
             <div className='
             font-sans font-[600] text-[12px] leading-[16.8px] text-bp-blue-1'>
-              一致体验
+              开放生态
             </div>
             <div className=' mt-[24px]
             font-sans font-[600] text-[36px] leading-[50.4px] text-[#000000]'>
