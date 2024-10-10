@@ -26,7 +26,7 @@ export default function Landing() {
       <HighAdaptability />
       <ConsistentExperience />
       <Customer />
-      <Blog />
+      {/* <Blog /> */}
       </div>
      <CTA />
      <Footer />

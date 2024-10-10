@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -17,12 +18,12 @@ export default function Footer() {
                   <p className='mt-[12px]
                   font-sans font-[400] text-[16px] leading-[28px]'>
                     余杭区仓前街道海创科技中心 3 幢</p>
+                  {/* <p className=' mt-[12px]
+                  font-sans font-[400] text-[16px] leading-[19px]'>
+                    400-1234-888</p> */}
                   <p className=' mt-[12px]
                   font-sans font-[400] text-[16px] leading-[19px]'>
-                    400-1234-888</p>
-                  <p className=' mt-[12px]
-                  font-sans font-[400] text-[16px] leading-[19px]'>
-                    hi@1stblue.com</p>
+                    sales@1stblue.com</p>
                 </div>
               </div>
               <div className='flex'>
@@ -31,22 +32,28 @@ export default function Footer() {
                 font-sans font-[600] text-[14px] leading-[33.6px]'>官网</div>
                 <div className=' mt-[18px]
                 font-sans font-[400] text-[14px] leading-[33.6px]'>
-                  <div>首页</div>
-                  <div>价格</div>
-                  <div>博客</div>
-                  <div>技术文档</div>
+                  <div>
+                    <Link href="/">首页</Link>
+                  </div>
+                  <div>
+                    <Link href="/price">价格</Link>
+                  </div>
+                  {/* <div>
+                    <Link href="/blog/2023-10-11-oracle-split-read">博客</Link></div>
+                  <div>
+                    <Link href="/docs/getting-started">技术文档</Link>
+                  </div> */}
                 </div>
               </div>
-              <div className='ml-[72px] mr-[48px]'>
-                <div className='
-                font-sans font-[600] text-[14px] leading-[33.6px]'>产品</div>
-                <div className=' mt-[18px]
-                font-sans font-[400] text-[14px] leading-[33.6px]'>
-                  <div>仪表盘</div>
-                  <div>工单</div>
-                  <div>订单</div>
-                </div>
-              </div>
+              {/* <div className='ml-[72px] mr-[48px]'>
+                  <div className='font-sans font-[600] text-[14px] leading-[33.6px]'>产品</div>
+                  <div className=' mt-[18px]
+                   font-sans font-[400] text-[14px] leading-[33.6px]'>
+                    <div>仪表盘</div>
+                    <div>工单</div>
+                    <div>订单</div>
+                  </div>
+              </div> */}
               </div>
             </div>
             
