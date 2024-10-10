@@ -1,5 +1,5 @@
 import AccurateAndPrecise from "./AccurateAndPrecise";
-import Blog from "./Blog";
+// import Blog from "./Blog";
 import ConsistentExperience from "./ConsistentExperience";
 import CTA from "./CTA";
 import Customer from "./Customer";

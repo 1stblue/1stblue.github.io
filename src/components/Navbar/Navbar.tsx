@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import Menu from "./Menu";
-import Telephone from "./Telephone";
+// import Telephone from "./Telephone";
 import Tryout from "./Tryout";
 import User from "./User";
 

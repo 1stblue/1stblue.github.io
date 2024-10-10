@@ -3,7 +3,7 @@
 import Image from "next/image"
 import ArrowButton from "../ui/ArrowButton"
 import { CALL_BUTTON_TXT, SOON_BUTTON_TXT } from "@/constant"
-import { useMailto } from "@/hooks/useMailto"
+import { mailto } from "@/lib/mailto"
 
 export default function Package() {
     const list = [
@@ -77,7 +77,7 @@ export default function Package() {
                                     ">{i}</span>
                                 ))}
                             </div> */}
-                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]" onClick={() => useMailto()} >
+                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]" onClick={() => mailto()} >
                                 <ArrowButton textWhite>
                                     {index === 2 ? CALL_BUTTON_TXT : SOON_BUTTON_TXT}
                                 </ArrowButton>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Package from './Package'
 import Version from './Version'
-import FAQ from './FAQ'
+// import FAQ from './FAQ'
 import Navbar from '../Navbar/Navbar'
 import CTA from '../CTA'
 import Footer from '../Footer'
