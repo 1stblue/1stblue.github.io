@@ -26,7 +26,7 @@ export default function FAQ() {
                 </AccordionTrigger>
                 {/* <AccordionContent className="mt-[28px]
                 font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
-                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的<br />Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
+                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
                 </AccordionContent> */}
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -36,7 +36,7 @@ export default function FAQ() {
                 </AccordionTrigger>
                 <AccordionContent className="mt-[28px]
                 font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
-                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的<br />Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
+                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
@@ -46,7 +46,7 @@ export default function FAQ() {
                 </AccordionTrigger>
                 <AccordionContent className="mt-[28px]
                 font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
-                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的<br />Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
+                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
@@ -56,7 +56,7 @@ export default function FAQ() {
                 </AccordionTrigger>
                 <AccordionContent className="mt-[28px]
                 font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
-                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的<br />Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
+                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
@@ -66,7 +66,7 @@ export default function FAQ() {
                 </AccordionTrigger>
                 <AccordionContent className="mt-[28px]
                 font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
-                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的<br />Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
+                Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
