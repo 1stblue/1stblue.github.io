@@ -77,7 +77,7 @@ export default function Package() {
                                     ">{i}</span>
                                 ))}
                             </div> */}
-                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]" onClick={() => mailto()} >
+                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]" onClick={() => index === 2 && mailto()} >
                                 <ArrowButton textWhite>
                                     {index === 2 ? CALL_BUTTON_TXT : SOON_BUTTON_TXT}
                                 </ArrowButton>
