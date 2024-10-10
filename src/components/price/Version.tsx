@@ -35,85 +35,6 @@ export default function Version() {
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
               pl-[24px] mt-[15px]
               font-sans font-[600] text-[18px] leading-[24px] ">
-              价格测算
-              </TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-
-            <TableRow className="h-[61px]">
-              <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
-              单价（人民币元/年/CU）
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              2,000
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              6,800  
-              </TableCell>
-              <TableCell>
-              合同约定
-              </TableCell>
-            </TableRow>
-
-            <TableRow className="h-[61px]">
-              <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
-              CU数/链路数
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              2
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              4
-              </TableCell>
-              <TableCell>
-              合同约定
-              </TableCell>
-            </TableRow>
-            <TableRow className="h-[61px]">
-              <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
-              时长（月）
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              12
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              12 
-              </TableCell>
-              <TableCell>
-              合同约定
-              </TableCell>
-            </TableRow>
-            <TableRow className="h-[61px]">
-              <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
-              小计
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              48,000
-              </TableCell>
-              <TableCell className="pl-[24px]">
-              326,400
-              </TableCell>
-              <TableCell>
-              合同约定
-              </TableCell>
-            </TableRow>
-
-
-
-            <TableRow className="h-[61px] bg-[#F4F4FA]">
-              <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
-              pl-[24px] mt-[15px]
-              font-sans font-[600] text-[18px] leading-[24px] ">
               基础能力
               </TableCell>
               <TableCell></TableCell>
@@ -125,7 +46,7 @@ export default function Version() {
               <TableCell className="h-[60.97px] bg-[#F4F4FA]
               pl-[24px] mt-[15px]
               font-sans font-[400] text-[16px] leading-[32px] ">
-              全增量融合
+              全、增量融合
               </TableCell>
               <TableCell className="p-[0]">
                 <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
@@ -189,7 +110,6 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-
             <TableRow className="h-[61px] bg-[#F4F4FA]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
               pl-[24px] mt-[15px]
@@ -205,33 +125,33 @@ export default function Version() {
             font-sans font-[400] text-[16px] leading-[32px] text-[#000000]">
               <TableCell className="w-[112px] h-[32px] bg-[#F4F4FA]
               pl-[24px] pt-[15px] align-top">
-              官方连接器
+              免费连接器
               </TableCell>
-              <TableCell className="p-[0] pl-[24px]">
-                <div className="w-[122px]
-                flex flex-col">
-                  <div className="inline-block">免费连接器</div>
-                  <ul className="inline-block list-disc ml-[20px]">
-                    <li>
-                      MySQL
-                    </li>
-                    <li>
-                      PostgresSQL
-                    </li>
-                    <li>
-                      MongoDB
-                    </li>
-                    <li>
-                      Hive
-                    </li>
-                  </ul>
-                </div>
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
               </TableCell>
-              <TableCell className="pl-[24px] pt-[15px] align-top">
-              商业连接器
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
               </TableCell>
-              <TableCell colSpan={2} className="pl-[24px] pt-[15px] align-top">
-              合同约定
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
+              </TableCell>
+            </TableRow>
+
+            <TableRow className="h-[61px]">
+              <TableCell className="w-[133px] h-[32px] bg-[#F4F4FA]
+              pl-[24px] mt-[15px]
+              font-sans font-[400] text-[16px] leading-[32px] ">
+                商业连接器
+              </TableCell>
+              <TableCell className="p-[0]">
+                <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
+              </TableCell>
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
+              </TableCell>
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
               </TableCell>
             </TableRow>
 
@@ -274,7 +194,7 @@ export default function Version() {
               2
               </TableCell>
               <TableCell className="pl-[24px]">
-              4 
+              4
               </TableCell>
               <TableCell className="pl-[24px]">
               合同约定
@@ -437,7 +357,7 @@ export default function Version() {
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
               pl-[24px] mt-[15px]
               font-sans font-[400] text-[16px] leading-[32px] ">
-              
+
               </TableCell>
               <TableCell className="p-[0]">
                 <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
@@ -469,13 +389,13 @@ export default function Version() {
               远程答疑
               </TableCell>
               <TableCell className="pl-[24px]">
-              5*8社区支持
+              5 * 8社区支持
               </TableCell>
               <TableCell className="pl-[24px]">
               7 * 24专家支持
               </TableCell>
               <TableCell className="pl-[24px]">
-              7*24 专家支持
+              7 * 24专家支持
               </TableCell>
             </TableRow>
 
@@ -485,8 +405,8 @@ export default function Version() {
               font-sans font-[400] text-[16px] leading-[32px] ">
               应急响应
               </TableCell>
-              <TableCell className="pl-[24px]">
-              0
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
               </TableCell>
               <TableCell className="pl-[24px]">
               2 次/年
@@ -502,8 +422,8 @@ export default function Version() {
               pl-[24px] pt-[15px] align-top">
               远程培训
               </TableCell>
-              <TableCell className="pl-[24px]">
-              0
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
               </TableCell>
               <TableCell className="pl-[24px]">
               1 次/年
