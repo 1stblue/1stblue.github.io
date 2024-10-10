@@ -97,7 +97,7 @@ export default function Version() {
               <TableCell className="h-[60.97px] bg-[#F4F4FA]
               pl-[24px] mt-[15px]
               font-sans font-[400] text-[16px] leading-[32px] ">
-               不限制速度率
+               不限制速率
               </TableCell>
               <TableCell className="p-[0]">
                 <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
@@ -121,8 +121,7 @@ export default function Version() {
               <TableCell></TableCell>
             </TableRow>
 
-            <TableRow className="h-[184px]
-            font-sans font-[400] text-[16px] leading-[32px] text-[#000000]">
+            <TableRow className="h-[61px]">
               <TableCell className="w-[112px] h-[32px] bg-[#F4F4FA]
               pl-[24px] pt-[15px] align-top">
               免费连接器
@@ -357,7 +356,24 @@ export default function Version() {
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
               pl-[24px] mt-[15px]
               font-sans font-[400] text-[16px] leading-[32px] ">
+                Logo、名称和主题
+              </TableCell>
+              <TableCell className="p-[0]">
+                <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
+              </TableCell>
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
+              </TableCell>
+              <TableCell>
+                <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
+              </TableCell>
+            </TableRow>
 
+            <TableRow className="h-[61px]">
+              <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
+              pl-[24px] mt-[15px]
+              font-sans font-[400] text-[16px] leading-[32px] ">
+                深度集成支持
               </TableCell>
               <TableCell className="p-[0]">
                 <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
@@ -389,13 +405,13 @@ export default function Version() {
               远程答疑
               </TableCell>
               <TableCell className="pl-[24px]">
-              5 * 8社区支持
+              5 * 8 社区支持
               </TableCell>
               <TableCell className="pl-[24px]">
-              7 * 24专家支持
+              7 * 24 专家支持
               </TableCell>
               <TableCell className="pl-[24px]">
-              7 * 24专家支持
+              7 * 24 专家支持
               </TableCell>
             </TableRow>
 
@@ -416,8 +432,7 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]
-            font-sans font-[400] text-[16px] leading-[32px] text-[#000000]">
+            <TableRow className="h-[61px]">
               <TableCell className="w-[112px] h-[32px] bg-[#F4F4FA]
               pl-[24px] pt-[15px] align-top">
               远程培训
