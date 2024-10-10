@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import ArrowButton from './ui/ArrowButton'
+import { LEARN_BUTTON_TXT } from '@/constant'
 
 export default function AccurateAndPrecise() {
   return (
@@ -20,7 +21,7 @@ export default function AccurateAndPrecise() {
               Bluepipe致力于确保您的数据迁移过程不仅准确无误，而且高效可靠。采用先进的Exactly Once一致性保证语义，让您的数据交付过程透明、可追踪，从而实现真正的数据安全和业务连续性
               </div>
               <div className='mt-[32px]'>
-                <ArrowButton className='rounded-[100px] border-[1px] border-[#000000]'>了解更多</ArrowButton>
+                <ArrowButton className='rounded-[100px] border-[1px] border-[#000000]'>{LEARN_BUTTON_TXT}</ArrowButton>
               </div>
             <Image className='mt-[40px]' src="/accurate.svg" width={928} height={389} alt="fast" />
           </div>

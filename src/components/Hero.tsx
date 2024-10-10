@@ -1,6 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import ArrowButton from './ui/ArrowButton'
+import { APPLY_BUTTON_TXT } from '@/constant'
+import { mailto } from '@/lib/mailto'
 
 export default function Hero() {
   
@@ -31,7 +35,7 @@ export default function Hero() {
           <div className=' mt-[16px] mb-[24px] font-sans, font-[400px] text-[18px] leading-[28.8px] text-[#000000]'>
             借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据。我们保证数据的一致性。就这么简单
           </div>
-          <div>
+          <div onClick={() => mailto()}>
             <ArrowButton
              className='w-[144px] h-[52px] rounded-[8px] bg-[linear-gradient(276.85deg,_#C7E9F5_-25.73%,_#1EABF4_10.58%,_#0165FF_53.63%,_#0028F3_112.96%)]
              flex justify-center items-center font-[600]'
@@ -39,7 +43,7 @@ export default function Hero() {
              textClassName='text-[16px] leading-[22.4px]'
              imgClassName='right-[35px]'
             >
-              即将邀测
+              {APPLY_BUTTON_TXT}
             </ArrowButton>
           </div>
         </div>

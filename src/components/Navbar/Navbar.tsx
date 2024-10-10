@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import Menu from "./Menu";
-import Telephone from "./Telephone";
+// import Telephone from "./Telephone";
 import Tryout from "./Tryout";
 import User from "./User";
 
@@ -14,7 +14,7 @@ export default function Navbar() {
         </div>
         <div className="w-[40%] flex justify-between items-center">
           <div className="w-[55%]">
-            <Telephone />
+            {/* <Telephone /> */}
           </div>
           <div className="w-[45%] flex justify-between items-center">
             <User />

@@ -1,5 +1,9 @@
+'use client'
+
 import Image from "next/image"
 import ArrowButton from "../ui/ArrowButton"
+import { CALL_BUTTON_TXT, SOON_BUTTON_TXT } from "@/constant"
+import { mailto } from "@/lib/mailto"
 
 export default function Package() {
     const list = [
@@ -53,7 +57,7 @@ export default function Package() {
                             font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
                                 {item.desc}
                             </div>
-                            <div className="text-[#0165FF]  mt-[26px]">
+                            {/* <div className="text-[#0165FF]  mt-[26px]">
                                 {!!item.price ? <>
                                 <span className="
                                 font-[SF Pro] font-[590] text-[24px] leading-[28.64px] ">¥</span>
@@ -72,10 +76,10 @@ export default function Package() {
                                     font-sans font-[600] text-[14px] leading-[19.6px] text-[#0B5362]
                                     ">{i}</span>
                                 ))}
-                            </div>
-                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px] ">
+                            </div> */}
+                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]" onClick={() => mailto()} >
                                 <ArrowButton textWhite>
-                                    即将邀测
+                                    {index === 2 ? CALL_BUTTON_TXT : SOON_BUTTON_TXT}
                                 </ArrowButton>
                             </div>
                             <div className="mt-[33px]">
