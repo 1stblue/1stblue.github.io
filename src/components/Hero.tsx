@@ -12,17 +12,17 @@ export default function Hero() {
     {
       icon: '/icons/连接器.svg',
       title: '20+优质连接器',
-      desc: '覆盖主流关系型数据库、NoSQL 和大数据系统覆盖主流关系型数据库、NoSQL 和大数据系统'
+      desc: '覆盖主流关系型数据库、NoSQL和大数据系统，在边界值、鲁棒性和性能等方面均经过了严格测试和生产验证'
     },
     {
       icon: '/icons/同步.svg',
       title: '全、增量融合',
-      desc: '根据上下文动态调整数据复制策略，融合使用全量复制和增量复制算法，保证两侧数据完全一致'
+      desc: '根据上下文动态调整数据复制策略，融合使用全量复制和增量复制算法，无需繁杂的人工干预'
     },
     {
       icon: '/icons/schema.svg',
       title: 'Schema Evolution',
-      desc: '自动跟踪读取端数据结构的变化并调整到写入端，保证两侧“表”结构一致。我们抹平了异构数据库之间的差异'
+      desc: '自动跟踪数据结构的变化并应用到写入端，保证两侧“表”结构一致，我们抹平了异构数据库之间的差异'
     }
   ]
   return (
@@ -33,7 +33,7 @@ export default function Hero() {
           数据因自由流动而价值无限
           </div>
           <div className=' mt-[16px] mb-[24px] font-sans, font-[400px] text-[18px] leading-[28.8px] text-[#000000]'>
-            借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据。我们保证数据的一致性。就这么简单
+            借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据；我们保证数据的一致性。就这么简单
           </div>
           <div onClick={() => mailto()}>
             <ArrowButton

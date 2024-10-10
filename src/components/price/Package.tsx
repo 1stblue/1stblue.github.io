@@ -9,28 +9,28 @@ export default function Package() {
     const list = [
         {
             title: '社区版',
-            desc: '面向个人，数字化起步阶段企业及个人，高效协同、管理团队、激发活力',
-            price: '0',
-            discount: [],
+            desc: '面向个人，或线下测试场景',
+            price: '68',
+            discount: ['限时免费'],
             preList: '',
             list: ['所有基础功能', '免费连接器', '不限制速率', '最大 2 并发', '单用户', '5*8 社区支持'],
             
         },
         {
             title: '企业版',
-            desc: '面向公司，管理有序、协同便捷、形象专业，深度协同、灵活开放',
-            price: '340',
+            desc: '面向公司，存在生产系统依赖的场景',
+            price: '680',
             discount: ['限时优惠：满10送2月'],
             preList: '包含企业版所有功能，以及：',
-            list: ['商业连接器', '按订单配置最大并发数；', '多节点容灾和负载均衡；', '基于 OAuth2.0 的单点登录', '细粒度权限控制', '审计日志', '7*24专家支持']
+            list: ['商业连接器', '按订单配置链路数', '多节点容灾和负载均衡', '基于 OAuth2.0 的单点登录', 'RBAC和审计日志', '开放API与集成', '7*24专家支持']
         },
         {
             title: '专属版',
-            desc: '面向伙伴，深度协同、资产安全、灵活开放安全合规、自主可控、专属AI',
+            desc: '面向伙伴，或大型企业',
             price: '',
             discount: [],
             preList: '包含企业版所有功能，以及：',
-            list: ['品牌化', '私有连接器']
+            list: ['品牌化', '私有连接器', '多地域、多供应商支持', '数据架构咨询与治理']
         }
     ]
   return (
@@ -40,7 +40,7 @@ export default function Package() {
            <div className="flex flex-col items-center">
               <div className="mt-[64px]
               font-sans font-[600] text-[48px] leading-[57.6px] text-center text-[#000000] ">
-              选择适合你的服务
+              选择适合您的方案
               </div>
               <div className="mt-[40px] mb-[64px] flex gap-[32px]">
                 {list.map((item, index) => (
@@ -88,7 +88,7 @@ export default function Package() {
                                 <div className="mt-[16px]">
                                     {item.list.map((n, index) => (
                                         <div className="flex" key={index}>
-                                            <Image src={'/icons/勾.svg'} alt="" width={25} height={25} />
+                                            <Image src={'/icons/right.svg'} alt="" width={25} height={25} />
                                             <p className="ml-[15px]
                                             font-sans font-[400] text-[16px] leading-[32px] text-[#666666]">{n}</p>
                                         </div>

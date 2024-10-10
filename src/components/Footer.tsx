@@ -64,7 +64,7 @@ export default function Footer() {
             border-t-[1px] border-[#FFFFFF4D]'>
               <div className=' mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px]'>
-                ©️ 2024 1stBlue LTD. All rights reserved</div>
+                &copy; 2024 1stblue LTD. All rights reserved</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
                 浙ICP备2024076741号</div>
