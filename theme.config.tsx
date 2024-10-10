@@ -1,12 +1,14 @@
 
 import dynamic from 'next/dynamic';
-const Logo = dynamic(() => import('@/components/Navbar/Logo'), { ssr: false });
-
+const Navbar = dynamic(() => import('@/components/Navbar/Navbar'), { ssr: false });
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
 export default {
-    logo: <Logo />,
-    // project: {
-    //   link: ''
-    // },
+    navbar: {
+      component: <div className="max-w-[1920px] m-auto"><Navbar /></div>,
+    },
+    footer: {
+      component: <Footer />
+    },
     darkMode: false,
     nextThemes: {
       defaultTheme: 'light', // 默认使用亮色主题
