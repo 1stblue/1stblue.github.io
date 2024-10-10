@@ -13,9 +13,6 @@ export default function Footer() {
               <div className='text-white'>
                 <Image src="/logo-footer.svg" alt='logo' width={124.02} height={28.8} />
                 <div className='mt-[31.2px]'>
-                  <p className='
-                  font-sans font-[400] text-[16px] leading-[19.36px]'>
-                    杭州萃蓝网络科技有限公司</p>
                   <p className='mt-[12px]
                   font-sans font-[400] text-[16px] leading-[28px]'>
                     余杭区仓前街道海创科技中心 3 幢</p>
@@ -64,7 +61,7 @@ export default function Footer() {
             border-t-[1px] border-[#FFFFFF4D]'>
               <div className=' mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px]'>
-                &copy; 2024 1stblue LTD. All rights reserved</div>
+                &copy; 2022-2024 杭州萃蓝网络科技有限公司 版权所有</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
                 浙ICP备2024076741号</div>
