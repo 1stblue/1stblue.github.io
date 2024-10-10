@@ -17,7 +17,7 @@ export default function PricePage() {
         <Package />
       <div className='max-w-[1920px] m-auto'>
         <Version />
-        <FAQ />
+        {/* <FAQ /> */}
       </div>
      <CTA />
      <Footer />

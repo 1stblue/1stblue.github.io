@@ -1,5 +1,9 @@
+'use client'
+
 import React from 'react'
 import ArrowButton from './ui/ArrowButton'
+import { APPLY_BUTTON_TXT } from '@/constant'
+import { useMailto } from '@/hooks/useMailto'
 
 export default function CTA() {
   return (
@@ -16,13 +20,13 @@ export default function CTA() {
             font-sans font-[400] text-[16px] leading-[22.4px] text-center'>
              借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据。我们保证数据的一致性。就这么简单
             </div>
-            <div className=''>
+            <div onClick={() => useMailto()}>
               <ArrowButton
                 className='w-[144px] h-[52px] rounded-[8px] bg-white mt-[40px] font-[600]'
                 textClassName='text-[16px] leading-[22.4px]'
                 imgClassName='right-[35px]'
               >
-                 即将邀测
+                 {APPLY_BUTTON_TXT}
               </ArrowButton>
             </div>
           </div>
