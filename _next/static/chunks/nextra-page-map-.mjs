@@ -1,4 +1,75 @@
 export const pageMap = [{
+  name: "blog",
+  route: "/blog",
+  children: [{
+    name: "2023-10-11-oracle-split-read",
+    route: "/blog/2023-10-11-oracle-split-read",
+    frontMatter: {
+      "slug": "oracle-split-read",
+      "title": "Oracle大表的并行读取",
+      "authors": ["aleafs"],
+      "image": "http://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONT2211A10520EB41FBA9E95AA892CCEE34/native/rh08-oracle-for-azure-732x372.jpg",
+      "tags": ["Oracle", "ROWID", "并行"]
+    }
+  }, {
+    name: "2023-12-29-v2023-released",
+    route: "/blog/2023-12-29-v2023-released",
+    frontMatter: {
+      "slug": "v2023-release-notes",
+      "authors": ["aleafs"],
+      "image": "/img/v2023-cover.jpeg",
+      "tags": ["Release Notes", "v2023"],
+      "sidebarTitle": "2023 12 29 V2023 Released"
+    }
+  }, {
+    name: "2024-01-19-v095-released",
+    route: "/blog/2024-01-19-v095-released",
+    frontMatter: {
+      "slug": "v095-release-notes",
+      "authors": ["aleafs"],
+      "image": "/img/v2023-cover.jpeg",
+      "tags": ["Release Notes", "v0.9.5"],
+      "sidebarTitle": "2024 01 19 V095 Released"
+    }
+  }, {
+    name: "2024-04-04-sqlplus-tips",
+    route: "/blog/2024-04-04-sqlplus-tips",
+    frontMatter: {
+      "slug": "tips-for-sqlplus",
+      "title": "Tips for sqlplus",
+      "authors": ["aleafs"],
+      "tags": ["Sqlplus", "工具"]
+    }
+  }, {
+    name: "2024-04-23-v010-released",
+    route: "/blog/2024-04-23-v010-released",
+    frontMatter: {
+      "slug": "v0.10.1-release-notes",
+      "authors": ["aleafs"],
+      "tags": ["Release Notes", "v0.10.1"],
+      "sidebarTitle": "2024 04 23 V010 Released"
+    }
+  }, {
+    name: "2024-06-03-v011-released",
+    route: "/blog/2024-06-03-v011-released",
+    frontMatter: {
+      "slug": "v0.11.0-release-notes",
+      "authors": ["aleafs"],
+      "tags": ["Release Notes", "v0.11.0"],
+      "sidebarTitle": "2024 06 03 V011 Released"
+    }
+  }, {
+    name: "2024-06-21-with-lakehouse",
+    route: "/blog/2024-06-21-with-lakehouse",
+    frontMatter: {
+      "slug": "bluepipe-with-lakehouse",
+      "authors": ["aleafs"],
+      "image": "/img/blog-static/cover-bridge.jpeg",
+      "tags": ["lakehouse", "network", "Oracle"],
+      "sidebarTitle": "2024 06 21 with Lakehouse"
+    }
+  }]
+}, {
   name: "docs",
   route: "/docs",
   children: [{
