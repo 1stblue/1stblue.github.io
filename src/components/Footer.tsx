@@ -64,7 +64,7 @@ export default function Footer() {
                 &copy; 2022-2024 杭州萃蓝网络科技有限公司 版权所有</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
-                浙ICP备2024076741号</div>
+                <a target="_blank" href="https://beian.miit.gov.cn">浙ICP备2024076741号</a></div>
             </div>
           </div>
         </div>
