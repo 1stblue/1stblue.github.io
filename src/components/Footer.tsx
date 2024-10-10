@@ -9,7 +9,7 @@ export default function Footer() {
           <div className='flex flex-col  h-[518px]'>
             <div className='flex justify-between mt-[96px]'>
               <div className='text-white'>
-                <Image src="./logo-footer.svg" alt='logo' width={124.02} height={28.8} />
+                <Image src="/logo-footer.svg" alt='logo' width={124.02} height={28.8} />
                 <div className='mt-[31.2px]'>
                   <p className='
                   font-sans font-[400] text-[16px] leading-[19.36px]'>
