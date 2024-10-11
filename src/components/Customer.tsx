@@ -4,7 +4,7 @@ import React from 'react'
 export default function Customer() {
   return (
     <section>
-      <div className="w-[1120px] m-auto h-[790px] flex flex-col justify-center items-center">
+      <div className="w-[1120px] m-auto mt-[40px] h-[790px] flex flex-col justify-center items-center">
         <div className="w-[100%] h-[320px] rounded-[16px]
         bg-[url('/mask-group.svg')] bg-cover bg-center flex justify-center">
           <div className=' h-[110px] mt-[56px] flex flex-col items-center'>
