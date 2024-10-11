@@ -6,7 +6,7 @@ export default function HighAdaptability() {
   return (
     <section>
       <div className='w-[1120px] m-auto flex justify-between'>
-        <div className='w-[45%] py-[150px] flex flex-col'>
+        <div className='w-[45%] pt-[150px] flex flex-col'>
           <div className='
           font-sans font-[600] text-[12px] leading-[16.8px] text-bp-blue-1'>
             可持续发展
@@ -23,7 +23,7 @@ export default function HighAdaptability() {
             <p>全自研引擎，自主知识产权，没有供应商锁定</p>
           </div>
         </div>
-       <div className='w-[45%] py-[123px] flex flex-row-reverse'>
+       <div className='w-[45%] pt-[123px] flex flex-row-reverse'>
         <Image className="mr-0" src={Adaptability} alt="high-adopter" />
        </div>
     </div>

@@ -36,7 +36,7 @@ export default function Customer() {
             </div>
             <div className='mt-[24px]
             font-sans font-[400] text-[16px] leading-[25.6px] text-[#000000]'>
-              原来需要几周时间完成的数据汇聚工作，现在两天就搞定了……(InterSystem)Cache 数据库市面资料少，在适配上面做了非常多的努力...抽取调度服务日臻完善。
+              原来需要几周时间完成的数据汇聚工作，现在两天就搞定了…… (InterSystem)Cache 数据库市面资料少，在适配上面做了非常多的努力...抽取调度服务日臻完善。
             </div>
           </div>
           <div className='flex-1 rounded-[8px] border-[1px] border-[#00000033]
@@ -56,7 +56,7 @@ export default function Customer() {
             </div>
             <div className='mt-[24px]
             font-sans font-[400] text-[16px] leading-[25.6px] text-[#000000]'>
-              Bluepipe效率非常高……我们Oracle 里 9000 张表，120GB 左右；它一台机器，连带自动建表和数据校验，一小时多一点就全复制过去了，比原来 OMS 快了两倍还多
+              Bluepipe 效率非常高……我们 Oracle 里 9000 张表，120GB 左右；它一台机器，连带自动建表和数据校验，一小时多一点就全复制过去了，比原来 OMS 快了两倍还多
             </div>
           </div>
           <div className='flex-1 rounded-[8px] border-[1px] border-[#00000033]
@@ -71,7 +71,7 @@ export default function Customer() {
             </div>
             <div className='mt-[24px]
             font-sans font-[400] text-[16px] leading-[25.6px] text-[#000000]'>
-              在操作体验上，Bluepipe的界面简洁直观，用户上手非常容易。无论是技术团队还是非技术团队成员，都能迅速掌握其操作方式，降低了学习成本。同时，由于效率和准确度的提升，我们的运营成本也明显降低，整体体验非常满意。
+              在操作体验上， Bluepipe 的界面简洁直观，用户上手非常容易。无论是技术团队还是非技术团队成员，都能迅速掌握其操作方式，降低了学习成本。同时，由于效率和准确度的提升，我们的运营成本也明显降低，整体体验非常满意。
             </div>
           </div>
         </div>

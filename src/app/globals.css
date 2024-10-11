@@ -63,6 +63,17 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* 中文后面跟英文 */
+  :lang(zh) + :lang(en)::before {
+    content: " ";
+    margin-right: 0.5em;
+  }
+
+  /* 英文后面跟中文 */
+  :lang(en) + :lang(zh)::before {
+    content: " ";
+    margin-left: 0.5em;
+  }
 }
 
 /* body :not(pre):not(code):lang(en) {
@@ -71,6 +82,5 @@
 
 body :lang(zh) + :lang(en),
 body :lang(en) + :lang(zh) {
-  margin-right: 5px !important;
-  margin-left: 5px !important;
+  margin-right: 0.5em !important;
 }

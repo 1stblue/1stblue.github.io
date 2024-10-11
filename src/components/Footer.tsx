@@ -21,7 +21,12 @@ export default function Footer() {
                     400-1234-888</p> */}
                   <p className=' mt-[12px]
                    font-sans font-[400] text-[16px] leading-[19px]'>
-                    <a href={`mailto:${MAIL_ADDRESS}`}>{MAIL_ADDRESS}</a>
+                    <a href={`mailto:${MAIL_ADDRESS}`} className='relative text-[14px] group'>
+                      {MAIL_ADDRESS}
+                      <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
+                      origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
+                      group-hover:scale-y-100 group-hover:translate-y-0"></span>
+                    </a>
                   </p>
                 </div>
               </div>
@@ -32,10 +37,20 @@ export default function Footer() {
                 <div className=' mt-[18px]
                 font-sans font-[400] text-[14px] leading-[33.6px]'>
                   <div>
-                    <Link href="/">首页</Link>
+                    <Link href="/" className='relative text-[14px] group'>
+                    首页
+                    <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
+                      origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
+                      group-hover:scale-y-100 group-hover:translate-y-0"></span>
+                    </Link>
                   </div>
                   <div>
-                    <Link href="/price">价格</Link>
+                    <Link href="/price" className='relative text-[14px] group'>
+                    价格
+                    <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
+                      origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
+                      group-hover:scale-y-100 group-hover:translate-y-0"></span>
+                    </Link>
                   </div>
                   {/* <div>
                     <Link href="/blog/2023-10-11-oracle-split-read">博客</Link></div>
@@ -64,7 +79,13 @@ export default function Footer() {
                 &copy; 2022-2024 杭州萃蓝网络科技有限公司 版权所有</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
-                <a target="_blank" href="https://beian.miit.gov.cn">浙ICP备2024076741号</a></div>
+                <a target="_blank" href="https://beian.miit.gov.cn" className='relative text-[14px] group'>
+                  浙ICP备2024076741号
+                  <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
+                  origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
+                  group-hover:scale-y-100 group-hover:translate-y-0"></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

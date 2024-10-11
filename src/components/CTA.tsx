@@ -18,7 +18,7 @@ export default function CTA() {
             </div>
             <div className=' mt-[16px]
             font-sans font-[400] text-[16px] leading-[22.4px] text-center'>
-             借助 Bluepipe，您可以在不同数据库、API、甚至SaaS产品之间自由地流转数据；我们保证数据的一致性。就这么简单
+             借助 Bluepipe，您可以在不同数据库、API、甚至 SaaS 产品之间自由地流转数据；我们保证数据的一致性。就这么简单
             </div>
             <div onClick={() => mailto()}>
               <ArrowButton

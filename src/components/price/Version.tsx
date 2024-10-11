@@ -42,10 +42,10 @@ export default function Version() {
               <TableCell></TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px] ">
               全、增量融合
               </TableCell>
               <TableCell className="p-[0]">
@@ -59,10 +59,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[133px] h-[32px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               Schema Evolution
               </TableCell>
               <TableCell className="p-[0]">
@@ -76,10 +76,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
                列裁减、列映射
               </TableCell>
               <TableCell className="p-[0]">
@@ -93,10 +93,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
                不限制速率
               </TableCell>
               <TableCell className="p-[0]">
@@ -110,10 +110,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px] bg-[#F4F4FA]">
+            <TableRow className="h-[61px] bg-[#F4F4FA]
+            font-sans font-[600] text-[18px] leading-[24px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
-              pl-[24px] mt-[15px]
-              font-sans font-[600] text-[18px] leading-[24px] ">
+              pl-[24px] mt-[15px]">
               连接器
               </TableCell>
               <TableCell></TableCell>
@@ -121,7 +121,8 @@ export default function Version() {
               <TableCell></TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[112px] h-[32px] bg-[#F4F4FA]
               pl-[24px] pt-[15px] align-top">
               免费连接器
@@ -137,10 +138,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[133px] h-[32px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
                 商业连接器
               </TableCell>
               <TableCell className="p-[0]">
@@ -154,10 +155,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[133px] h-[32px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               私有连接器
               </TableCell>
               <TableCell className="p-[0]">
@@ -171,10 +172,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px] bg-[#F4F4FA]">
+            <TableRow className="h-[61px] bg-[#F4F4FA]
+            font-sans font-[600] text-[18px] leading-[24px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
-              pl-[24px] mt-[15px]
-              font-sans font-[600] text-[18px] leading-[24px] ">
+              pl-[24px] mt-[15px]">
               资源与调度
               </TableCell>
               <TableCell className="p-[0]">
@@ -183,10 +184,10 @@ export default function Version() {
               <TableCell className=""></TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               最大并发度
               </TableCell>
               <TableCell className="pl-[24px]">
@@ -200,10 +201,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px]
+            font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               多节点容灾
               </TableCell>
               <TableCell className="p-[0]">
@@ -217,10 +218,10 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px] bg-[#F4F4FA]">
+            <TableRow className="h-[61px] bg-[#F4F4FA]
+            font-sans font-[600] text-[18px] leading-[24px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
-              pl-[24px] mt-[15px]
-              font-sans font-[600] text-[18px] leading-[24px] ">
+              pl-[24px] mt-[15px]">
               安全与治理
               </TableCell>
               <TableCell className="p-[0]">
