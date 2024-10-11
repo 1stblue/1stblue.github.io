@@ -6,8 +6,8 @@ import { LEARN_BUTTON_TXT } from '@/constant'
 export default function AccurateAndPrecise() {
   return (
     <section className='bg-[#F2F7FE]'>
-      <div className="max-w-[1920px] m-auto">
-        <div className='w-[67%] m-auto h-[776px]'>
+      <div className="max-w-[1920px] m-auto bg-[#F2F7FE]">
+        <div className='w-[1120px] m-auto h-[776px] bg-[#F2F7FE]'>
           <div className='flex-1 m-auto flex flex-col items-center justify-center'>
               <div className=' mt-[64px]
               font-sans font-[400] text-[12px] leading-[16.8px] text-center text-bp-blue-1'>

@@ -35,8 +35,8 @@ export default function Package() {
     ]
   return (
     <section className="bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
-        <div className="max-w-[1920px] m-auto">
-        <div className="w-[67%] m-auto">
+        <div className="max-w-[1920px] m-auto bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
+        <div className="w-[1120px] m-auto bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
            <div className="flex flex-col items-center">
               <div className="mt-[64px]
               font-sans font-[600] text-[48px] leading-[57.6px] text-center text-[#000000] ">
@@ -47,8 +47,9 @@ export default function Package() {
                         <div
                          key={index}
                          className="
+                         flex-1
                          rounded-[8px] border-[1px] border-[#D0D0D0] bg-[#FFFFFF]
-                         px-[24px] pt-[38px]">
+                         px-[24px] py-[38px]">
                             <div className="
                             font-sans font-[600] text-[24px] leading-[33.6px] text[#000000]">
                                 {item.title}
@@ -77,7 +78,7 @@ export default function Package() {
                                     ">{i}</span>
                                 ))}
                             </div> */}
-                            <div className="flex justify-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px]" onClick={() => index === 2 && mailto()} >
+                            <div className="flex justify-center items-center rounded-[8px] bg-[#0165FF] hover:bg-[#0165FF] mt-[20px] h-[52px]" onClick={() => index === 2 && mailto()} >
                                 <ArrowButton textWhite>
                                     {index === 2 ? CALL_BUTTON_TXT : SOON_BUTTON_TXT}
                                 </ArrowButton>
@@ -88,7 +89,7 @@ export default function Package() {
                                 <div className="mt-[16px]">
                                     {item.list.map((n, index) => (
                                         <div className="flex" key={index}>
-                                            <Image src={'/icons/right.svg'} alt="" width={25} height={25} />
+                                            <Image src={'/icons/right.svg'} alt="" width={20} height={20} />
                                             <p className="ml-[15px]
                                             font-sans font-[400] text-[16px] leading-[32px] text-[#666666]">{n}</p>
                                         </div>

@@ -9,7 +9,7 @@ import {
 export default function FAQ() {
   return (
     <section>
-      <div className='w-[67%] m-auto'>
+      <div className='w-[1120px] m-auto'>
         <div className='flex flex-col items-center'>
           <div className="h-[50px] mt-[128px]
           font-sans font-[600] text-[36px] leading-[50.4px] text-center text-[#000000]">

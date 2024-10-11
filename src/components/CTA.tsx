@@ -9,7 +9,7 @@ export default function CTA() {
   return (
     <section className="mt-[128px] bg-[url('/bg-blue.svg')] bg-repeat">
       <div className=" m-auto py-[96px]">
-        <div className='w-[32%] m-auto  flex'>
+        <div className="w-[32%] m-auto  flex">
           <div className=' m-auto text-[#FFFFFF]
           flex flex-col items-center'>
             <div className='

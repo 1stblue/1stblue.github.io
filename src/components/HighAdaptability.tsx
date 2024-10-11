@@ -5,7 +5,7 @@ import Adaptability from '../../public/high-adaptability.svg';
 export default function HighAdaptability() {
   return (
     <section>
-      <div className='w-[67%] m-auto flex justify-between'>
+      <div className='w-[1120px] m-auto flex justify-between'>
         <div className='w-[45%] py-[150px] flex flex-col'>
           <div className='
           font-sans font-[600] text-[12px] leading-[16.8px] text-bp-blue-1'>

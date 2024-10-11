@@ -5,8 +5,8 @@ import Consistent from '../../public/consistent.svg';
 export default function ConsistentExperience() {
   return (
     <section>
-      <div className='w-[67%] m-auto flex justify-between'>
-        <div className='w-[45%] py-[103px] flex items-center'>
+      <div className='w-[1120px] m-auto flex justify-between'>
+        <div className='w-[45%] py-[60px] flex items-center'>
           <Image src={Consistent} alt="consistent" />
         </div>
         <div className='w-[45%] py-[167px] flex items-center'>

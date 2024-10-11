@@ -12,13 +12,13 @@ export default function Version() {
   return (
     <section>
       <div>
-        <div className='w-[67%] m-auto flex flex-col items-center'>
+        <div className='w-[1120px] m-auto flex flex-col items-center'>
           <div className="h-[50px] mt-[64px]
           font-sans font-[600] text-[36px] leading-[50.4px] text-center text-[#000000]">
           各版本对比详情
           </div>
          <Table className=" mt-[24px]">
-          <TableHeader className=" h-[81px]w
+          <TableHeader className=" h-[81px]
           font-sans font-[600] text-[24px] leading-[33.6px] text-[#000000]
           border-b-[1px] border-b-[#666666]"
           >
@@ -166,7 +166,7 @@ export default function Version() {
               <TableCell>
                 <Image className="ml-[24px]" src={'/icons/null.svg'} alt="" width={20} height={20} />
               </TableCell>
-              <TableCell colSpan={2} className="pl-[24px] pt-[15px] align-top">
+              <TableCell colSpan={2} className="pl-[24px]">
               合同约定
               </TableCell>
             </TableRow>
@@ -229,10 +229,9 @@ export default function Version() {
               <TableCell className=""></TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               最大用户数
               </TableCell>
               <TableCell className="pl-[24px]">
@@ -245,10 +244,9 @@ export default function Version() {
               不限制
               </TableCell>
             </TableRow>
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px] ">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               基于标准 OAuth 的 SSO
               </TableCell>
               <TableCell className="p-[0]">
@@ -261,10 +259,9 @@ export default function Version() {
                 <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
               </TableCell>
             </TableRow>
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               基于角色的权限控制
               </TableCell>
               <TableCell className="p-[0]">
@@ -277,10 +274,9 @@ export default function Version() {
                 <Image className="ml-[24px]" src={'/icons/right.svg'} alt="" width={20} height={20} />
               </TableCell>
             </TableRow>
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px] ">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               审计日志
               </TableCell>
               <TableCell className="p-[0]">
@@ -294,10 +290,9 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px] bg-[#F4F4FA]">
-              <TableCell className="w-[212.8px] h-[60.97px] bg-[#E5E5F0]
-              pl-[24px] mt-[15px]
-              font-sans font-[600] text-[18px] leading-[24px] ">
+            <TableRow className="h-[61px] bg-[#F4F4FA] font-sans font-[600] text-[18px] leading-[24px] ">
+              <TableCell className="h-[60.97px] bg-[#E5E5F0]
+              pl-[24px] mt-[15px]">
               扩展与集成
               </TableCell>
               <TableCell className="p-[0]">
@@ -398,10 +393,9 @@ export default function Version() {
               <TableCell className=""></TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[212.8px] h-[60.97px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               远程答疑
               </TableCell>
               <TableCell className="pl-[24px]">
@@ -415,10 +409,9 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[133px] h-[32px] bg-[#F4F4FA]
-              pl-[24px] mt-[15px]
-              font-sans font-[400] text-[16px] leading-[32px] ">
+              pl-[24px] mt-[15px]">
               应急响应
               </TableCell>
               <TableCell>
@@ -432,7 +425,7 @@ export default function Version() {
               </TableCell>
             </TableRow>
 
-            <TableRow className="h-[61px]">
+            <TableRow className="h-[61px] font-sans font-[400] text-[16px] leading-[32px]">
               <TableCell className="w-[112px] h-[32px] bg-[#F4F4FA]
               pl-[24px] pt-[15px] align-top">
               远程培训

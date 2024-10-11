@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className=' bg-black text-white'>
       <div className="max-w-[1920px] m-auto">
-        <div className='w-[67%] m-auto'>
+        <div className='w-[1120px] m-auto bg-black'>
           <div className='flex flex-col  h-[518px]'>
             <div className='flex justify-between mt-[96px]'>
               <div className='text-white'>

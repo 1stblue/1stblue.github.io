@@ -12,7 +12,7 @@ import Navbar from "./Navbar/Navbar";
 export default function Landing() {
   return (
     <div>
-      <section className=" mx-auto bg-[url('/bg-mid.svg')]">
+      <section className=" mx-auto bg-[url('/bg-mid.svg')] bg-no-repeat bg-cover">
         <div className="max-w-[1920px] m-auto">
           <Navbar />
           <Hero />

@@ -65,6 +65,12 @@
   }
 }
 
-body :not(pre):not(code):lang(en) {
+/* body :not(pre):not(code):lang(en) {
   font-family: 'Inconsolata', monospace;
+} */
+
+body :lang(zh) + :lang(en),
+body :lang(en) + :lang(zh) {
+  margin-right: 5px !important;
+  margin-left: 5px !important;
 }

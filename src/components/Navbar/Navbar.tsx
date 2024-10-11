@@ -6,7 +6,7 @@ import User from "./User";
 
 export default function Navbar() {
   return (
-    <header className="w-[67%] m-auto py-[16px] h-[56px]">
+    <header className="w-[1120px] m-auto py-[10px] h-[56px]">
       <nav className="flex justify-between items-center">
         <div className="w-[45%] flex justify-between items-center">
         <Logo />
