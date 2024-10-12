@@ -39,7 +39,7 @@ export default function Package() {
         <div className="w-[1120px] m-auto bg-gradient-to-b from-[#EFF1FC] to-[#F9F9FE]">
            <div className="flex flex-col items-center">
               <div className="mt-[64px]
-              font-sans font-[600] text-[48px] leading-[57.6px] text-center text-[#000000] ">
+              font-sans font-[600] text-[48px] leading-[58px] text-center text-[#000000] ">
               选择适合您的方案
               </div>
               <div className="mt-[40px] mb-[64px] flex gap-[32px]">
@@ -51,7 +51,7 @@ export default function Package() {
                          rounded-[8px] border-[1px] border-[#D0D0D0] bg-[#FFFFFF]
                          px-[24px] py-[38px]">
                             <div className="
-                            font-sans font-[600] text-[24px] leading-[33.6px] text[#000000]">
+                            font-sans font-[600] text-[24px] leading-[34px] text[#000000]">
                                 {item.title}
                             </div>
                             <div className="mt-[7px] h-[48px]
@@ -85,7 +85,7 @@ export default function Package() {
                             </div>
                             <div className="mt-[33px]">
                                 {item.preList && <div className="h-[22px]
-                                font-sans font-[400] text-[16px] leading-[22.4px] text-[#666666]">{item.preList}</div>}
+                                font-sans font-[400] text-[16px] leading-[22px] text-[#666666]">{item.preList}</div>}
                                 <div className="mt-[16px]">
                                     {item.list.map((n, index) => (
                                         <div className="flex" key={index}>
