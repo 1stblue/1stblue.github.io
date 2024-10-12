@@ -12,7 +12,7 @@ export default function Version() {
   return (
     <section>
       <div>
-        <div className='w-[1120px] m-auto flex flex-col items-center'>
+        <div className='w-[1120px] m-auto pb-[128px] flex flex-col items-center'>
           <div className="h-[50px] mt-[64px]
           font-sans font-[600] text-[36px] leading-[50.4px] text-center text-[#000000]">
           各版本对比详情
