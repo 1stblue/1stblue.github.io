@@ -18,7 +18,7 @@ export default function FastAndEfficient() {
             </div>
             <div className='mt-[32px]
             font-sans font-[400] text-[18px] leading-[25.2px] space-y-[12px] text-[#000000]'>
-              <p>极低的硬件资源需求，丰富的环境适配技术，使您可以在几分钟内快速拉起一个全新服务。</p>
+              <p>极低的硬件资源需求，配合细致的环境适配脚本，使您可以在几分钟内快速拉起一个全新服务。</p>
               <p>CBO 与 HBO 相结合的自动调优技术，使您的系统始终运行在最佳状态，无需繁杂的维护工作。</p>
             </div>
           </div>

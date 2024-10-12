@@ -52,25 +52,35 @@ export default function Version() {
     {
       type: "row",
       title: "私有连接器",
-      data: [false, false, "合同约定"],
+      data: [false, false, "按约定"],
     },
     {
       type: "header",
-      title: "资源与调度",
+      title: "性能与容灾",
     },
     {
       type: "row",
-      title: "最大并发度",
-      data: ["2", "4", "合同约定"],
+      title: "最大链路数",
+      data: ["2", "按订单", "按约定"],
     },
     {
       type: "row",
-      title: "多节点容灾",
+      title: "数据库保护",
       data: [false, true, true],
     },
     {
+      type: "row",
+      title: "多节点容灾（分布式）",
+      data: [false, true, true],
+    },
+    {
+      type: "row",
+      title: "架构咨询",
+      data: [false, false, true],
+    },
+    {
       type: "header",
-      title: "安全与治理",
+      title: "安全与合规",
     },
     {
       type: "row",
@@ -79,13 +89,13 @@ export default function Version() {
     },
     {
       type: "row",
-      title: "基于标准 OAuth 的 SSO",
-      data: [false, true, true],
+      title: "单点登录（SSO）",
+      data: [false, 'OAuth 2.0', '按约定'],
     },
     {
       type: "row",
-      title: "基于角色的权限控制",
-      data: [false, true, true],
+      title: "权限控制",
+      data: [false, 'RBAC', 'RBAC'],
     },
     {
       type: "row",
@@ -103,8 +113,13 @@ export default function Version() {
     },
     {
       type: "row",
+      title: "可观测性",
+      data: [false, 'Prometheus', 'Prometheus'],
+    },
+    {
+      type: "row",
       title: "HTTP Hooks",
-      data: [false, true, true],
+      data: [false, false, true],
     },
     {
       type: "header",
@@ -112,7 +127,7 @@ export default function Version() {
     },
     {
       type: "row",
-      title: "Logo、名称和主题",
+      title: "Logo和名称",
       data: [false, false, true],
     },
     {
@@ -126,18 +141,18 @@ export default function Version() {
     },
     {
       type: "row",
-      title: "远程答疑",
-      data: ['5*8社区支持', '7 * 24专家支持', '7*24 专家支持'],
+      title: "远程诊断",
+      data: ['5 * 8 社区支持', '7 * 24 专家支持', '7 * 24 专家支持'],
     },
     {
       type: "row",
       title: "应急响应",
-      data: [false, '2 次/年', '合同约定'],
+      data: [false, '2 次/年', '按约定'],
     },
     {
       type: "row",
       title: "远程培训",
-      data: [false, '1 次/年', '合同约定'],
+      data: [false, '1 次/年', '按约定'],
     },
   ];
   return (
