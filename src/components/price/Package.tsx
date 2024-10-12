@@ -54,7 +54,7 @@ export default function Package() {
               font-sans font-[600] text-[48px] leading-[58px] text-center text-[#000000] ">
               选择适合您的方案
               </div>
-              <div className="mt-[40px] mb-[64px] flex gap-[32px]">
+              <div className="mt-[40px] mb-[64px] flex gap-[32px] w-full">
                 {list.map((item, index) => (
                         <div
                          key={index}

@@ -18,7 +18,7 @@ export default function AccurateAndPrecise() {
                 可信赖的数据交付
               </div>
               <div className='mt-[8px] font-sans font-[400] text-[18px] leading-[24px] text-center text-[#000000]'>
-              Bluepipe 致力于确保您的数据高效、准确地在各个系统之间流转。我们采用 Exactly Once 一致性保证语义，并且采用极高性价比的数据比对和延迟控制技术，让您无后顾之忧
+              Bluepipe 致力于确保您的数据高效、准确地在各个系统之间流转。<br /> 我们采用 Exactly Once 一致性保证语义，并且采用极高性价比的数据比对和延迟控制技术，让您无后顾之忧
               </div>
               <div className='mt-[32px]'>
                 <ArrowButton className='rounded-[100px] border-[1px] border-[#000000]'>{LEARN_BUTTON_TXT}</ArrowButton>
