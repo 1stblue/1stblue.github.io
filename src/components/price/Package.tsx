@@ -54,7 +54,7 @@ export default function Package() {
                             font-sans font-[600] text-[24px] leading-[33.6px] text[#000000]">
                                 {item.title}
                             </div>
-                            <div className="mt-[7px]
+                            <div className="mt-[7px] h-[48px]
                             font-sans font-[400] text-[18px] leading-[24px] text-[#000000]">
                                 {item.desc}
                             </div>
