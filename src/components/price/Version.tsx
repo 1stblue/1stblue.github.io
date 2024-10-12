@@ -155,9 +155,9 @@ export default function Version() {
           >
             <TableRow className="text-[#000000]">
               <TableHead></TableHead>
-              <TableHead className=" text-[#000000] text-center">社区版</TableHead>
-              <TableHead className=" text-[#000000] text-center">企业版</TableHead>
-              <TableHead className=" text-[#000000] text-center">专属版</TableHead>
+              <TableHead className=" text-[#000000] text-center w-[302px]">社区版</TableHead>
+              <TableHead className=" text-[#000000] text-center w-[302px]">企业版</TableHead>
+              <TableHead className=" text-[#000000] text-center w-[302px]">专属版</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

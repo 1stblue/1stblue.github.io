@@ -78,8 +78,8 @@ export default function Footer() {
               font-sans font-[400] text-[12px] leading-[16.8px]'>
                 &copy; 2022-2024 杭州萃蓝网络科技有限公司 版权所有</div>
               <div className='mt-[32px]
-              font-sans font-[400] text-[12px] leading-[16.8px] text-right'>
-                <a target="_blank" href="https://beian.miit.gov.cn" className='relative text-[14px] group'>
+              font-sans font-[400] text-[12px] leading-[17px] text-right'>
+                <a target="_blank" href="https://beian.miit.gov.cn" className='relative group'>
                   浙ICP备2024076741号
                   <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
                   origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
