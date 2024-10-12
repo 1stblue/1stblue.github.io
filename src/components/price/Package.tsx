@@ -9,7 +9,7 @@ export default function Package() {
     const list = [
         {
             title: '社区版',
-            desc: '面向个人，或测试场景',
+            desc: '面向个人，或线下测试场景',
             price: '68',
             discount: ['限时免费'],
             preList: '',
