@@ -8,8 +8,8 @@ export default function Footer() {
     <footer className=' bg-black text-white'>
       <div className="max-w-[1920px] m-auto">
         <div className='w-[1120px] m-auto bg-black'>
-          <div className='flex flex-col  h-[518px]'>
-            <div className='flex justify-between mt-[96px]'>
+          <div className='flex flex-col py-[83px] gap-[82px]'>
+            <div className='flex justify-between'>
               <div className='text-white'>
                 <Image src="/logo-footer.svg" alt='logo' width={124.02} height={28.8} />
                 <div className='mt-[31.2px]'>
@@ -71,7 +71,7 @@ export default function Footer() {
               </div>
             </div>
             
-            <div className='h-[49px] mt-[96px]
+            <div className='h-[49px]
             flex justify-between text-[#FFFFFF]
             border-t-[1px] border-[#FFFFFF4D]'>
               <div className=' mt-[32px]
