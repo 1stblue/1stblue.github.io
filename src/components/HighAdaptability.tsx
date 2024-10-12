@@ -24,7 +24,7 @@ export default function HighAdaptability() {
           </div>
         </div>
        <div className='w-[45%] pt-[123px] flex flex-row-reverse'>
-        <Image className="mr-0" src={Adaptability} alt="high-adopter" />
+        <Image className="mr-0" src={Adaptability} alt="high-adopter" width={576} height={398} />
        </div>
     </div>
     </section>
