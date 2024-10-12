@@ -10,7 +10,7 @@ export default function Package() {
     const list = [
         {
             title: '社区版',
-            desc: '面向个人，或线下测试场景',
+            desc: '面向个人，或非生产场景',
             price: '68',
             discount: ['限时免费'],
             preList: '',
@@ -23,7 +23,7 @@ export default function Package() {
             price: '680',
             discount: ['限时优惠：满10送2月'],
             preList: '包含企业版所有功能，以及：',
-            list: ['商业连接器', '按订单配置链路数', '多节点容灾和负载均衡', 'SSO、RBAC和审计日志', '开放API与集成', '7 * 24 专家支持']
+            list: ['商业连接器', '按订单配置链路数', '多节点容灾和负载均衡', 'SSO、权限控制和审计', '开放API与集成', '7 * 24 专家支持']
         },
         {
             title: '专属版',

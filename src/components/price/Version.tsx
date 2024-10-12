@@ -90,7 +90,7 @@ export default function Version() {
     {
       type: "row",
       title: "单点登录（SSO）",
-      data: [false, 'OAuth 2.0', '按约定'],
+      data: [false, 'OAuth 2.0', 'OAuth 2.0'],
     },
     {
       type: "row",

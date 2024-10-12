@@ -76,7 +76,7 @@ export default function Footer() {
             border-t-[1px] border-[#FFFFFF4D]'>
               <div className=' mt-[32px]
               font-sans font-[400] text-[12px] leading-[16.8px]'>
-                &copy; 2022-2024 杭州萃蓝网络科技有限公司 版权所有</div>
+                &copy; 2022-2024 杭州萃蓝网络科技有限公司 保留所有权利</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[17px] text-right'>
                 <a target="_blank" href="https://beian.miit.gov.cn" className='relative group'>
