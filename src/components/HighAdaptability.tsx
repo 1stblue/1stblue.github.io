@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Adaptability from '../../public/high-adaptability.svg';
+import Adaptability from '../../public/high-adaptability.webp';
 
 export default function HighAdaptability() {
   return (
