@@ -67,7 +67,7 @@ export default function Customer() {
             <div className=' h-[22px] mt-[4px]
             font-sans font-[400] text-[16px] leading-[22.4px] text-center text-[#000000]'>安德玛中国区市场总监</div>
             <div>
-            <Image className="mt-[24px] rounded-[100px]" src="/Avatar3.svg" width={56} height={56} alt='avatar3' />
+            <Image className="mt-[24px] rounded-[100px]" src="/Avatar3.webp" width={56} height={56} alt='avatar3' />
             </div>
             <div className='mt-[24px]
             font-sans font-[400] text-[16px] leading-[25.6px] text-[#000000]'>

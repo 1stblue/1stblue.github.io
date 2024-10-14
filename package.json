@@ -19,6 +19,8 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dlx": "^0.2.1",
+    "image-minimizer-webpack-plugin": "^4.1.0",
+    "imagemin-webp": "^8.0.0",
     "lucide-react": "^0.445.0",
     "next": "14.2.13",
     "next-themes": "^0.3.0",
@@ -38,6 +40,9 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
