@@ -5,26 +5,63 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-wrapper {
+    padding-top: 60px; /* 与 navbar 的高度一致 */
+    padding-bottom: 56px;
+    width: 1120px;
+    margin: auto;
+}
+.navbar {
+    height: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.breadcrumbs, .breadcrumbs__item {
+    display: flex;
+    align-items: center
 }
+.menu {
+    width: 200px;
+    margin-right: 5px;
+}
+/* 修改 sidebar 的宽度 */
+.theme-doc-sidebar-container {
+    width: 200px !important; /* 设置你想要的宽度，如200px */
+  }
+.theme-doc-sidebar-menu {
+    width: 200px;
+}
+.container.padding-top--md.padding-bottom--lg {
+    width: 920px;
+}
+
+/* 处理docusaurus提供的默认table样式和shadcn table冲突 */
+/* 去除表格斑马纹 */
+table.shadcn-table tr:nth-child(2n) {
+    background-color: white;
+}
+/* 去除thead 表格线 */
+table.shadcn-table tr {
+    background-color: var(--ifm-table-background);
+    border-top: 0;
+}
+/* thead背景色 */
+table.shadcn-table thead {
+    background-color: white;
+}
+/* 表格行hover样式 */
+table.shadcn-table tr:hover {
+    background-color: hsl(0 0% 96.1% / 0.5) !important;
+}
+/* 表格线 */
+table.shadcn-table th,
+table.shadcn-table td {
+border: 0;
+padding: var(--ifm-table-cell-padding);
+}
+    
