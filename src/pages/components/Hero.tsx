@@ -10,12 +10,12 @@ export default function Hero() {
   
   const list = [
     {
-      icon: '/icons/连接器.svg',
+      icon: '/icons/connector.svg',
       title: '20+优质连接器',
       desc: '覆盖主流关系型数据库、 NoSQL 和大数据系统，在边界值、鲁棒性和性能等方面均经过了严格测试和生产验证'
     },
     {
-      icon: '/icons/同步.svg',
+      icon: '/icons/sync.svg',
       title: '全、增量融合',
       desc: '根据上下文动态调整数据复制策略，融合使用全量复制和增量复制算法，无需繁杂的人工干预'
     },
