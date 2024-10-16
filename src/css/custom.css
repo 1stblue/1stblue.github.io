@@ -25,14 +25,14 @@
     display: flex;
     align-items: center
 }
+/* 修改 sidebar 的宽度 */
 .menu {
     width: 200px;
     margin-right: 5px;
 }
-/* 修改 sidebar 的宽度 */
 .theme-doc-sidebar-container {
-    width: 200px !important; /* 设置你想要的宽度，如200px */
-  }
+    width: 210px !important; 
+}
 .theme-doc-sidebar-menu {
     width: 200px;
 }
