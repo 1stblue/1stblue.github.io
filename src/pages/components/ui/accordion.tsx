@@ -55,3 +55,5 @@ const AccordionContent = React.forwardRef<
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+
+export default Accordion;  // docusaurus 规定每个react组件必须使用默认导出，且导出类型必须是字符串/function/class，否则build报错

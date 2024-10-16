@@ -11,5 +11,5 @@ We strongly recommend that you write end-to-end tests of your application. **blu
 
 ## Example
 
-<CodeSandboxExample path="with-cypress" />
+<!-- <CodeSandboxExample path="with-cypress" /> -->
 
