@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_1stblue_github_io=self.webpackChunk_1stblue_github_io||[]).push([[948],{2934:(e,u,s)=>{s.r(u),s.d(u,{default:()=>a});var t=s(4848);function a(){return(0,t.jsx)("article",{className:"w-[1120px]"})}}}]);

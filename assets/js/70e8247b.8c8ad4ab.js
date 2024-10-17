@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_1stblue_github_io=self.webpackChunk_1stblue_github_io||[]).push([[7024],{5104:(e,r,s)=>{s.r(r),s.d(r,{default:()=>t});var u=s(4848);function t(){return(0,u.jsx)("aside",{className:"w-[20%] border-r-[1px] border-r-[##D0D0D0]",children:"LeftAside"})}}}]);
