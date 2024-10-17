@@ -59,7 +59,7 @@ export default function Package() {
                          key={index}
                          className="flex-1 rounded-[8px] border-[1px] border-[#D0D0D0] bg-[#FFFFFF] px-[24px] py-[38px]"
                          >
-                          <div style={{ height: `${topSize}px` }}>
+                          <div style={{ height: `${91}px` }}>
                             <div className="font-sans font-[600] text-[24px] leading-[34px] text[#000000]">
                                 {item.title}
                             </div>
