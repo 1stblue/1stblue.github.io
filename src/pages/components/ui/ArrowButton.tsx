@@ -1,6 +1,5 @@
-import Image from "next/image";
-import BlackArrow from '../../../../static/black-arrow.svg';
-import WhiteArrow from '../../../../static/white-arrow.svg';
+import React from 'react';
+
 import clsx from "clsx";
 
 interface ArrowButtonProps {

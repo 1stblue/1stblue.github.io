@@ -1,4 +1,4 @@
-'use client'
+import React from 'react';
 
 import { APPLY_BUTTON_TXT } from '@site/src/constant';
 import ArrowButton from '../ui/ArrowButton';

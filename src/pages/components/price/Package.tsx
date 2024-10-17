@@ -1,6 +1,5 @@
-'use client'
+import React from 'react';
 
-import Image from "next/image"
 import ArrowButton from "../ui/ArrowButton"
 import { CALL_BUTTON_TXT, SOON_BUTTON_TXT } from "@site/src/constant"
 import { mailto } from "@site/src/lib/mailto"

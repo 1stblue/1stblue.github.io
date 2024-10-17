@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Footer from "../Footer";
 import Navbar from "../Navbar/Navbar";
 import Content from "./Content";

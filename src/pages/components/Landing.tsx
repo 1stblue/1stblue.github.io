@@ -1,3 +1,4 @@
+import React from 'react';
 import AccurateAndPrecise from "./AccurateAndPrecise";
 // import Blog from "./Blog";
 import ConsistentExperience from "./ConsistentExperience";
