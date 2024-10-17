@@ -54,6 +54,8 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          blogSidebarTitle: '最新文章',
+          // showLastUpdateTime: true
         },
         theme: {
           customCss: './src/css/custom.css',

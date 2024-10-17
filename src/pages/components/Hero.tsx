@@ -30,7 +30,7 @@ export default function Hero() {
           <div className='font-sans font-[600] text-[48px] leading-[58px] text-[#000000]'>
           数据因自由流动<br />而价值无限
           </div>
-          <div className=' mt-[16px] mb-[24px] font-sans, font-[400px] text-[18px] leading-[29px] text-[#000000]'>
+          <div className=' mt-[16px] mb-[24px] font-sans, font-[400] text-[18px] leading-[29px] text-[#000000]'>
             借助 Bluepipe，您可以在不同数据库、API、甚至 SaaS 产品之间自由地流转数据；我们保证数据的一致性。就这么简单
           </div>
           <div onClick={() => mailto()}>

@@ -15,8 +15,8 @@ const config: Config = {
   	extend: {
 		fontFamily: {
 		sans: [
-			'"PingFang SC"', // MacOS 上的中文字体
-			'"Microsoft YaHei"', // Windows 上的中文字体
+			'PingFang SC', // MacOS 上的中文字体
+			'Microsoft YaHei', // Windows 上的中文字体
 			'sans-serif', // 默认字体
 		],
 		inconsolata: ['Inconsolata', 'monospace'], // 英文字体

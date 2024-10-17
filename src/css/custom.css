@@ -9,6 +9,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+body :not(pre):not(code):lang(en) {
+  font-family: 'Inconsolata', monospace !important;
+} */
+
 .main-wrapper {
     padding-top: 60px; /* 与 navbar 的高度一致 */
     padding-bottom: 56px;
@@ -25,10 +30,22 @@
     display: flex;
     align-items: center
 }
-/* 修改 sidebar 的宽度 */
+.breadcrumbs__link {
+    font-size: 14px;
+    font-weight: 400;
+}
+/* 修改 sidebar 的样式 */
 .menu {
+    font-weight: 400;
+    font-size: 18px;
     width: 200px;
     margin-right: 5px;
+}
+.menu__link {
+    color: black;
+}
+.menu__link--active {
+    color: #3578e5
 }
 .theme-doc-sidebar-container {
     width: 210px !important; 
@@ -63,5 +80,43 @@ table.shadcn-table th,
 table.shadcn-table td {
 border: 0;
 padding: var(--ifm-table-cell-padding);
+}
+
+/* 文档、博客 markdown 文件标题样式定制 */
+main, .container.margin-vert--lg main {
+    font-size: 16px;
+    font-weight: 400;
+}
+main h1, .container.margin-vert--lg main h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+main h2, .container.margin-vert--lg main h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+main h3, .container.margin-vert--lg main h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+main h4, .container.margin-vert--lg main h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+main h5, .container.margin-vert--lg main h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+main h6, .container.margin-vert--lg main h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+main .table-of-contents {
+  font-size: 14px;
+}
+/* 博客 样式定制 */
+.container.margin-vert--lg ul {
+    font-size: 14px;
+    font-weight: 400;
 }
     
