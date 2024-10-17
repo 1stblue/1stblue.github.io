@@ -11,14 +11,14 @@ export default function Menu() {
       name: '价格',
       href: '/price'
     },
-    {
-      name: '文档',
-      href: '/docs/getting-started'
-    },
-    {
-      name: '博客',
-      href: '/blog'
-    }
+    // {
+    //   name: '文档',
+    //   href: '/docs/getting-started'
+    // },
+    // {
+    //   name: '博客',
+    //   href: '/blog'
+    // }
   ];
   return (
     <div className='w-[70%] flex gap-[40px]'>
