@@ -37,7 +37,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="oracle链路的独特优势"><code>Oracle</code>链路的独特优势<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#oracle%E9%93%BE%E8%B7%AF%E7%9A%84%E7%8B%AC%E7%89%B9%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Lien direct vers oracle链路的独特优势" title="Lien direct vers oracle链路的独特优势">​</a></h2>
 <p><code>bluepipe</code>基于<code>Oracle LogMiner</code>实现对变更数据的捕捉。与此同时，在以下几个方面做了深度优化：</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="对ddl行为的深度兼容">对<code>DDL</code>行为的深度兼容<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%AF%B9ddl%E8%A1%8C%E4%B8%BA%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%85%BC%E5%AE%B9" class="hash-link" aria-label="Lien direct vers 对ddl�行为的深度兼容" title="Lien direct vers 对ddl行为的深度兼容">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="对ddl行为的深度兼容">对<code>DDL</code>行为的深度兼容<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%AF%B9ddl%E8%A1%8C%E4%B8%BA%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%85%BC%E5%AE%B9" class="hash-link" aria-label="Lien direct vers 对ddl行为的深度兼容" title="Lien direct vers 对ddl行为的深度兼容">​</a></h3>
 <p>在<code>LogMiner</code>默认策略下，当发生<code>DDL</code>行为后，相关表上后续的<code>DML</code>操作均无法正确解析，从而导致无法正确捕捉到变更。</p>
 <p><code>bluepipe</code>维护了字典文件的自动构建策略，保证表结构变更后仍然能捕捉到正确的增量数据。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="大事务优化">大事务优化<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%A4%A7%E4%BA%8B%E5%8A%A1%E4%BC%98%E5%8C%96" class="hash-link" aria-label="Lien direct vers 大事务优化" title="Lien direct vers 大事务优化">​</a></h3>
