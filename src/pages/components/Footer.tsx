@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from '@docusaurus/Link';
 
 
 import { MAIL_ADDRESS } from '@site/src/constant'
@@ -37,25 +38,25 @@ export default function Footer() {
                 <div className=' mt-[18px]
                 font-sans font-[400] text-[14px] leading-[33.6px]'>
                   <div>
-                    <a href="/" className='relative text-[14px] group hover:no-underline hover:text-current'>
+                    <Link href="/" className='relative text-[14px] group hover:no-underline hover:text-current'>
                     首页
                     <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
                       origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
                       group-hover:scale-y-100 group-hover:translate-y-0"></span>
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a href="/price" className='relative text-[14px] group hover:no-underline hover:text-current'>
+                    <Link href="/price" className='relative text-[14px] group hover:no-underline hover:text-current'>
                     价格
                     <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
                       origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
                       group-hover:scale-y-100 group-hover:translate-y-0"></span>
-                    </a>
+                    </Link>
                   </div>
                   {/* <div>
-                    <a href="/blog/2023-10-11-oracle-split-read">博客</a></div>
+                    <Link href="/blog/2023-10-11-oracle-split-read">博客</Link></div>
                   <div>
-                    <a href="/docs/getting-started">技术文档</a>
+                    <Link href="/docs/getting-started">技术文档</Link>
                   </div> */}
                 </div>
               </div>
@@ -79,12 +80,12 @@ export default function Footer() {
                 &copy; 2022-2024 杭州萃蓝网络科技有限公司 保留所有权利</div>
               <div className='mt-[32px]
               font-sans font-[400] text-[12px] leading-[17px] text-right'>
-                <a target="_blank" href="https://beian.miit.gov.cn" className='relative group hover:no-underline hover:text-current'>
+                <Link target="_blank" href="https://beian.miit.gov.cn" className='relative group hover:no-underline hover:text-current'>
                   浙ICP备2024076741号
                   <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
                   origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
                   group-hover:scale-y-100 group-hover:translate-y-0"></span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

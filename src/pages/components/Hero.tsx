@@ -51,7 +51,6 @@ export default function Hero() {
             alt="hero-image"
             width={720}
             height={400}
-            layout='fixed'
           />
         </div>
       </div>
