@@ -2,6 +2,7 @@
 slug: tips-for-sqlplus
 title: Tips for sqlplus
 authors: [ aleafs ]
+image: /img/blog-static/cover-bridge.jpeg
 tags: [ Sqlplus, 工具 ]
 ---
 
