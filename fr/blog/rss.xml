@@ -49,7 +49,7 @@
 但因为种种原因，<code>LogMiner</code>对于无<code>OGG LICENSE</code>的实例，至今仍不支持对包含长名称的表的 DML
 解析，详情参考<a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html" target="_blank" rel="noopener noreferrer">官方文档</a>。</p>
 <p><code>bluepipe</code>基于高效的流批融合技术，全面支持了此种情况下的增量数据捕捉与投递。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="适配支持rac架构">适配支持<code>RAC</code>架构<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E9%80%82%E9%85%8D%E6%94%AF%E6%8C%81rac%E6%9E%B6%E6%9E%84" class="hash-link" aria-label="Lien direct vers 适配支持rac架构" title="Lien direct vers 适配支持rac架构">​</a></h3>]]></content:encoded>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="适配��支持rac架构">适配支持<code>RAC</code>架构<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E9%80%82%E9%85%8D%E6%94%AF%E6%8C%81rac%E6%9E%B6%E6%9E%84" class="hash-link" aria-label="Lien direct vers 适配支持rac架构" title="Lien direct vers 适配支持rac架构">​</a></h3>]]></content:encoded>
             <category>lakehouse</category>
             <category>network</category>
             <category>Oracle</category>

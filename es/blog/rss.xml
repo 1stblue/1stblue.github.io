@@ -165,7 +165,7 @@
 <p><img decoding="async" loading="lazy" alt="调度方式" src="https://www.1stblue.com/es/assets/images/auto-method-782fd9406560ff917faf16f0ac8f9e84.png" width="778" height="530" class="img_ev3q">
 <img decoding="async" loading="lazy" alt="按天调度" src="https://www.1stblue.com/es/assets/images/auto-method-day-7e31dbd25ee85aebe5c4759a6c9eb44a.png" width="776" height="360" class="img_ev3q">
 <img decoding="async" loading="lazy" alt="按小时调度" src="https://www.1stblue.com/es/assets/images/auto-method-hour-0fb3ba6beb577f17ca48559e9eef70f7.png" width="694" height="350" class="img_ev3q">
-<img decoding="async" loading="lazy" alt="调度�状态" src="https://www.1stblue.com/es/assets/images/automatic-header-8c25b35dd05cd39f13550bc3177a00f5.png" width="3426" height="356" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="调度状态" src="https://www.1stblue.com/es/assets/images/automatic-header-8c25b35dd05cd39f13550bc3177a00f5.png" width="3426" height="356" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="支持按schema筛选复制范围">支持按<code>Schema</code>筛选复制范围<a href="https://www.1stblue.com/es/blog/v095-release-notes#%E6%94%AF%E6%8C%81%E6%8C%89schema%E7%AD%9B%E9%80%89%E5%A4%8D%E5%88%B6%E8%8C%83%E5%9B%B4" class="hash-link" aria-label="Enlace directo al 支持按schema筛选复制范围" title="Enlace directo al 支持按schema筛选复制范围">​</a></h3>
 <ul>
 <li>此版本将复制范围下放到数据库的<code>Schema</code>层级，为用户提供更灵活的选择。</li>
@@ -261,7 +261,7 @@
 <li>CDC数据以<code>APPEND</code>模式写入临时表，定期<code>MERGE</code>到主表。</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="遗留问题">遗留问题<a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E9%81%97%E7%95%99%E9%97%AE%E9%A2%98" class="hash-link" aria-label="Enlace directo al 遗留问题" title="Enlace directo al 遗留问题">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="错误率控制">错误率控制<a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E9%94%99%E8%AF%AF%E7%8E%87%E6%8E%A7%E5%88%B6" class="hash-link" aria-label="Enlace directo al 错误率控制" title="Enlace directo al 错误率控制">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="错误率控制">错误率控制<a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E9%94%99%E8%AF%AF%E7%8E%87%E6%8E%A7%E5%88%B6" class="hash-link" aria-label="Enlace directo al 错误率控制" title="Enlace directo al 错�误率控制">​</a></h3>
 <p>复制过程中的<code>错误率控制</code>尚未支持。
 因此，在当前版本中，如果某行数据因为字段类型不兼容、或者字符超长等原因而无法写入，则会导致整个任务失败。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="cdc模式下表之间的耦合">CDC模式下表之间的耦合<a href="https://www.1stblue.com/es/blog/v2023-release-notes#cdc%E6%A8%A1%E5%BC%8F%E4%B8%8B%E8%A1%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88" class="hash-link" aria-label="Enlace directo al CDC模式下表之间的耦合" title="Enlace directo al CDC模式下表之间的耦合">​</a></h3>
