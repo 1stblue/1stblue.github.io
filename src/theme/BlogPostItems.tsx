@@ -1,7 +1,9 @@
 import React from 'react';
 import BlogPostItem from '@theme/BlogPostItem';
-import {BlogPostProvider} from '@docusaurus/plugin-content-blog/client';
+import {BlogPostProvider, useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import clsx from 'clsx';
+import TagsList from '@theme/TagsList';
+import { flatMap, groupBy, map } from 'micro-dash';
 
 export default function BlogPostItems({
     items,
@@ -10,6 +12,15 @@ export default function BlogPostItems({
     isAuthorPage,
     isTagsPage
   }) {
+    /** 从items中提取tags数据 */
+    const arr = flatMap(items, obj => obj.content.metadata.tags);
+    const grouped = groupBy(arr, item => item.label);
+    tags = map(grouped, (items, label) => ({
+      label,
+      permalink: items[0]?.permalink,
+      count: items.length // 计算 count
+    }));
+
   return (
     <div
     // className={clsx(
@@ -60,7 +71,7 @@ export default function BlogPostItems({
             trends, and provide helpful tips to enhance your coding journey.
           </p>
         </div>
-        {/* <TagsList tags={tags} /> */}
+        <TagsList tags={tags} />
       </>
     )}
 

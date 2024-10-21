@@ -59,6 +59,9 @@ importers:
       lucide-react:
         specifier: ^0.453.0
         version: 0.453.0(react@18.3.1)
+      micro-dash:
+        specifier: ^8.1.0
+        version: 8.1.0
       prism-react-renderer:
         specifier: ^2.3.0
         version: 2.4.0(react@18.3.1)
@@ -3468,6 +3471,10 @@ packages:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==}
     engines: {node: '>= 0.6'}
 
+  micro-dash@8.1.0:
+    resolution: {integrity: sha512-FieSaCyErxoYCN12fYcat+y6E9s/s/ZChdtZi9iHAhqasaYHRq6yvQ1waSfHbS0A+Vsy82ABIoQmmzS3rwi3XA==}
+    deprecated: This packaged moved. This version is outdated. It is now at @s-libs/micro-dash
+
   micromark-core-commonmark@2.0.1:
     resolution: {integrity: sha512-CUQyKr1e///ZODyD1U3xit6zXwy1a8q2a1S1HKtIlmgvurrEpaw/Y9y6KSIbF8P59cn/NjzHyO+Q2fAyYLQrAA==}
 
@@ -5118,6 +5125,10 @@ packages:
 
   utila@0.4.0:
     resolution: {integrity: sha512-Z0DbgELS9/L/75wZbro8xAnT50pBVFQZ+hUEueGDU5FN51YSCYM+jdxsfCiHjwNP/4LCDD0i/graKpeBnOXKRA==}
+
+  utility-types@3.10.0:
+    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
+    engines: {node: '>= 4'}
 
   utility-types@3.11.0:
     resolution: {integrity: sha512-6Z7Ma2aVEWisaL6TvBCy7P8rm2LQoPv6dJ7ecIaIixHcwfbJ0x7mWdbcwlIM5IGQxPZSFYeqRCqlOOeKoJYMkw==}
@@ -9731,6 +9742,11 @@ snapshots:
 
   methods@1.1.2: {}
 
+  micro-dash@8.1.0:
+    dependencies:
+      tslib: 2.8.0
+      utility-types: 3.10.0
+
   micromark-core-commonmark@2.0.1:
     dependencies:
       decode-named-character-reference: 1.0.2
@@ -11691,6 +11707,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   utila@0.4.0: {}
+
+  utility-types@3.10.0: {}
 
   utility-types@3.11.0: {}
 

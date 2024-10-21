@@ -29,7 +29,7 @@ export default function BlogPostItem({ className }) {
         </Link>
       </div>
       <div>
-        {/* <div className={clsx('my-2 flex gap-1 md:mb-4', 'flex flex-wrap items-center')}>
+        <div className={clsx('my-2 flex gap-1 md:mb-4', 'flex flex-wrap items-center')}>
           {tags.map(tag => (
             <Link
               className={clsx(
@@ -46,7 +46,7 @@ export default function BlogPostItem({ className }) {
               {tag.label}
             </Link>
           ))}
-        </div> */}
+        </div>
         <div className="py-2 md:mb-4">
           <Link
             itemProp="url"

@@ -46,7 +46,7 @@ function BlogListPageContent(props) {
       >
         <div className="border-b border-gray-100 "></div>
       </div> */}
-      <BlogPostItems items={paginatedPosts} tags={tags} metadata={metadata} />
+      <BlogPostItems items={paginatedPosts} />
       <div
         className={clsx(
           'max-w-[512px]',

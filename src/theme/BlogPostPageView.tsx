@@ -40,7 +40,7 @@ export const BlogPostPageView = ({ children }) => {
         <div className={clsx('flex', 'justify-between', 'sm:flex-row flex-col')}>
           <div className="flex justify-center items-center gap-2">
             <Link to="/blog" className={clsx('!text-gray-500 text-sm no-underline')}>
-              ← 返回博客
+              ← 返回博客主页
             </Link>
           </div>
           <div className="flex items-center gap-2 text-gray-600 ">
