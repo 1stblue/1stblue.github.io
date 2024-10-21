@@ -173,7 +173,7 @@
 <p><img decoding="async" loading="lazy" alt="作业生效范围" src="https://www.1stblue.com/es/assets/images/auto-all-table-1c7813cf64943ef98a1e25bb7b7a8374.png" width="1072" height="728" class="img_ev3q">
 <img decoding="async" loading="lazy" alt="全选 SCHEMA" src="https://www.1stblue.com/es/assets/images/auto-all-table-schema-35169d2e9cfc0ac0bc3d42830b6d677c.png" width="1084" height="612" class="img_ev3q">
 <img decoding="async" loading="lazy" alt="多选 SCHEMA" src="https://www.1stblue.com/es/assets/images/job-status-list-d9ade5753e583b4c41e36186b3642fe1.png" width="3434" height="842" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="调度策略优化">调度策略优化<a href="https://www.1stblue.com/es/blog/v095-release-notes#%E8%B0%83%E5%BA%A6%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96" class="hash-link" aria-label="Enlace directo al 调度策略优化" title="Enlace directo al 调度策略优化">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="调度策略优化">调度策略优化<a href="https://www.1stblue.com/es/blog/v095-release-notes#%E8%B0%83%E5%BA%A6%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96" class="hash-link" aria-label="Enlace directo al 调度策略优化" title="Enlace directo al 调度策略�优化">​</a></h3>
 <ul>
 <li>基于深度优先的作业调度方式，避免大量作业同时提交时排队时间过长。</li>
 </ul>
@@ -246,7 +246,7 @@
 </ul>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>限制</div><div class="admonitionContent_BuS1"><p>受<code>ClickZetta</code>当前版本限制，对于含 <code>Primary Key</code>的表，目前仅支持单线程写入。<code>bluepipe</code>自动进行了适配，无<code>Primary Key</code>
 的表仍然可以多线程大吞吐写入。</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="新增intersystems">新增<code>InterSystems</code><a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E6%96%B0%E5%A2%9Eintersystems" class="hash-link" aria-label="Enlace directo al 新增intersystems" title="Enlace directo al 新增intersystems">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="��新增intersystems">新增<code>InterSystems</code><a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E6%96%B0%E5%A2%9Eintersystems" class="hash-link" aria-label="Enlace directo al 新增intersystems" title="Enlace directo al 新增intersystems">​</a></h3>
 <p><code>InterSystems</code>是一家提供数据管理和医疗信息系统的公司，为医疗健康、金融服务、供应链和物流等行业提供数据解决方案。
 <code>InterSystems</code>在2022 Gartner<!-- -->©️<!-- --> 云数据库管理系统魔力象限<!-- -->™️<!-- -->中被评为“远见者（Visionary）”。</p>
 <ul>
@@ -261,7 +261,7 @@
 <li>CDC数据以<code>APPEND</code>模式写入临时表，定期<code>MERGE</code>到主表。</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="遗留问题">遗留问题<a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E9%81%97%E7%95%99%E9%97%AE%E9%A2%98" class="hash-link" aria-label="Enlace directo al 遗留问题" title="Enlace directo al 遗留问题">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="错误率控制">错误率控制<a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E9%94%99%E8%AF%AF%E7%8E%87%E6%8E%A7%E5%88%B6" class="hash-link" aria-label="Enlace directo al 错误率控制" title="Enlace directo al 错�误率控制">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="错误率控制">错误率控制<a href="https://www.1stblue.com/es/blog/v2023-release-notes#%E9%94%99%E8%AF%AF%E7%8E%87%E6%8E%A7%E5%88%B6" class="hash-link" aria-label="Enlace directo al 错误率控制" title="Enlace directo al 错误率控制">​</a></h3>
 <p>复制过程中的<code>错误率控制</code>尚未支持。
 因此，在当前版本中，如果某行数据因为字段类型不兼容、或者字符超长等原因而无法写入，则会导致整个任务失败。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="cdc模式下表之间的耦合">CDC模式下表之间的耦合<a href="https://www.1stblue.com/es/blog/v2023-release-notes#cdc%E6%A8%A1%E5%BC%8F%E4%B8%8B%E8%A1%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E8%80%A6%E5%90%88" class="hash-link" aria-label="Enlace directo al CDC模式下表之间的耦合" title="Enlace directo al CDC模式下表之间的耦合">​</a></h3>
