@@ -46,11 +46,11 @@ function BlogTagsPostsPageContent({
       {tag.unlisted && <Unlisted />}
       <header className="">
         {/* {tag.description && <p>{tag.description}</p>} */}
-        <Link href={tag.allTagsPath}>
+        <Link href={tag.allTagsPath} className="no-underline">
           <Translate
             id="theme.tags.tagsPageLink"
             description="The label of the link targeting the tag list page">
-            查看所有标签 ➡️
+            查看所有分类标签 ➡️
           </Translate>
         </Link>
         <Heading as="h2" className='mt-[10px]'>{`有${tag?.count}篇${tag?.label}相关的文章`}</Heading>

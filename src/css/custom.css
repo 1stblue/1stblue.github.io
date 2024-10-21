@@ -90,26 +90,32 @@ main, .container.margin-vert--lg main {
 main h1, .container.margin-vert--lg main h1 {
     font-size: 48px;
     font-weight: 700;
+    font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 main h2, .container.margin-vert--lg main h2 {
     font-size: 24px;
     font-weight: 600;
+    font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 main h3, .container.margin-vert--lg main h3 {
     font-size: 18px;
     font-weight: 600;
+    font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 main h4, .container.margin-vert--lg main h4 {
     font-size: 16px;
     font-weight: 600;
+    font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 main h5, .container.margin-vert--lg main h5 {
     font-size: 14px;
     font-weight: 600;
+    font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 main h6, .container.margin-vert--lg main h6 {
   font-size: 12px;
   font-weight: 600;
+  font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 main .table-of-contents {
   font-size: 14px;
