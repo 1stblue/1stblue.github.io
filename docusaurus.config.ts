@@ -56,6 +56,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
           blogSidebarTitle: '最新文章',
           // showLastUpdateTime: true
+          postsPerPage: 9, // 分页
         },
         theme: {
           customCss: './src/css/custom.css',

@@ -80,7 +80,8 @@ export default function BlogPostItems({
         'grid-cols-3',
         'gap-4',
         'pt-6',
-        isAuthorPage ? 'blog-md:pt-0' : 'blog-md:pt-12'
+        'py-[24px]'
+        // isAuthorPage ? 'blog-md:pt-0' : 'blog-md:pt-12'
       )}
     >
       {items.map(({ content: BlogPostContent }) => (
