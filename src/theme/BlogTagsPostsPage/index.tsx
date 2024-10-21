@@ -22,6 +22,7 @@ import type {Props} from '@theme/BlogTagsPostsPage';
 import BlogPostItems from '@theme/BlogPostItems';
 import Unlisted from '@theme/ContentVisibility/Unlisted';
 import Heading from '@theme/Heading';
+import TagsList from '../TagsList';
 
 function BlogTagsPostsPageMetadata({tag}: Props): JSX.Element {
   const title = useBlogTagsPostsPageTitle(tag);
@@ -43,18 +44,19 @@ function BlogTagsPostsPageContent({
   return (
     <BlogLayout sidebar={sidebar}>
       {tag.unlisted && <Unlisted />}
-      <header className="margin-bottom--xl">
-        <Heading as="h1">{title}</Heading>
-        {tag.description && <p>{tag.description}</p>}
+      <header className="">
+        {/* {tag.description && <p>{tag.description}</p>} */}
         <Link href={tag.allTagsPath}>
           <Translate
             id="theme.tags.tagsPageLink"
             description="The label of the link targeting the tag list page">
-            查看所有标签
+            查看所有标签 ➡️
           </Translate>
         </Link>
+        <Heading as="h2" className='mt-[10px]'>{`有${tag?.count}篇${tag?.label}相关的文章`}</Heading>
+        {/* <TagsList tags={tags} /> */}
       </header>
-      <BlogPostItems items={items} />
+      <BlogPostItems items={items} showTitle={false} isTagsPage={true} />
       <BlogListPaginator metadata={listMetadata} />
     </BlogLayout>
   );

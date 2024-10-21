@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogPostItem from '@theme/BlogPostItem';
+import type {Props} from '@theme/BlogPostItems';
 import {BlogPostProvider, useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import clsx from 'clsx';
 import TagsList from '@theme/TagsList';
@@ -56,7 +57,7 @@ export default function BlogPostItems({
               'font-semibold'
             )}
           >
-            最新文章
+            所有文章
           </h2>
           <p
             className={clsx(
@@ -66,9 +67,7 @@ export default function BlogPostItems({
               'text-gray-500 '
             )}
           >
-            <b>bluepipe technical blog</b> - a resource for bluepipe, front-end ecosystem, and web
-            development. Here, we publish insightful articles that demystify complex concepts, explore new
-            trends, and provide helpful tips to enhance your coding journey.
+            <b>Bluepipe 技术博客</b> - 一个用于 Bluepipe 产品生态系统和网络开发的资源。在这里，我们发表有见地的文章，揭开复杂的概念，探索新的趋势，并提供实用的提示和专业的指导，为你的产品使用旅程保驾护航。
           </p>
         </div>
         <TagsList tags={tags} />
