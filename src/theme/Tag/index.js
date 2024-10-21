@@ -7,7 +7,7 @@ export default function Tag({ permalink, label, isActive }) {
     <Link
       href={permalink}
       className={clsx(
-        'no-underline hover:no-underline',
+        'no-underline hover:no-underline hover:text-bp-blue-1',
         'text-xs',
         !isActive && 'bg-gray-100 ',
         !isActive && 'text-gray-600 ',

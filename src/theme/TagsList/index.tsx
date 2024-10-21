@@ -15,6 +15,16 @@ const ChevronDownIcon = () => (
     />
   </svg>
 );
+const ChevronRightIcon = () => (
+  <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M0.792893 0.292893C1.18342 -0.0976311 1.81658 -0.0976311 2.20711 0.292893L5.20711 3.29289C5.59763 3.68342 5.59763 4.31658 5.20711 4.70711L2.20711 7.70711C1.81658 8.09763 1.18342 8.09763 0.792893 7.70711C0.402369 7.31658 0.402369 6.68342 0.792893 6.29289L3.08579 4L0.792893 1.70711C0.402369 1.31658 0.402369 0.683417 0.792893 0.292893Z"
+      fill="currentColor"
+    />
+  </svg>
+)
 
 const mapLabel = label => {
   // remove `-`
@@ -90,7 +100,8 @@ const Desktop = ({
           'mt-1'
         )}
       >
-        展示更多 <ChevronDownIcon />
+        展示更多
+        {collapsed ? <ChevronRightIcon /> : <ChevronDownIcon />}
       </label>
     </div>
   );
