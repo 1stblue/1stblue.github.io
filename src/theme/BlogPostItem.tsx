@@ -1,16 +1,16 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import dayjs from 'dayjs';
 import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import BlogPostItemContainer from '@theme/BlogPostItem/Container';
-
 import clsx from 'clsx';
 import Date from '../pages/components/blog/Date';
 
 export default function BlogPostItem({ className }) {
   const { metadata } = useBlogPost();
-  const { permalink, title, date, formattedDate, frontMatter, description, tags } = metadata;
+  const { permalink, title, date, frontMatter, description, tags } = metadata;
 
-  // console.log('metadata', metadata);
+  const formattedDate = dayjs(date).format('YYYY年MM月DD日');
 
   const author = metadata.authors[0];
 
