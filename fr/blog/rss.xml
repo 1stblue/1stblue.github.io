@@ -19,7 +19,7 @@
 ，我们推荐将<code>bluepipe</code>部署在客户 IDC 中，<strong>推</strong>数据到<code>Lakehouse</code>。</p>
 <p><img decoding="async" loading="lazy" alt="Oracle to Lakehouse" src="https://www.1stblue.com/fr/assets/images/cross-network-pipe-eddbc84234790986facb8dda2658652e.png" width="2350" height="520" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="方案优势">方案优势<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E6%96%B9%E6%A1%88%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Lien direct vers 方案优势" title="Lien direct vers 方案优势">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="开箱即用10-分钟完成配置">开箱即用，10 分钟完成配置<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A810-%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Lien direct vers 开箱即用，10 分钟完成配置" title="Lien direct vers 开箱即用，10 分钟完成配置">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="开箱即用10-分钟完成配置">开箱即用，10 分钟完成配置<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A810-%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Lien direct vers 开箱即用，10 分钟完成配置" title="Lien direct vers 开箱�即用，10 分钟完成配置">​</a></h3>
 <ul>
 <li><code>bluepipe</code>几乎可以运行在任何<code>Linux</code>系统中，支持<code>x86</code>和<code>arm</code>芯片；常见的机架式服务器、笔记本电脑，甚至树莓派都可以用来部署；</li>
 <li>极简的配置过程，默认参数即可达到最佳性能。</li>
@@ -71,7 +71,7 @@
 <ul>
 <li>默认采用<code>20%</code>物理内存模式，以适应<code>POC</code>阶段广泛存在的与其他服务混合部署需求。</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接器">连接器<a href="https://www.1stblue.com/fr/blog/v0.11.0-release-notes#%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 连接器" title="Lien direct vers 连接器">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接器">连接器<a href="https://www.1stblue.com/fr/blog/v0.11.0-release-notes#%E8%BF%9E%EF%BF%BD%EF%BF%BD%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 连接器" title="Lien direct vers 连接器">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-database改进"><code>Oracle Database</code>（改进）<a href="https://www.1stblue.com/fr/blog/v0.11.0-release-notes#oracle-database%E6%94%B9%E8%BF%9B" class="hash-link" aria-label="Lien direct vers oracle-database改进" title="Lien direct vers oracle-database改进">​</a></h3>
 <ul>
 <li><code>CDC</code>：全面支持超过30个字符的表和字段；</li>
@@ -99,7 +99,7 @@
 <li>作业配置备份功能。</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接器">连接器<a href="https://www.1stblue.com/fr/blog/v0.10.1-release-notes#%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 连接器" title="Lien direct vers 连接器">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="postgressql改进"><code>PostgresSQL</code>（改进）<a href="https://www.1stblue.com/fr/blog/v0.10.1-release-notes#postgressql%EF%BF%BD%EF%BF%BD%E6%94%B9%E8%BF%9B" class="hash-link" aria-label="Lien direct vers postgressql改进" title="Lien direct vers postgressql改进">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="postgressql改进"><code>PostgresSQL</code>（改进）<a href="https://www.1stblue.com/fr/blog/v0.10.1-release-notes#postgressql%E6%94%B9%E8%BF%9B" class="hash-link" aria-label="Lien direct vers postgressql改进" title="Lien direct vers postgressql改进">​</a></h3>
 <ul>
 <li><code>CDC</code>模式开启自动创建<code>publication</code>（需要<code>super</code>权限）；</li>
 </ul>
