@@ -40,36 +40,6 @@ export default function BlogPostItems({
   >
     {!isAuthorPage && !isTagsPage && (
       <>
-        <div
-          className={clsx(
-            'flex flex-col blog-md:flex-row items-start lg:items-center justify-between',
-            'mb-4 lg:mb-8',
-            'px-0 blog-sm:px-6',
-            'not-prose'
-          )}
-        >
-          <h2
-            className={clsx(
-              '!m-0 !mt-0 !mb-0 p-0',
-              'blog-lg:mb-12 blog-md:mb-8 mb-8',
-              'text-xl blog-sm:text-4xl blog-lg:text-5xl',
-              'text-gray-900 ',
-              'font-semibold'
-            )}
-          >
-            所有文章
-          </h2>
-          <p
-            className={clsx(
-              'text-sm blog-md:text-base blog-lg:text-xl',
-              'blog-md:max-w-[624px]',
-              'mt-6 lg:mt-0',
-              'text-gray-500 '
-            )}
-          >
-            <b>Bluepipe 技术博客</b> - 一个用于 Bluepipe 产品生态系统和网络开发的资源。在这里，我们发表有见地的文章，揭开复杂的概念，探索新的趋势，并提供实用的提示和专业的指导，为你的产品使用旅程保驾护航。
-          </p>
-        </div>
         <TagsList tags={tags} />
       </>
     )}
