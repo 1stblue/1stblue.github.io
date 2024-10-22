@@ -9,9 +9,9 @@ import clsx from 'clsx';
 import html2PDF from 'jspdf-html2canvas';
 // import { Date, ReadingTime } from '@site/src/pages/components/blog';
 import Date from '../pages/components/blog/Date';
-// import ReadingTime from '../pages/components/blog/ReadingTime';
-// import html2canvas from 'html2canvas';
-// import jsPDF from 'jspdf';
+import ReadingTime from '../pages/components/blog/ReadingTime';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 import dayjs from 'dayjs';
 export const BlogPostPageView = ({ children }) => {
   const { metadata, isBlogPostPage } = useBlogPost();
@@ -42,20 +42,20 @@ export const BlogPostPageView = ({ children }) => {
       <div className="text-sm">
         <div className={clsx('flex', 'justify-between', 'sm:flex-row flex-col')}>
           <div className="flex justify-center items-center gap-2">
-            <Link to="/blog" className={clsx('text-sm no-underline')}>
-              ← 返回博客主页
+            <Link to="/blog" className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
+              ← 返回博客
             </Link>
           </div>
           <div className="flex items-center gap-2 text-gray-600 ">
             <Date date={date} formattedDate={formattedDate} />
-            {/* {typeof readingTime !== 'undefined' && (
+            {typeof readingTime !== 'undefined' && (
               <>
                 <span className="w-[4px] h-[4px] rounded-full bg-gray-600 "></span>
                 <ReadingTime readingTime={readingTime} />
               </>
-            )} */}
-            {/* <a
-              className="cursor-pointer"
+            )}
+             <a
+              className="cursor-pointer text-bp-blue-1"
               onClick={() => {
                 html2canvas(document.querySelector('.bluepipe-prose-blog-content'), {
                   foreignObjectRendering: false
@@ -98,7 +98,7 @@ export const BlogPostPageView = ({ children }) => {
               }}
             >
               下载
-            </a> */}
+            </a>
           </div>
         </div>
       </div>

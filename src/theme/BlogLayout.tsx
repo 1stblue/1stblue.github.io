@@ -17,12 +17,13 @@ export default function BlogLayout(props: Props): JSX.Element {
 
   return (
     <Layout {...layoutProps}>
-      <div className="container margin-vert--lg">
-        <div>
+      <div className="container margin-vert--lg flex gap-[10px]">
+        <div className='flex-1'>
           <main>
             {children}
           </main>
         </div>
+        {toc && <div className="flex-shrink-0">{toc}</div>}
       </div>
     </Layout>
   );
