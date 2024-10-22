@@ -54,7 +54,8 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-          blogSidebarTitle: '最新文章',
+          blogSidebarTitle: '所有文章',
+          blogSidebarCount: 'ALL',
           // showLastUpdateTime: true
           postsPerPage: 9, // 分页
         },

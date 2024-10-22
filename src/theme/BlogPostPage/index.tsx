@@ -38,7 +38,7 @@ function BlogPostPageContent({
   } = frontMatter;
   return (
     <BlogLayout
-      sidebar={sidebar}
+      // sidebar={sidebar}
       toc={
         !hideTableOfContents && toc.length > 0 ? (
           <TOC

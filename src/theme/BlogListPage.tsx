@@ -25,27 +25,14 @@ function BlogListPageMetadata(props) {
 }
 
 function BlogListPageContent(props) {
-  const { metadata, tags, items } = props;
+  const { metadata, tags, items, sidebar } = props;
 
   const paginatedPosts = items.filter(post => post.content.metadata.frontMatter.is_featured !== true);
 
   return (
-    <BlogLayout>
-      {/* <div
-        className={clsx(
-          'px-4',
-          'max-w-[512px]',
-          'blog-md:px-7',
-          'blog-md:max-w-screen-blog-md',
-          'blog-2xl:px-0',
-          'blog-2xl:max-w-screen-blog-md',
-          'w-full',
-          'mx-auto',
-          'blog-md:block hidden'
-        )}
-      >
-        <div className="border-b border-gray-100 "></div>
-      </div> */}
+    <BlogLayout
+      sidebar={sidebar}
+    >
       <BlogPostItems items={paginatedPosts} />
       <div
         className={clsx(
