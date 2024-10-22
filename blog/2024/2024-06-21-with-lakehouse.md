@@ -7,7 +7,10 @@ tags: [ lakehouse, network, Oracle ]
 
 # 构建跨网络数据管道最佳实践
 
+
+
 本文以[云器](https://yunqi.tech/) `Lakehouse` 为例，介绍利用`bluepipe`构建跨网络的数据复制最佳实践。
+<!-- truncate -->
 
 如下图，客户业务系统部署在私有 IDC 中，而`Lakehouse`作为多租户湖仓服务部署在云上。数据需要从`Oracle`同步到`Lakehouse`
 ，我们推荐将`bluepipe`部署在客户 IDC 中，**推**数据到`Lakehouse`。

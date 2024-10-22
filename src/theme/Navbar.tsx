@@ -10,7 +10,7 @@ export default function Navbar(props) {
   const progressPercentage = useTransform(scrollYProgress, [0.03, 0.95], ['0%', '100%']);
 
   const { pathname } = useLocation();
-  const isBlogDetailPage = /^\/blog\/.+/.test(pathname) && !/^\/blog\/tags.*/.test(pathname);
+  const isBlogDetailPage = /^\/blog\/.+/.test(pathname) && !/^\/blog\/tags.*/.test(pathname) && !/^\/blog\/page.*/.test(pathname);
 
   return (
    <div>

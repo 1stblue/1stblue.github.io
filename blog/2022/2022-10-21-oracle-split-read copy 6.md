@@ -1,8 +1,8 @@
 ---
-slug: oracle-split-read
-title: Oracle大表的并行读取
+slug: oracle-split-read20221021
+title: Oracle大表的并行读取20221021
 authors: [ aleafs ]
-image: http://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONT2211A10520EB41FBA9E95AA892CCEE34/native/rh08-oracle-for-azure-732x372.jpg
+image: /img/oracle.png
 tags: [ Oracle, ROWID, 并行 ]
 ---
 
