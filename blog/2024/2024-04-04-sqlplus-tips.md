@@ -6,11 +6,6 @@ image: /img/blog-static/cover-bridge.jpeg
 tags: [ Sqlplus, 工具 ]
 ---
 
-# 1
-## 2
-### 3
-#### 4
-##### 5
 ```oraclesqlplus
 SET LINESIZE 100;
 SET PAGESIZE 100;

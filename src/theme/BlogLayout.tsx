@@ -20,7 +20,7 @@ export default function BlogLayout(props: Props): JSX.Element {
       <div className="container margin-vert--lg flex gap-[10px]">
         <div className='flex-1 flex'>
         <BlogSidebar sidebar={sidebar} />
-          <main>
+          <main className='w-full'>
             {children}
           </main>
         </div>
