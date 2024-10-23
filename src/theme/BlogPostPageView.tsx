@@ -13,6 +13,7 @@ import ReadingTime from '../pages/components/blog/ReadingTime';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import dayjs from 'dayjs';
+import BlogAuthor from './Blog/Components/Author';
 export const BlogPostPageView = ({ children }) => {
   const { metadata, isBlogPostPage } = useBlogPost();
   const { permalink, title, date, readingTime, frontMatter, tags, description, authors } = metadata;
@@ -113,6 +114,7 @@ export const BlogPostPageView = ({ children }) => {
           )}
         </h1>
         <div id={blogPostContainerID} className="markdown" itemProp="articleBody">
+          <BlogAuthor author={author} className='my-[10px]'/>
           <MDXContent>{children}</MDXContent>
         </div>
       </div>
