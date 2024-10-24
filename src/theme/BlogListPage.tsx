@@ -36,7 +36,6 @@ function BlogListPageContent(props) {
       <BlogPostItems items={paginatedPosts} />
       <div
         className={clsx(
-          'max-w-[512px]',
           'blog-md:max-w-screen-blog-md',
           'blog-2xl:max-w-screen-blog-md',
           'w-full',

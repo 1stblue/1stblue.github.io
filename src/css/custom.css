@@ -37,8 +37,7 @@ body :not(pre):not(code):lang(en) {
 /* 修改 sidebar 的样式 */
 .menu {
     font-weight: 400;
-    font-size: 18px;
-    width: 200px;
+    font-size: 14px;
     margin-right: 5px;
 }
 .menu__link {
@@ -55,6 +54,31 @@ body :not(pre):not(code):lang(en) {
 }
 .container.padding-top--md.padding-bottom--lg {
     width: 920px;
+}
+
+/** 面包屑 **/
+.breadcrumbs__item--active .breadcrumbs__link {
+    background: unset;
+    color: unset;
+}
+/** 博客左侧分割线间距 **/
+.container> .row> .col {
+    padding-left: 32px;
+    padding: 0, 0;
+}
+
+/** 分页 **/
+.pagination-nav__link {
+    border: unset;
+    border-radius: unset;
+}
+
+/** 博客侧边栏 **/
+aside.col {
+    width: 400px;
+    border-right: 1px solid #dadde1;
+    padding-right: 32px;
+    margin-right: 32px;
 }
 
 /* 处理docusaurus提供的默认table样式和shadcn table冲突 */
@@ -88,7 +112,7 @@ main, .container.margin-vert--lg main {
     font-weight: 400;
 }
 main h1, .container.margin-vert--lg main h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }

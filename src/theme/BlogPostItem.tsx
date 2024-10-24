@@ -28,26 +28,15 @@ export default function BlogPostItem({ className }) {
           </div>
         </Link>
       </div>
+
       <div>
-        <div className={clsx('my-2 flex gap-1 md:mb-4', 'flex flex-wrap items-center')}>
-          {tags.map(tag => (
-            <Link
-              className={clsx(
-                'text-xs',
-                'bg-gray-100 ',
-                'text-gray-600 hover:text-bp-blue-1 ',
-                'no-underline',
-                'rounded',
-                'px-2 py-1'
-              )}
-              href={tag.permalink}
-              key={tag.permalink}
-            >
-              {tag.label}
-            </Link>
-          ))}
+        <div className="flex items-center gap-2">
+          <span className={clsx('text-gray-600 text-[14px] mt-[5px]')}>
+            <Date date={date} formattedDate={formattedDate} />
+          </span>
         </div>
-        <div className="py-2 md:mb-4">
+
+        <div className="py-2">
           <Link
             itemProp="url"
             to={permalink}
@@ -70,7 +59,6 @@ export default function BlogPostItem({ className }) {
           <div
             className={clsx(
               'text-xs md:text-base lg:text-sm 2xl:text-lg',
-              'mt-2 md:mt-4',
               'line-clamp-3 text-gray-700 '
             )}
           >
@@ -78,10 +66,23 @@ export default function BlogPostItem({ className }) {
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <span className={clsx('text-gray-600')}>
-            <Date date={date} formattedDate={formattedDate} />
-          </span>
+        <div className={clsx('my-2 flex gap-1 md:mb-4', 'flex flex-wrap items-center')}>
+          {tags.map(tag => (
+            <Link
+              className={clsx(
+                'text-xs',
+                'bg-gray-100 ',
+                'text-gray-600 hover:text-bp-blue-1 ',
+                'no-underline',
+                'rounded',
+                'px-2 py-1'
+              )}
+              href={tag.permalink}
+              key={tag.permalink}
+            >
+              {tag.label}
+            </Link>
+          ))}
         </div>
       </div>
     </BlogPostItemContainer>

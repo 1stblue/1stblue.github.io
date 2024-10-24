@@ -48,7 +48,6 @@ export default function BlogPostItems({
       className={clsx(
         'grid',
         'grid-cols-3',
-        'gap-4',
         'pt-6',
         'py-[24px]'
         // isAuthorPage ? 'blog-md:pt-0' : 'blog-md:pt-12'
@@ -56,7 +55,7 @@ export default function BlogPostItems({
     >
       {items.map(({ content: BlogPostContent }) => (
         <BlogPostProvider key={BlogPostContent.metadata.permalink} content={BlogPostContent}>
-          <BlogPostItemComponent className='border-[1px] rounded-[12px] p-4'>
+          <BlogPostItemComponent className='hover:border-[1px] hover:rounded-[12px] p-4'>
             <BlogPostContent />
           </BlogPostItemComponent>
         </BlogPostProvider>
