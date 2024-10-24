@@ -68,7 +68,7 @@ const Desktop = ({
       )}
     >
       <ul
-        className={clsx('overflow-hidden', 'flex-1', collapsed && 'h-8')}
+        className={clsx('overflow-hidden', 'flex-1')}
         style={{
           margin: 0,
           padding: 0
@@ -80,7 +80,7 @@ const Desktop = ({
           </li>
         ))}
       </ul>
-      <label
+      {/* <label
         onClick={() => onShowMoreClick(!collapsed)}
         className={clsx(
           'flex',
@@ -100,7 +100,7 @@ const Desktop = ({
       >
         展示更多
         {collapsed ? <ChevronRightIcon /> : <ChevronDownIcon />}
-      </label>
+      </label> */}
     </div>
   );
 };

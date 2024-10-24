@@ -24,7 +24,7 @@ export default function BlogPostItems({
 
   return (
     <div
-     className='mt-[60px]'
+     className='mt-[20px]'
     >
     {!isAuthorPage && !isTagsPage && (
       <>
@@ -43,7 +43,7 @@ export default function BlogPostItems({
     >
       {items.map(({ content: BlogPostContent }) => (
         <BlogPostProvider key={BlogPostContent.metadata.permalink} content={BlogPostContent}>
-          <BlogPostItemComponent className='hover:border-[1px] hover:rounded-[12px] p-4'>
+          <BlogPostItemComponent>
             <BlogPostContent />
           </BlogPostItemComponent>
         </BlogPostProvider>

@@ -15,7 +15,7 @@ body :not(pre):not(code):lang(en) {
 } */
 
 :root {
-    --doc-sidebar-width: 320px !important; /* 文档docs 侧边栏宽度 */
+    --doc-sidebar-width: 240px !important; /* 文档docs 侧边栏宽度 */
 }
 .main-wrapper {
     padding-top: 56px; /* 与 navbar 的高度一致 */
@@ -52,7 +52,7 @@ body :not(pre):not(code):lang(en) {
 .theme-doc-sidebar-container {
 }
 .theme-doc-sidebar-menu {
-    padding-right: 32px
+    padding-right: 48px /* 文档左侧分割线左间距 */
 }
 .container.padding-top--md.padding-bottom--lg {
     padding-top: 36px !important;
@@ -63,9 +63,9 @@ body :not(pre):not(code):lang(en) {
     background: unset;
     color: unset;
 }
-/** 文档左侧分割线间距 **/
+
 .container> .row> .col {
-    padding-left: 32px;
+    padding-left: 16px; /* 文档左侧分割线右间距 */
     padding: 0, 0;
 }
 
@@ -73,18 +73,19 @@ body :not(pre):not(code):lang(en) {
 .pagination-nav__link {
     border: unset;
     border-radius: unset;
+    padding: 0px;
 }
 
 /** 博客侧边栏 **/
 aside.col {
-    margin-right: 32px;
+    margin-right: 16px; /* 博客左侧分割线右间距 */
 }
 aside.col.col--3> nav {
-    padding-right: 32px;
-    /* width: 320px */
+    padding-right: 48px; /* 博客左侧分割线左间距 */
+    /* width: 240px */
 }
 aside.col.col--3 {
-    --ifm-col-width: 320px; /* 博客侧边栏宽度设置 */
+    --ifm-col-width: 240px; /* 博客侧边栏宽度设置 */
     padding: 0;
     border-right: 1px solid #dadde1;
 }

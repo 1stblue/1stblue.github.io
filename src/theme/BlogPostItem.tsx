@@ -15,7 +15,13 @@ export default function BlogPostItem({ className }) {
   const author = metadata.authors[0];
 
   return (
-    <BlogPostItemContainer className={className}>
+    <Link
+      itemProp="url"
+      to={permalink}
+      className="no-underline hover:border-[1px] hover:p-[15px] hover:rounded-[12px] p-[16px]"
+      rel="noopener dofollow"
+    >
+      <BlogPostItemContainer className={className}>
       <div>
         <Link itemProp="url" to={permalink}>
           <div className="not-prose relative m-0 h-40 hover:brightness-90">
@@ -58,7 +64,7 @@ export default function BlogPostItem({ className }) {
           </Link>
           <div
             className={clsx(
-              'text-xs md:text-base lg:text-sm 2xl:text-lg',
+              'text-[16px]',
               'line-clamp-3 text-gray-700 '
             )}
           >
@@ -85,7 +91,8 @@ export default function BlogPostItem({ className }) {
           ))}
         </div>
       </div>
-    </BlogPostItemContainer>
+      </BlogPostItemContainer>
+    </Link>
   );
 }
 

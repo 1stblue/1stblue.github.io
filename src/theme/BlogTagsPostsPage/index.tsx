@@ -49,16 +49,16 @@ function BlogTagsPostsPageContent({
           <Link to="/blog" className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
                 ← 返回博客
           </Link>
-          <Link href={tag.allTagsPath} className="no-underline">
+          <Link href={tag.allTagsPath} className="no-underline flex">
             <Translate
               id="theme.tags.tagsPageLink"
               description="The label of the link targeting the tag list page">
-              查看所有分类标签 ➡️
+              查看所有分类标签
             </Translate>
+            <img src='/icons/arrow-right.svg' alt='arrow right' className='hover:text-bp-blue-1' />
           </Link>
         </div>
         <Heading as="h2" className='mt-[10px]'>{`有${tag?.count}篇${tag?.label}相关的文章`}</Heading>
-        {/* <TagsList tags={tags} /> */}
       </header>
       <BlogPostItems items={items} showTitle={false} isTagsPage={true} />
       <BlogListPaginator metadata={listMetadata} />
