@@ -24,20 +24,8 @@ export default function BlogPostItems({
 
   return (
     <div
-    // className={clsx(
-    //   'px-4',
-    //   'blog-md:px-7',
-    //   'blog-2xl:px-0',
-    //   !isAuthorPage && !isTagsPage && 'blog-sm:pb-16 blog-md:pb-8 blog-2xl:pb-12 pb-10',
-    //   !isAuthorPage && !isTagsPage && 'blog-md:pt-16 blog-2xl:pt-20',
-    //   (isAuthorPage || isTagsPage) && 'py-8',
-    //   'max-w-[512px]',
-    //   'blog-md:max-w-screen-blog-md',
-    //   'blog-2xl:max-w-screen-blog-md',
-    //   'w-full',
-    //   'mx-auto'
-    // )}
-  >
+     className='mt-[60px]'
+    >
     {!isAuthorPage && !isTagsPage && (
       <>
         <TagsList tags={tags} />

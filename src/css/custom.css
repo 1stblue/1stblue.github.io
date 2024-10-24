@@ -14,8 +14,11 @@ body :not(pre):not(code):lang(en) {
   font-family: 'Inconsolata', monospace !important;
 } */
 
+:root {
+    --doc-sidebar-width: 320px !important; /* 文档docs 侧边栏宽度 */
+}
 .main-wrapper {
-    padding-top: 60px; /* 与 navbar 的高度一致 */
+    padding-top: 56px; /* 与 navbar 的高度一致 */
     padding-bottom: 56px;
     width: 1120px;
     margin: auto;
@@ -38,7 +41,7 @@ body :not(pre):not(code):lang(en) {
 .menu {
     font-weight: 400;
     font-size: 14px;
-    margin-right: 5px;
+    padding-top: 36px !important; /* 文档侧边栏*/
 }
 .menu__link {
     color: black;
@@ -47,13 +50,12 @@ body :not(pre):not(code):lang(en) {
     color: #3578e5
 }
 .theme-doc-sidebar-container {
-    width: 210px !important; 
 }
 .theme-doc-sidebar-menu {
-    width: 200px;
+    padding-right: 32px
 }
 .container.padding-top--md.padding-bottom--lg {
-    width: 920px;
+    padding-top: 36px !important;
 }
 
 /** 面包屑 **/
@@ -61,7 +63,7 @@ body :not(pre):not(code):lang(en) {
     background: unset;
     color: unset;
 }
-/** 博客左侧分割线间距 **/
+/** 文档左侧分割线间距 **/
 .container> .row> .col {
     padding-left: 32px;
     padding: 0, 0;
@@ -75,10 +77,16 @@ body :not(pre):not(code):lang(en) {
 
 /** 博客侧边栏 **/
 aside.col {
-    width: 400px;
-    border-right: 1px solid #dadde1;
-    padding-right: 32px;
     margin-right: 32px;
+}
+aside.col.col--3> nav {
+    padding-right: 32px;
+    /* width: 320px */
+}
+aside.col.col--3 {
+    --ifm-col-width: 320px; /* 博客侧边栏宽度设置 */
+    padding: 0;
+    border-right: 1px solid #dadde1;
 }
 
 /* 处理docusaurus提供的默认table样式和shadcn table冲突 */
@@ -149,4 +157,7 @@ main .table-of-contents {
     font-size: 14px;
     font-weight: 400;
 }
-    
+/* * 隐藏#号 *
+.hash-link {
+    display: none;
+} */

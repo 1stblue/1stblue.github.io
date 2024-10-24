@@ -8,7 +8,7 @@ import User from "./User";
 
 export default function Navbar() {
   return (
-    <header className="w-[1120px] m-auto py-[12px] ">
+    <header className="w-[1120px] m-auto py-[12px]  h-[56px]">
       <nav className="flex justify-between items-center">
         <div className="w-[45%] flex justify-between items-center">
         <Logo />
