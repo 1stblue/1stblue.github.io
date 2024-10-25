@@ -44,7 +44,7 @@ body :not(pre):not(code):lang(en) {
 .table-of-contents {
     padding: 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
 }
-.tableOfContents_src-theme-TOC-styles-module {
+.tableOfContents_src-theme-TOC-styles-module, .tableOfContents_jeP5 {
     position: unset !important;
     top: unset !important;
 }
