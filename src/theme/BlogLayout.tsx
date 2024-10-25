@@ -19,12 +19,10 @@ export default function BlogLayout(props: Props): JSX.Element {
   const { pathname } = useLocation();
   return (
     <Layout {...layoutProps}>
-      <div className={clsx('margin-vert--lg flex',
-        pathname === '/blog' && 'mt-[-20px]'
-      )}>
+      <div className={clsx('margin-vert--lg flex')}>
         <div className='flex-1 flex'>
         <BlogSidebar sidebar={sidebar} />
-          <main className='w-full'>
+          <main className={clsx('w-full', pathname !== '/blog/' && pathname !== '/blog' && 'mt-[36px]')}>
             {children}
           </main>
         </div>

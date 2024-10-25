@@ -18,7 +18,7 @@ export default function BlogPostItem({ className }) {
     <Link
       itemProp="url"
       to={permalink}
-      className="no-underline hover:border-[1px] hover:p-[15px] hover:rounded-[12px] p-[16px]"
+      className="no-underline border-[1px] border-transparent hover:border-[#e5e7eb] rounded-[24px] p-[16px]"
       rel="noopener dofollow"
     >
       <BlogPostItemContainer className={className}>
@@ -37,7 +37,7 @@ export default function BlogPostItem({ className }) {
 
       <div>
         <div className="flex items-center gap-2">
-          <span className={clsx('text-gray-600 text-[14px] mt-[5px]')}>
+          <span className={clsx('text-gray-600 text-[14px] pt-[21px] pb-[4px]')}>
             <Date date={date} formattedDate={formattedDate} />
           </span>
         </div>
@@ -51,7 +51,7 @@ export default function BlogPostItem({ className }) {
           >
             <div
               className={clsx(
-                'text-xs sm:text-sm md:text-2xl lg:text-base 2xl:text-xl',
+                'text-xs sm:text-sm md:text-2xl lg:text-base 2xl:text-xl pb-[4px]',
                 'text-gray-700 ',
                 'font-lg',
                 'font-bold',
@@ -65,7 +65,7 @@ export default function BlogPostItem({ className }) {
           <div
             className={clsx(
               'text-[16px]',
-              'line-clamp-3 text-gray-700 '
+              'line-clamp-3 text-gray-700'
             )}
           >
             {description}

@@ -38,6 +38,20 @@ body :not(pre):not(code):lang(en) {
     font-weight: 400;
 }
 /* 修改 sidebar 的样式 */
+.sidebar_src-theme-DocSidebar-Desktop-styles-module {
+    padding-top: 56px !important;
+}
+.table-of-contents {
+    padding: 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
+    margin-top: 36px !important;
+}
+.tableOfContents_src-theme-TOC-styles-module {
+    position: unset !important;
+    top: unset !important;
+}
+.sidebar_node_modules--pnpm-\@docusaurus\+theme-classic\@3-5-2_\@types\+react\@18-3-11_react-dom\@18-3-1_react\@18-3-1__react\@18-3-1_typescript\@5-5-4-node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
+    top: calc(var(--ifm-navbar-height) + 2rem);
+}
 .menu {
     font-weight: 400;
     font-size: 14px;
@@ -82,12 +96,14 @@ aside.col {
 }
 aside.col.col--3> nav {
     padding-right: 48px; /* 博客左侧分割线左间距 */
-    /* width: 240px */
 }
 aside.col.col--3 {
     --ifm-col-width: 240px; /* 博客侧边栏宽度设置 */
     padding: 0;
     border-right: 1px solid #dadde1;
+}
+#__docusaurus_skipToContent_fallback > .margin-vert--lg {
+    margin-top: 0px !important; /* 博客左侧分隔线上边距 */
 }
 
 /* 处理docusaurus提供的默认table样式和shadcn table冲突 */

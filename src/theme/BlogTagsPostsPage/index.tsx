@@ -55,7 +55,7 @@ function BlogTagsPostsPageContent({
               description="The label of the link targeting the tag list page">
               查看所有分类标签
             </Translate>
-            <img src='/icons/arrow-right.svg' alt='arrow right' className='hover:text-bp-blue-1' />
+            <img src='/icons/arrow-right.svg' alt='arrow right' className='hover:text-bp-blue-1 pl-[5px]' />
           </Link>
         </div>
         <Heading as="h2" className='mt-[10px]'>{`有${tag?.count}篇${tag?.label}相关的文章`}</Heading>

@@ -5,6 +5,7 @@ import {BlogPostProvider, useBlogPost} from '@docusaurus/plugin-content-blog/cli
 import clsx from 'clsx';
 import TagsList from '@theme/TagsList';
 import { flatMap, groupBy, map } from 'micro-dash';
+import { useLocation } from '@docusaurus/router';
 
 export default function BlogPostItems({
     items,
@@ -21,10 +22,11 @@ export default function BlogPostItems({
       permalink: items[0]?.permalink,
       count: items.length // 计算 count
     }));
-
+  
+    const {pathname} = useLocation();
   return (
     <div
-     className='mt-[20px]'
+     className={clsx(pathname.includes('/blog/tags') ? 'mt-[20px]' : 'mt-[36px]')}
     >
     {!isAuthorPage && !isTagsPage && (
       <>

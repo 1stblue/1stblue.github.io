@@ -42,7 +42,7 @@ export const BlogPostPageView = ({ children }) => {
     >
       <div className="text-sm">
         <div className={clsx('flex', 'justify-between', 'sm:flex-row flex-col')}>
-          <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2 pl-[24px]">
             <Link to="/blog" className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
               ← 返回博客
             </Link>
@@ -103,7 +103,7 @@ export const BlogPostPageView = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className="p-6 bluepipe-prose-blog-content">
+      <div className="p-[24px] bluepipe-prose-blog-content">
         <h1 itemProp="headline">
           {isBlogPostPage ? (
             title
@@ -114,7 +114,7 @@ export const BlogPostPageView = ({ children }) => {
           )}
         </h1>
         <div id={blogPostContainerID} className="markdown" itemProp="articleBody">
-          <BlogAuthor author={author} className='my-[10px]'/>
+          <BlogAuthor author={author} className='mt-[10px] mb-[40px]'/>
           <MDXContent>{children}</MDXContent>
         </div>
       </div>
