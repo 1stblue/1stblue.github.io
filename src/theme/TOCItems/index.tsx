@@ -14,6 +14,8 @@ import {
 } from '@docusaurus/theme-common/internal';
 import TOCItemTree from '@theme/TOCItems/Tree';
 import type {Props} from '@theme/TOCItems';
+import clsx from 'clsx';
+import { useLocation } from '@docusaurus/router';
 // import Tags from '@site/src/pages/components/blog/Tags';
 
 export default function TOCItems({
@@ -51,12 +53,13 @@ export default function TOCItems({
   }, [linkClassName, linkActiveClassName, minHeadingLevel, maxHeadingLevel]);
   useTOCHighlight(tocHighlightConfig);
 
+  const {pathname} = useLocation();
   return (
     <div>
       {/* <Tags /> */}
       <TOCItemTree
       toc={tocTree}
-      className={className}
+      className={clsx(className, pathname.includes('/docs') && 'mt-[0px]', pathname.includes('/blog') && 'mt-[36px]')}
       linkClassName={linkClassName}
       {...props}
       />

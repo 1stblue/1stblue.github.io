@@ -43,7 +43,6 @@ body :not(pre):not(code):lang(en) {
 }
 .table-of-contents {
     padding: 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
-    margin-top: 36px !important;
 }
 .tableOfContents_src-theme-TOC-styles-module {
     position: unset !important;
