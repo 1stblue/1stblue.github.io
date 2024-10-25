@@ -16,6 +16,7 @@ body :not(pre):not(code):lang(en) {
 
 :root {
     --doc-sidebar-width: 240px !important; /* 文档docs 侧边栏宽度 */
+    --ifm-navbar-height: 56px !important;
 }
 .main-wrapper {
     padding-top: 56px; /* 与 navbar 的高度一致 */
@@ -43,10 +44,6 @@ body :not(pre):not(code):lang(en) {
 }
 .table-of-contents {
     padding: 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
-}
-.tableOfContents_src-theme-TOC-styles-module, .tableOfContents_jeP5 {
-    position: unset !important;
-    top: unset !important;
 }
 .sidebar_node_modules--pnpm-\@docusaurus\+theme-classic\@3-5-2_\@types\+react\@18-3-11_react-dom\@18-3-1_react\@18-3-1__react\@18-3-1_typescript\@5-5-4-node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
     top: calc(var(--ifm-navbar-height) + 2rem);

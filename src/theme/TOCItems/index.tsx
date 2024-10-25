@@ -59,7 +59,7 @@ export default function TOCItems({
       {/* <Tags /> */}
       <TOCItemTree
       toc={tocTree}
-      className={clsx(className, pathname.includes('/docs') && 'mt-[0px]', pathname.includes('/blog') && 'mt-[36px]')}
+      className={clsx(className, pathname.includes('/blog') && 'mt-[20px]' )}
       linkClassName={linkClassName}
       {...props}
       />
