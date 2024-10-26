@@ -60,7 +60,7 @@ body :not(pre):not(code):lang(en) {
     width: 241px !important; /* 文档左侧导航栏宽度(240 + border 1px)*/
 }
 .theme-doc-sidebar-menu {
-    padding-right: 32px /* 文档左侧分割线左间距 */
+    padding-right: 22px /* 文档左侧分割线左间距 */
 }
 .container.padding-top--md.padding-bottom--lg {
     padding-top: 36px !important;
