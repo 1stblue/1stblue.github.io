@@ -47,7 +47,7 @@ function BlogTagsPostsPageContent({
       {/* {tag.unlisted && <Unlisted />} */}
       <header className="">
         <div className='flex justify-between'>
-          <Link to="/blog" className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
+          <Link onClick={() => window.history.go(-1)} className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
                 ← 返回博客
           </Link>
           <Link href={tag.allTagsPath} className="no-underline flex text-[14px] group items-center">

@@ -43,7 +43,7 @@ export const BlogPostPageView = ({ children }) => {
       <div className="text-sm">
         <div className={clsx('flex', 'justify-between', 'sm:flex-row flex-col')}>
           <div className="flex justify-center items-center gap-2 pl-[32px]">
-            <Link to="/blog" className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
+            <Link onClick={() => window.history.go(-1)} className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
               ← 返回博客
             </Link>
           </div>
