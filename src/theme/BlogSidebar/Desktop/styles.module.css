@@ -13,6 +13,7 @@
   /* 博客左边导航栏字体 */
   font-size: 14px !important;
   font-family: 'PingFang SC Microsoft YaHei sans-serif' !important;
+  width: 240px !important; /* 博客左边导航栏宽度 */
 }
 
 .sidebarItemTitle {

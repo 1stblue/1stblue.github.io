@@ -17,7 +17,6 @@ body :not(pre):not(code):lang(en) {
 :root {
     --doc-sidebar-width: 240px !important; /* 文档docs 侧边栏宽度 */
     --ifm-navbar-height: 56px !important;
-    --ifm-spacing-horizontal: 0px !important;
     --ifm-toc-padding-vertical: 5px !important;
 }
 .main-wrapper {
@@ -56,6 +55,7 @@ body :not(pre):not(code):lang(en) {
     color: #3578e5
 }
 .theme-doc-sidebar-container {
+    width: 241px !important; /* 文档左侧导航栏宽度(240 + border 1px)*/
 }
 .theme-doc-sidebar-menu {
     padding-right: 32px /* 文档左侧分割线左间距 */
@@ -95,7 +95,7 @@ aside.col.col--3> nav {
     padding-right: 32px; /* 博客左侧分割线左间距 */
 }
 aside.col.col--3 {
-    --ifm-col-width: 240px; /* 博客侧边栏宽度设置 */
+    --ifm-col-width: 241px; /* 博客侧边栏宽度设置 */
     padding: 0;
     border-right: 1px solid #dadde1;
 }
