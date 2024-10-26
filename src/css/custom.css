@@ -41,7 +41,9 @@ body :not(pre):not(code):lang(en) {
 }
 
 .table-of-contents {
-    padding: 0px 32px 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
+    /* 文档,博客右侧导航栏顶部对齐面包屑，左右间距32px */
+    padding: 0px 32px 0px !important;
+    padding-left: 24px !important;
 }
 .menu {
     font-weight: 400;
