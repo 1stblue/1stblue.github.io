@@ -18,6 +18,7 @@ body :not(pre):not(code):lang(en) {
     --doc-sidebar-width: 240px !important; /* 文档docs 侧边栏宽度 */
     --ifm-navbar-height: 56px !important;
     --ifm-spacing-horizontal: 0px !important;
+    --ifm-toc-padding-vertical: 5px !important;
 }
 .main-wrapper {
     padding-top: 56px; /* 与 navbar 的高度一致 */
