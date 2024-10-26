@@ -99,7 +99,7 @@ FROM (SELECT id, ROWNUM AS rn
 WHERE MOD(rn, 12500000) = 0
 ```
 
-### D: `DBMS_PARALLEL_EXECUTE`包`create_chunks_by_rowid`
+### D: DBMS_PARALLEL_EXECUTE 包 create_chunks_by_rowid
 
 ```oraclesqlplus
 BEGIN

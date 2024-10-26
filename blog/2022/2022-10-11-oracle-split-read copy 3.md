@@ -99,7 +99,7 @@ FROM (SELECT id, ROWNUM AS rn
 WHERE MOD(rn, 12500000) = 0
 ```
 
-### D: `DBMS_PARALLEL_EXECUTE`包`create_chunks_by_rowid`
+### D: DBMS_PARALLEL_EXECUTE 包 create_chunks_by_rowid
 
 ```oraclesqlplus
 BEGIN
@@ -119,7 +119,7 @@ WHERE task_name = 'tpch_test'
 ORDER BY chunk_id;
 ```
 
-### E: 基于ROWID，Hash切分
+### E: 基于 ROWID，Hash 切分
 
 ```oraclesqlplus title="hello.sql"
 SELECT *

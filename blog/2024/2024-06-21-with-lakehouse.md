@@ -35,11 +35,11 @@ tags: [ lakehouse, network, Oracle ]
 * `bluepipe`与您的数据库一起部署在您的内网，无需对外暴露端口；
 * 弹性`buffer size`技术，在`吞吐(Throughput)`和`延迟(latency)`之间自动平衡。
 
-## `Oracle`链路的独特优势
+## Oracle 链路的独特优势
 
 `bluepipe`基于`Oracle LogMiner`实现对变更数据的捕捉。与此同时，在以下几个方面做了深度优化：
 
-### 对`DDL`行为的深度兼容
+### 对 DDL 行为的深度兼容
 
 在`LogMiner`默认策略下，当发生`DDL`行为后，相关表上后续的`DML`操作均无法正确解析，从而导致无法正确捕捉到变更。
 
@@ -60,4 +60,4 @@ tags: [ lakehouse, network, Oracle ]
 
 `bluepipe`基于高效的流批融合技术，全面支持了此种情况下的增量数据捕捉与投递。
 
-### 适配支持`RAC`架构
+### 适配支持 RAC 架构
