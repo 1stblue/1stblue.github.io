@@ -68,7 +68,7 @@ const Desktop = ({
       )}
     >
       <ul
-        className={clsx('overflow-hidden', 'flex-1')}
+        className={clsx('overflow-hidden', 'flex-1 ml-[-4px]')}
         style={{
           margin: 0,
           padding: 0
