@@ -40,15 +40,9 @@ body :not(pre):not(code):lang(en) {
     font-size: 14px;
     font-weight: 400;
 }
-/* 修改 sidebar 的样式 */
-.sidebar_src-theme-DocSidebar-Desktop-styles-module {
-    padding-top: 56px !important;
-}
+
 .table-of-contents {
     padding: 0px 32px 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
-}
-.sidebar_node_modules--pnpm-\@docusaurus\+theme-classic\@3-5-2_\@types\+react\@18-3-11_react-dom\@18-3-1_react\@18-3-1__react\@18-3-1_typescript\@5-5-4-node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
-    top: calc(var(--ifm-navbar-height) + 2rem);
 }
 .menu {
     font-weight: 400;
@@ -108,23 +102,6 @@ aside.col.col--3 {
 #__docusaurus_skipToContent_fallback > .margin-vert--lg {
     margin-top: 0px !important; /* 博客左侧分隔线上边距 */
 }
-
-.sidebar_src-theme-BlogSidebar-Desktop-styles-module,
-.sidebarItemTitle_src-theme-BlogSidebar-Desktop-styles-module,
-.yearGroupHeading_src-theme-BlogSidebar-Desktop-styles-module,
-.sidebarItemLink_src-theme-BlogSidebar-Desktop-styles-module {
-    font-size: 14px !important;
-    font-family: 'PingFang SC Microsoft YaHei sans-serif';
-}
-.sidebar_src-theme-BlogSidebar-Desktop-styles-module {
-    /* max-height: unset !important;
-    overflow-y: unset !important;
-    position: unset !important; */
-    top: 56px !important;
-}
- .sidebarItemTitle_src-theme-BlogSidebar-Desktop-styles-module {
-    margin-top: 36px !important;
- }
 
 /* 处理docusaurus提供的默认table样式和shadcn table冲突 */
 /* 去除表格斑马纹 */

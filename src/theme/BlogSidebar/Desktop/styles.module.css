@@ -9,12 +9,13 @@
   max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
   overflow-y: auto;
   position: sticky;
-  top: calc(var(--ifm-navbar-height) + 2rem);
+  top: 56px !important; /* 博客左侧导航栏顶部间距 */
 }
 
 .sidebarItemTitle {
   font-size: var(--ifm-h3-font-size);
   font-weight: var(--ifm-font-weight-bold);
+  margin-top: 36px !important; /* 博客左侧导航栏顶部间距 */
 }
 
 .sidebarItemList {
@@ -28,6 +29,9 @@
 .sidebarItemLink {
   color: var(--ifm-font-color-base);
   display: block;
+   /* 博客侧边栏字体 */
+  font-size: 14px !important;
+  font-family: 'PingFang SC Microsoft YaHei sans-serif' !important;
 }
 
 .sidebarItemLink:hover {
@@ -47,4 +51,7 @@
 .yearGroupHeading {
   margin-top: 1.6rem;
   margin-bottom: 0.4rem;
+  /* 博客侧边栏字体 */
+  font-size: 14px !important;
+  font-family: 'PingFang SC Microsoft YaHei sans-serif' !important;
 }
