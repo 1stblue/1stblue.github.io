@@ -65,16 +65,17 @@ body :not(pre):not(code):lang(en) {
 .container.padding-top--md.padding-bottom--lg {
     padding-top: 36px !important;
 }
-
-/** 面包屑 **/
-.breadcrumbs__item--active .breadcrumbs__link {
-    background: unset;
-    color: unset;
-}
 .breadcrumbs__link:hover {
     cursor: pointer;
     background: var(--ifm-breadcrumb-item-background-active);
     color: var(--ifm-breadcrumb-color-active);
+}
+
+/** 面包屑 **/
+.breadcrumbs__item--active .breadcrumbs__link {
+    cursor: unset;
+    background: unset;
+    color: unset;
 }
 
 .container> .row> .col {
