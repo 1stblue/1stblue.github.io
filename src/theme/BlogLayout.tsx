@@ -26,7 +26,7 @@ export default function BlogLayout(props: Props): JSX.Element {
             {children}
           </main>
         </div>
-        {toc && <div className="flex-shrink-0 ml-[10px]">{toc}</div>}
+        {toc && <div className="flex-shrink-0">{toc}</div>}
       </div>
     </Layout>
   );

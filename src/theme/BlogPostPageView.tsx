@@ -47,7 +47,7 @@ export const BlogPostPageView = ({ children }) => {
               ← 返回博客
             </Link>
           </div>
-          <div className="flex items-center gap-2 text-gray-600 ">
+          <div className="flex items-center gap-2 text-gray-600 mr-[32px]">
             <Date date={date} formattedDate={formattedDate} />
             {typeof readingTime !== 'undefined' && (
               <>
@@ -103,7 +103,7 @@ export const BlogPostPageView = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className="p-[24px] bluepipe-prose-blog-content">
+      <div className="p-[32px] bluepipe-prose-blog-content">
         <h1 itemProp="headline">
           {isBlogPostPage ? (
             title

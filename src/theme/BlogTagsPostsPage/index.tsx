@@ -23,6 +23,7 @@ import BlogPostItems from '@theme/BlogPostItems';
 import Unlisted from '@theme/ContentVisibility/Unlisted';
 import Heading from '@theme/Heading';
 import TagsList from '../TagsList';
+import ArrowRight from '../../../static/icons/arrow-right.svg';
 
 function BlogTagsPostsPageMetadata({tag}: Props): JSX.Element {
   const title = useBlogTagsPostsPageTitle(tag);
@@ -49,13 +50,13 @@ function BlogTagsPostsPageContent({
           <Link to="/blog" className={clsx('!text-gray-500 hover:text-bp-blue-1 text-sm no-underline')}>
                 ← 返回博客
           </Link>
-          <Link href={tag.allTagsPath} className="no-underline flex text-[14px]">
+          <Link href={tag.allTagsPath} className="no-underline flex text-[14px] group items-center">
             <Translate
               id="theme.tags.tagsPageLink"
               description="The label of the link targeting the tag list page">
               查看所有分类标签
             </Translate>
-            <img src='/icons/arrow-right.svg' alt='arrow right' className='hover:text-bp-blue-1 pl-[5px]' />
+            <ArrowRight className='pl-[5px] h-[18px] w-[12px] group-hover:stroke-blue-500' />
           </Link>
         </div>
         <Heading as="h2" className='mt-[10px]'>{`有${tag?.count}篇${tag?.label}相关的文章`}</Heading>

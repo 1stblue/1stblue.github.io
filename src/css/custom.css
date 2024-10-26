@@ -43,7 +43,7 @@ body :not(pre):not(code):lang(en) {
     padding-top: 56px !important;
 }
 .table-of-contents {
-    padding: 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
+    padding: 0px 32px 0px !important; /* 文档右侧导航栏顶部对齐面包屑 */
 }
 .sidebar_node_modules--pnpm-\@docusaurus\+theme-classic\@3-5-2_\@types\+react\@18-3-11_react-dom\@18-3-1_react\@18-3-1__react\@18-3-1_typescript\@5-5-4-node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
     top: calc(var(--ifm-navbar-height) + 2rem);
@@ -62,7 +62,7 @@ body :not(pre):not(code):lang(en) {
 .theme-doc-sidebar-container {
 }
 .theme-doc-sidebar-menu {
-    padding-right: 48px /* 文档左侧分割线左间距 */
+    padding-right: 32px /* 文档左侧分割线左间距 */
 }
 .container.padding-top--md.padding-bottom--lg {
     padding-top: 36px !important;
@@ -73,9 +73,14 @@ body :not(pre):not(code):lang(en) {
     background: unset;
     color: unset;
 }
+.breadcrumbs__item--active .breadcrumbs__link:hover {
+    cursor: pointer;
+    background: var(--ifm-breadcrumb-item-background-active);
+    color: var(--ifm-breadcrumb-color-active);
+}
 
 .container> .row> .col {
-    padding-left: 16px; /* 文档左侧分割线右间距 */
+    padding-left: 32px; /* 文档左侧分割线右间距 */
     padding: 0, 0;
 }
 
@@ -88,10 +93,10 @@ body :not(pre):not(code):lang(en) {
 
 /** 博客侧边栏 **/
 aside.col {
-    margin-right: 16px; /* 博客左侧分割线右间距 */
+    margin-right: 32px; /* 博客左侧分割线右间距 */
 }
 aside.col.col--3> nav {
-    padding-right: 48px; /* 博客左侧分割线左间距 */
+    padding-right: 32px; /* 博客左侧分割线左间距 */
 }
 aside.col.col--3 {
     --ifm-col-width: 240px; /* 博客侧边栏宽度设置 */
@@ -100,6 +105,14 @@ aside.col.col--3 {
 }
 #__docusaurus_skipToContent_fallback > .margin-vert--lg {
     margin-top: 0px !important; /* 博客左侧分隔线上边距 */
+}
+
+.sidebar_src-theme-BlogSidebar-Desktop-styles-module,
+.sidebarItemTitle_src-theme-BlogSidebar-Desktop-styles-module,
+.yearGroupHeading_src-theme-BlogSidebar-Desktop-styles-module,
+.sidebarItemLink_src-theme-BlogSidebar-Desktop-styles-module {
+    font-size: 14px !important;
+    font-family: 'PingFang SC Microsoft YaHei sans-serif';
 }
 
 /* 处理docusaurus提供的默认table样式和shadcn table冲突 */
