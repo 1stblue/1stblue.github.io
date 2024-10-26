@@ -82,8 +82,8 @@ body :not(pre):not(code):lang(en) {
 }
 
 .container> .row> .col {
-    padding-left: 32px; /* 文档左侧分割线右间距 */
-    padding: 0, 0;
+    padding-left: 32px !important; /* 文档左侧分割线右间距 */
+    padding: 0 0;
 }
 
 /** 分页 **/
