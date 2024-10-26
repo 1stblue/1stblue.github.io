@@ -71,7 +71,7 @@ body :not(pre):not(code):lang(en) {
     background: unset;
     color: unset;
 }
-.breadcrumbs__item--active .breadcrumbs__link:hover {
+.breadcrumbs__link:hover {
     cursor: pointer;
     background: var(--ifm-breadcrumb-item-background-active);
     color: var(--ifm-breadcrumb-color-active);
