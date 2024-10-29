@@ -7,17 +7,18 @@ on:
     types: [ opened, edited ]
 
 jobs:
-  greeting:
+  notify:
     runs-on: ubuntu-latest
     steps:
       - name: WeCom (WeChat Work) Group Robot
         uses: MeanZhang/wecom-group-robot@v1.2
         env:
           AUTHOR: ${{ github.event.discussion.user.login || github.event.issue.user.login }}
-          TITLE: ${{ github.event.discussion.title || github.event.issue.title }}
-          ## category.title
+          TITLE: ${{ github.event.issue.title || github.event.discussion.title }}
+          LINK: ${{ github.event.discussion.url || github.event.issue.url }}
         with:
           key: ${{ secrets.WECOM_TOKEN }}
-          msgtype: text
+          msgtype: markdown
           content: |
             ${{ env.AUTHOR }} ${{ github.event.action}} a[n] ${{ github.event_name }} as ${{ env.TITLE }}
+            [详细情况](${{ env.LINK }})
