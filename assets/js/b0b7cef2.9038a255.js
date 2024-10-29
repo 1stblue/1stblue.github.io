@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_1stblue_io=self.webpackChunk_1stblue_io||[]).push([[1932],{39580:e=>{e.exports=JSON.parse('{"label":"lakehouse","permalink":"/blog/tags/lakehouse","allTagsPath":"/blog/tags","count":1}')}}]);
