@@ -16,7 +16,7 @@ export default function ConsistentExperience() {
             </div>
             <div className=' mt-[24px]
             font-sans font-[600] text-[36px] leading-[50.4px] text-[#000000]'>
-            通过 API 和 SDK 与您的现有系统无缝集成
+            通过 API 和 SDK <br/>与您的现有系统无缝集成
             </div>
             <div className=' mt-[32px]
             font-sans font-[400] text-[16px] leading-[22.4px] text-[#000000]'>
