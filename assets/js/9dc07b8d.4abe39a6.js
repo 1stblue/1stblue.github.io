@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_1stblue_io=self.webpackChunk_1stblue_io||[]).push([[8692],{61632:l=>{l.exports=JSON.parse('{"label":"Sqlplus","permalink":"/blog/tags/sqlplus","allTagsPath":"/blog/tags","count":1}')}}]);
