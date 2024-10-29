@@ -1,0 +1,23 @@
+name: Discussion Notify
+
+on:
+  discussion:
+    types: [ created, edited ]
+  issues:
+    types: [ opened, edited ]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: WeCom (WeChat Work) Group Robot
+        uses: MeanZhang/wecom-group-robot@v1.2
+        env:
+          AUTHOR: ${{ github.event.discussion.user.login || github.event.issue.user.login }}
+          TITLE: ${{ github.event.discussion.title || github.event.issue.title }}
+          ## category.title
+        with:
+          key: ${{ secrets.WECOM_TOKEN }}
+          msgtype: text
+          content: |
+            ${{ env.AUTHOR }} ${{ github.event.action}} a[n] ${{ github.event_name }} as ${{ env.TITLE }}
