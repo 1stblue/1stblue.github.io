@@ -91,7 +91,7 @@ export default function Version() {
         {
             type: "row",
             title: "最大用户数",
-            data: ['1', '1000', '1000'],
+            data: ['1', '1,000', '1,000'],
         },
         {
             type: "row",
