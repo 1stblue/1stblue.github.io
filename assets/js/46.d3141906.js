@@ -10,7 +10,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ purify)
 /* harmony export */ });
-/*! @license DOMPurify 2.5.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.5.7/LICENSE */
+/*! @license DOMPurify 2.5.8 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.5.8/LICENSE */
 
 function _typeof(obj) {
   "@babel/helpers - typeof";
@@ -230,7 +230,7 @@ var xml = freeze(['xlink:href', 'xml:id', 'xlink:title', 'xml:space', 'xmlns:xli
 var MUSTACHE_EXPR = seal(/\{\{[\w\W]*|[\w\W]*\}\}/gm); // Specify template detection regex for SAFE_FOR_TEMPLATES mode
 var ERB_EXPR = seal(/<%[\w\W]*|[\w\W]*%>/gm);
 var TMPLIT_EXPR = seal(/\${[\w\W]*}/gm);
-var DATA_ATTR = seal(/^data-[\-\w.\u00B7-\uFFFF]/); // eslint-disable-line no-useless-escape
+var DATA_ATTR = seal(/^data-[\-\w.\u00B7-\uFFFF]+$/); // eslint-disable-line no-useless-escape
 var ARIA_ATTR = seal(/^aria-[\-\w]+$/); // eslint-disable-line no-useless-escape
 var IS_ALLOWED_URI = seal(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i // eslint-disable-line no-useless-escape
 );
@@ -293,7 +293,7 @@ function createDOMPurify() {
    * Version label, exposed for easier checks
    * if DOMPurify is up to date or not
    */
-  DOMPurify.version = '2.5.7';
+  DOMPurify.version = '2.5.8';
 
   /**
    * Array of elements that DOMPurify removed during sanitation.
@@ -1128,7 +1128,7 @@ function createDOMPurify() {
     var attributes = currentNode.attributes;
 
     /* Check if we have attributes; if not we might have a text node */
-    if (!attributes) {
+    if (!attributes || _isClobbered(currentNode)) {
       return;
     }
     var hookEvent = {
@@ -1257,19 +1257,16 @@ function createDOMPurify() {
     while (shadowNode = shadowIterator.nextNode()) {
       /* Execute a hook if present */
       _executeHook('uponSanitizeShadowNode', shadowNode, null);
-
       /* Sanitize tags and elements */
-      if (_sanitizeElements(shadowNode)) {
-        continue;
-      }
+      _sanitizeElements(shadowNode);
+
+      /* Check attributes next */
+      _sanitizeAttributes(shadowNode);
 
       /* Deep shadow DOM detected */
       if (shadowNode.content instanceof DocumentFragment) {
         _sanitizeShadowDOM(shadowNode.content);
       }
-
-      /* Check attributes, sanitize if necessary */
-      _sanitizeAttributes(shadowNode);
     }
 
     /* Execute a hook if present */
@@ -1391,17 +1388,15 @@ function createDOMPurify() {
       }
 
       /* Sanitize tags and elements */
-      if (_sanitizeElements(currentNode)) {
-        continue;
-      }
+      _sanitizeElements(currentNode);
+
+      /* Check attributes next */
+      _sanitizeAttributes(currentNode);
 
       /* Shadow DOM detected, sanitize it */
       if (currentNode.content instanceof DocumentFragment) {
         _sanitizeShadowDOM(currentNode.content);
       }
-
-      /* Check attributes, sanitize if necessary */
-      _sanitizeAttributes(currentNode);
       oldNode = currentNode;
     }
     oldNode = null;
