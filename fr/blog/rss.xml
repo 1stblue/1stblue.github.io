@@ -4,10 +4,38 @@
         <title>Bluepipe - 数据因自由流动而价值无限 Blog</title>
         <link>https://www.1stblue.com/fr/blog</link>
         <description>Bluepipe - 数据因自由流动而价值无限 Blog</description>
-        <lastBuildDate>Fri, 21 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 31 Mar 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[Release Notes (v2.5)]]></title>
+            <link>https://www.1stblue.com/fr/blog/v2.5-release-notes</link>
+            <guid>https://www.1stblue.com/fr/blog/v2.5-release-notes</guid>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[新特性]]></description>
+            <content:encoded><![CDATA[<div class="avatar margin-bottom--sm mt-[10px] mb-[40px]"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_GKcB" src="https://avatars.githubusercontent.com/u/535479" alt="aleafs"></a><div class="avatar__intro authorDetails_uciD"><div class="avatar__name"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer"><span class="authorName_r1JK">aleafs</span></a></div><small class="authorTitle_ym37" title="大龄程序员">大龄程序员</small><div class="authorSocials_OQLn"></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="新特性">新特性<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E6%96%B0%E7%89%B9%E6%80%A7" class="hash-link" aria-label="Lien direct vers 新特性" title="Lien direct vers 新特性">​</a></h2>
+<p>此版本以<code>MySQL</code>为例，实验性地支持了在相同类型数据库之间迁移视图、触发器、存储过程、函数、用户和权限等。</p>
+<p>此特性对于新建/重建备库，或者进行整个数据库实例迁移非常有帮助，欢迎体验。</p>
+<p><img decoding="async" loading="lazy" alt="搭建MySQL备库" src="https://www.1stblue.com/fr/assets/images/mysql-migration-7633e352c5d2f749953ad7064986214f.png" width="2610" height="660" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接器">连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 连接器" title="Lien direct vers 连接器">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="优化-mysql-连接器">优化 MySQL 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E4%BC%98%E5%8C%96-mysql-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 优化 MySQL 连接器" title="Lien direct vers 优化 MySQL 连接器">​</a></h3>
+<ul>
+<li>支持在<code>MySQL</code>之间迁移视图、触发器、存储过程、函数、用户和权限；</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="优化-oracle-连接器">优化 Oracle 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E4%BC%98%E5%8C%96-oracle-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 优化 Oracle 连接器" title="Lien direct vers 优化 Oracle 连接器">​</a></h3>
+<ul>
+<li><code>CDC</code> 支持 <code>PDB</code> 架构；</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="新增-sql-server-连接器">新增 SQL Server 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E6%96%B0%E5%A2%9E-sql-server-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 新增 SQL Server 连接器" title="Lien direct vers 新增 SQL Server 连接器">​</a></h3>
+<ul>
+<li>支持通过批量方式读取数据；</li>
+<li>暂未支持基于日志订阅的 CDC 能力；</li>
+<li>暂未支持数据写入能力。</li>
+</ul>]]></content:encoded>
+            <category>Release Notes</category>
+            <category>v2.5</category>
+        </item>
         <item>
             <title><![CDATA[构建跨网络数据管道最佳实践]]></title>
             <link>https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse</link>
