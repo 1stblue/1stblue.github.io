@@ -47,7 +47,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <Link href="/price" className='relative text-[14px] group hover:no-underline hover:text-current'>
-                    价格
+                    版本
                     <span className="absolute left-0 bottom-[-2px] w-full h-[1px] bg-white 
                       origin-bottom scale-y-0 translate-y-[1px] transition-transform duration-200 ease-in-out
                       group-hover:scale-y-100 group-hover:translate-y-0"></span>

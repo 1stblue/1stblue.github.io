@@ -8,7 +8,7 @@ export default function Menu() {
       href: '/'
     },
     {
-      name: '价格',
+      name: '版本',
       href: '/price'
     },
     // {

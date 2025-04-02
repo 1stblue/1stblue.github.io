@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 export default function Package() {
     const list = [
         {
-            title: '社区版',
+            title: '基础版',
             desc: '面向个人，或非生产场景',
             price: '68',
             discount: ['限时免费'],
@@ -17,7 +17,7 @@ export default function Package() {
             
         },
         {
-            title: '企业版',
+            title: '专业版',
             desc: '满足高可用与合规要求',
             price: '680',
             discount: ['限时优惠：满10送2月'],
@@ -25,7 +25,7 @@ export default function Package() {
             list: ['商业连接器', '按订单配置链路数', '多节点容灾和负载均衡', 'SSO、权限控制和审计', '开放API与集成', '7 * 24 专家支持']
         },
         {
-            title: '专属版',
+            title: '旗舰版',
             desc: '面向伙伴，或大型企业',
             price: '',
             discount: [],
@@ -98,7 +98,7 @@ export default function Package() {
                                   textWhite
                                   textClassName="text-[16px] leading-[22px]"
                                 >
-                                    {index === 2 ? CALL_BUTTON_TXT : SOON_BUTTON_TXT}
+                                    {index > 0 ? CALL_BUTTON_TXT : SOON_BUTTON_TXT}
                                 </ArrowButton>
                             </div>
                             <div className="mt-[33px]">
