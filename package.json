@@ -32,7 +32,7 @@
     "docusaurus-tailwindcss": "^0.1.0",
     "framer-motion": "^6.5.1",
     "html2canvas": "^1.4.1",
-    "jspdf": "^2.5.2",
+    "jspdf": "^3.0.2",
     "lucide-react": "^0.453.0",
     "micro-dash": "^8.1.0",
     "prism-react-renderer": "^2.3.0",
