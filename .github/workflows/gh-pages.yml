@@ -24,11 +24,11 @@ jobs:
         run: npm run build
 
       # push to cloudflare
-      - name: Publish to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ID }}
-        run: npx wrangler pages deploy ./build --project-name=1stblue
+        run: npx wrangler deploy ./build --project-name=1stblue
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
