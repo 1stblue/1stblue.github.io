@@ -18,4 +18,5 @@
 .*
 *.log
 *.swp
+*-workspace.yaml
 
