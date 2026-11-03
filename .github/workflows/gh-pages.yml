@@ -20,7 +20,7 @@ jobs:
           cache: true
 
       - name: Install dependencies
-        run: pnpm install --legacy-peer-deps
+        run: pnpm install
 
       - name: Build website
         run: pnpm run build
