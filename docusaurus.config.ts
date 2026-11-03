@@ -19,6 +19,7 @@ const config: Config = {
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
 
   // Even if you don't use internationalization, you can use this field to set
@@ -27,12 +28,6 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr', 'es'],
-  },
-
-  markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
   },
 
   presets: [
