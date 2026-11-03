@@ -14,20 +14,20 @@
             <guid>https://www.1stblue.com/fr/blog/v2.5-release-notes</guid>
             <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[新特性]]></description>
-            <content:encoded><![CDATA[<div class="avatar margin-bottom--sm mt-[10px] mb-[40px]"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_GKcB" src="https://avatars.githubusercontent.com/u/535479" alt="aleafs"></a><div class="avatar__intro authorDetails_uciD"><div class="avatar__name"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer"><span class="authorName_r1JK">aleafs</span></a></div><small class="authorTitle_ym37" title="大龄程序员">大龄程序员</small><div class="authorSocials_OQLn"></div></div></div><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="新特性">新特性<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E6%96%B0%E7%89%B9%E6%80%A7" class="hash-link" aria-label="Lien direct vers 新特性" title="Lien direct vers 新特性" translate="no">​</a></h2>
+            <content:encoded><![CDATA[<div class="avatar margin-bottom--sm mt-[10px] mb-[40px]"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_GKcB" src="https://avatars.githubusercontent.com/u/535479" alt="aleafs"></a><div class="avatar__intro authorDetails_uciD"><div class="avatar__name"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer"><span class="authorName_r1JK">aleafs</span></a></div><small class="authorTitle_ym37" title="大龄程序员">大龄程序员</small><div class="authorSocials_OQLn"></div></div></div><h2 class="anchor anchorTargetStickyNavbar_CaeH" id="新特性">新特性<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E6%96%B0%E7%89%B9%E6%80%A7" class="hash-link" aria-label="Lien direct vers 新特性" title="Lien direct vers 新特性" translate="no">​</a></h2>
 <p>此版本以<code>MySQL</code>为例，实验性地支持了在相同类型数据库之间迁移视图、触发器、存储过程、函数、用户和权限等。</p>
 <p>此特性对于新建/重建备库，或者进行整个数据库实例迁移非常有帮助，欢迎体验。</p>
-<p><img decoding="async" loading="lazy" alt="搭建MySQL备库" src="https://www.1stblue.com/fr/assets/images/mysql-migration-7633e352c5d2f749953ad7064986214f.png" width="2610" height="660" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="连接器">连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 连接器" title="Lien direct vers 连接器" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="优化-mysql-连接器">优化 MySQL 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E4%BC%98%E5%8C%96-mysql-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 优化 MySQL 连接器" title="Lien direct vers 优化 MySQL 连接器" translate="no">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="搭建MySQL备库" src="https://www.1stblue.com/fr/assets/images/mysql-migration-7633e352c5d2f749953ad7064986214f.png" width="2610" height="660" class="img_CpEV"></p>
+<h2 class="anchor anchorTargetStickyNavbar_CaeH" id="连接器">连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 连接器" title="Lien direct vers 连接器" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="优化-mysql-连接器">优化 MySQL 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E4%BC%98%E5%8C%96-mysql-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 优化 MySQL 连接器" title="Lien direct vers 优化 MySQL 连接器" translate="no">​</a></h3>
 <ul>
 <li class="">支持在<code>MySQL</code>之间迁移视图、触发器、存储过程、函数、用户和权限；</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="优化-oracle-连接器">优化 Oracle 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E4%BC%98%E5%8C%96-oracle-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 优化 Oracle 连接器" title="Lien direct vers 优化 Oracle 连接器" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="优化-oracle-连接器">优化 Oracle 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E4%BC%98%E5%8C%96-oracle-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 优化 Oracle 连接器" title="Lien direct vers 优化 Oracle 连接器" translate="no">​</a></h3>
 <ul>
 <li class=""><code>CDC</code> 支持 <code>PDB</code> 架构；</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="新增-sql-server-连接器">新增 SQL Server 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E6%96%B0%E5%A2%9E-sql-server-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 新增 SQL Server 连接器" title="Lien direct vers 新增 SQL Server 连接器" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="新增-sql-server-连接器">新增 SQL Server 连接器<a href="https://www.1stblue.com/fr/blog/v2.5-release-notes#%E6%96%B0%E5%A2%9E-sql-server-%E8%BF%9E%E6%8E%A5%E5%99%A8" class="hash-link" aria-label="Lien direct vers 新增 SQL Server 连接器" title="Lien direct vers 新增 SQL Server 连接器" translate="no">​</a></h3>
 <ul>
 <li class="">支持通过批量方式读取数据；</li>
 <li class="">暂未支持基于日志订阅的 CDC 能力；</li>
@@ -45,39 +45,39 @@
             <content:encoded><![CDATA[<div class="avatar margin-bottom--sm mt-[10px] mb-[40px]"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_GKcB" src="https://avatars.githubusercontent.com/u/535479" alt="aleafs"></a><div class="avatar__intro authorDetails_uciD"><div class="avatar__name"><a href="https://github.com/aleafs" target="_blank" rel="noopener noreferrer"><span class="authorName_r1JK">aleafs</span></a></div><small class="authorTitle_ym37" title="大龄程序员">大龄程序员</small><div class="authorSocials_OQLn"></div></div></div><p>本文以<a href="https://yunqi.tech/" target="_blank" rel="noopener noreferrer" class="">云器</a> <code>Lakehouse</code> 为例，介绍利用<code>bluepipe</code>构建跨网络的数据复制最佳实践。</p>
 <p>如下图，客户业务系统部署在私有 IDC 中，而<code>Lakehouse</code>作为多租户湖仓服务部署在云上。数据需要从<code>Oracle</code>同步到<code>Lakehouse</code>
 ，我们推荐将<code>bluepipe</code>部署在客户 IDC 中，<strong>推</strong>数据到<code>Lakehouse</code>。</p>
-<p><img decoding="async" loading="lazy" alt="Oracle to Lakehouse" src="https://www.1stblue.com/fr/assets/images/cross-network-pipe-eddbc84234790986facb8dda2658652e.png" width="2350" height="520" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="方案优势">方案优势<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E6%96%B9%E6%A1%88%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Lien direct vers 方案优势" title="Lien direct vers 方案优势" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="开箱即用10-分钟完成配置">开箱即用，10 分钟完成配置<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A810-%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Lien direct vers 开箱即用，10 分钟完成配置" title="Lien direct vers 开箱即用，10 分钟完成配置" translate="no">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Oracle to Lakehouse" src="https://www.1stblue.com/fr/assets/images/cross-network-pipe-eddbc84234790986facb8dda2658652e.png" width="2350" height="520" class="img_CpEV"></p>
+<h2 class="anchor anchorTargetStickyNavbar_CaeH" id="方案优势">方案优势<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E6%96%B9%E6%A1%88%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Lien direct vers 方案优势" title="Lien direct vers 方案优势" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="开箱即用10-分钟完成配置">开箱即用，10 分钟完成配置<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A810-%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Lien direct vers 开箱即用，10 分钟完成配置" title="Lien direct vers 开箱即用，10 分钟完成配置" translate="no">​</a></h3>
 <ul>
 <li class=""><code>bluepipe</code>几乎可以运行在任何<code>Linux</code>系统中，支持<code>x86</code>和<code>arm</code>芯片；常见的机架式服务器、笔记本电脑，甚至树莓派都可以用来部署；</li>
 <li class="">极简的配置过程，默认参数即可达到最佳性能。</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="全增量一体化无需运维干预">全、增量一体化，无需运维干预<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%85%A8%E5%A2%9E%E9%87%8F%E4%B8%80%E4%BD%93%E5%8C%96%E6%97%A0%E9%9C%80%E8%BF%90%E7%BB%B4%E5%B9%B2%E9%A2%84" class="hash-link" aria-label="Lien direct vers 全、增量一体化，无需运维干预" title="Lien direct vers 全、增量一体化，无需运维干预" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="全增量一体化无需运维干预">全、增量一体化，无需运维干预<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%85%A8%E5%A2%9E%E9%87%8F%E4%B8%80%E4%BD%93%E5%8C%96%E6%97%A0%E9%9C%80%E8%BF%90%E7%BB%B4%E5%B9%B2%E9%A2%84" class="hash-link" aria-label="Lien direct vers 全、增量一体化，无需运维干预" title="Lien direct vers 全、增量一体化，无需运维干预" translate="no">​</a></h3>
 <ul>
 <li class="">全量同步与增量同步深度协同，几乎无需日常运维操作；</li>
 <li class="">高效的数据比对与热修复技术，始终保证数据一致；</li>
 <li class="">高度鲁棒的<code>Schema Evolution</code>。</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="推数据而不是暴露端口">推数据，而不是暴露端口<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E6%8E%A8%E6%95%B0%E6%8D%AE%E8%80%8C%E4%B8%8D%E6%98%AF%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3" class="hash-link" aria-label="Lien direct vers 推数据，而不是暴露端口" title="Lien direct vers 推数据，而不是暴露端口" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="推数据而不是暴露端口">推数据，而不是暴露端口<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E6%8E%A8%E6%95%B0%E6%8D%AE%E8%80%8C%E4%B8%8D%E6%98%AF%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3" class="hash-link" aria-label="Lien direct vers 推数据，而不是暴露端口" title="Lien direct vers 推数据，而不是暴露端口" translate="no">​</a></h3>
 <ul>
 <li class=""><code>bluepipe</code>与您的数据库一起部署在您的内网，无需对外暴露端口；</li>
 <li class="">弹性<code>buffer size</code>技术，在<code>吞吐(Throughput)</code>和<code>延迟(latency)</code>之间自动平衡。</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="oracle-链路的独特优势">Oracle 链路的独特优势<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#oracle-%E9%93%BE%E8%B7%AF%E7%9A%84%E7%8B%AC%E7%89%B9%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Lien direct vers Oracle 链路的独特优势" title="Lien direct vers Oracle 链路的独特优势" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_CaeH" id="oracle-链路的独特优势">Oracle 链路的独特优势<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#oracle-%E9%93%BE%E8%B7%AF%E7%9A%84%E7%8B%AC%E7%89%B9%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Lien direct vers Oracle 链路的独特优势" title="Lien direct vers Oracle 链路的独特优势" translate="no">​</a></h2>
 <p><code>bluepipe</code>基于<code>Oracle LogMiner</code>实现对变更数据的捕捉。与此同时，在以下几个方面做了深度优化：</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="对-ddl-行为的深度兼容">对 DDL 行为的深度兼容<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%AF%B9-ddl-%E8%A1%8C%E4%B8%BA%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%85%BC%E5%AE%B9" class="hash-link" aria-label="Lien direct vers 对 DDL 行为的深度兼容" title="Lien direct vers 对 DDL 行为的深度兼容" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="对-ddl-行为的深度兼容">对 DDL 行为的深度兼容<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%AF%B9-ddl-%E8%A1%8C%E4%B8%BA%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%85%BC%E5%AE%B9" class="hash-link" aria-label="Lien direct vers 对 DDL 行为的深度兼容" title="Lien direct vers 对 DDL 行为的深度兼容" translate="no">​</a></h3>
 <p>在<code>LogMiner</code>默认策略下，当发生<code>DDL</code>行为后，相关表上后续的<code>DML</code>操作均无法正确解析，从而导致无法正确捕捉到变更。</p>
 <p><code>bluepipe</code>维护了字典文件的自动构建策略，保证表结构变更后仍然能捕捉到正确的增量数据。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="大事务优化">大事务优化<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%A4%A7%E4%BA%8B%E5%8A%A1%E4%BC%98%E5%8C%96" class="hash-link" aria-label="Lien direct vers 大事务优化" title="Lien direct vers 大事务优化" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="大事务优化">大事务优化<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%A4%A7%E4%BA%8B%E5%8A%A1%E4%BC%98%E5%8C%96" class="hash-link" aria-label="Lien direct vers 大事务优化" title="Lien direct vers 大事务优化" translate="no">​</a></h3>
 <p><code>Oracle Redo Log</code>中记录了完整的事务(<code>Transaction</code>)过程，而业务上通常仅希望拿到<code>commit</code>
 之后的数据，因此，需要在传输过程中使用<code>buffer</code>来暂存尚未<code>commit</code>的变更记录。</p>
 <p><code>bluepipe</code>基于独特的内存管理技术，单节点上也能轻松应对千万量级的大事务。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="全面支持名称超过-30-字符的表">全面支持名称超过 30 字符的表<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81%E5%90%8D%E7%A7%B0%E8%B6%85%E8%BF%87-30-%E5%AD%97%E7%AC%A6%E7%9A%84%E8%A1%A8" class="hash-link" aria-label="Lien direct vers 全面支持名称超过 30 字符的表" title="Lien direct vers 全面支持名称超过 30 字符的表" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="全面支持名称超过-30-字符的表">全面支持名称超过 30 字符的表<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81%E5%90%8D%E7%A7%B0%E8%B6%85%E8%BF%87-30-%E5%AD%97%E7%AC%A6%E7%9A%84%E8%A1%A8" class="hash-link" aria-label="Lien direct vers 全面支持名称超过 30 字符的表" title="Lien direct vers 全面支持名称超过 30 字符的表" translate="no">​</a></h3>
 <p><code>Oracle 12.2</code>版本之后，对表名、字段名的最大长度支持到了 128 字节。
 但因为种种原因，<code>LogMiner</code>对于无<code>OGG LICENSE</code>的实例，至今仍不支持对包含长名称的表的 DML
 解析，详情参考<a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html" target="_blank" rel="noopener noreferrer" class="">官方文档</a>。</p>
 <p><code>bluepipe</code>基于高效的流批融合技术，全面支持了此种情况下的增量数据捕捉与投递。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="适配支持-rac-架构">适配支持 RAC 架构<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E9%80%82%E9%85%8D%E6%94%AF%E6%8C%81-rac-%E6%9E%B6%E6%9E%84" class="hash-link" aria-label="Lien direct vers 适配支持 RAC 架构" title="Lien direct vers 适配支持 RAC 架构" translate="no">​</a></h3>]]></content:encoded>
+<h3 class="anchor anchorTargetStickyNavbar_CaeH" id="适配支持-rac-架构">适配支持 RAC 架构<a href="https://www.1stblue.com/fr/blog/bluepipe-with-lakehouse#%E9%80%82%E9%85%8D%E6%94%AF%E6%8C%81-rac-%E6%9E%B6%E6%9E%84" class="hash-link" aria-label="Lien direct vers 适配支持 RAC 架构" title="Lien direct vers 适配支持 RAC 架构" translate="no">​</a></h3>]]></content:encoded>
             <category>lakehouse</category>
             <category>network</category>
             <category>Oracle</category>

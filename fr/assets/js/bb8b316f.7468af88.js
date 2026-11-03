@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_1stblue_github_io||=[]).push([[7973],{4226(e,i,s){s.r(i),s.d(i,{default:()=>h});s(758);var t=s(6070);function h(){return(0,t.jsx)("div",{children:(0,t.jsx)("span",{children:(0,t.jsx)("img",{src:"/icons/telephone.svg",alt:"telephone",width:116,height:17})})})}}}]);

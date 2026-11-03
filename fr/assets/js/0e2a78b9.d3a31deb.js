@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunk_1stblue_github_io=globalThis.webpackChunk_1stblue_github_io||[]).push([[551],{3858:(e,t,i)=>{i.r(t),i.d(t,{default:()=>a});i(6540);var u=i(4848);function a({date:e,formattedDate:t}){return(0,u.jsx)("time",{dateTime:e,itemProp:"datePublished",children:t})}}}]);
